@@ -1,0 +1,52 @@
+name: New Job Posting
+description: Submit a new job opening to the community board
+title: "[JOB] Company – Role"
+labels: ["job-submission"]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company Name
+      placeholder: Example Ltd
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: Role
+      placeholder: Data Analyst
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: London, UK / Remote
+    validations:
+      required: true
+
+  - type: input
+    id: experience
+    attributes:
+      label: Experience
+      placeholder: 1–3 years
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline (YYYY-MM-DD)
+      placeholder: 2026-02-15
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Application Link
+      placeholder: https://company.com/jobs
+    validations:
+      required: true
