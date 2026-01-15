@@ -15,6 +15,4 @@ def load_jobs(filepath: str) -> pd.DataFrame:
     missing_cols = REQUIRED_COLUMNS - set(df.columns)
     if missing_cols:
         raise ValueError(f"Missing required columns: {missing_cols}")
-    print(df["deadline"])
-
     return df
