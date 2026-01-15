@@ -40,3 +40,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 
 <!-- END:JOB_POSTINGS -->
+
+
+## 🧩 How This Project Works
+
+1. Community submits jobs via Issues
+2. Approved jobs are added to `docs/pending-jobs.md`
+3. Maintainer reviews and merges PRs
+4. Data is added to the main dataset
+5. README updates automatically
+
+This keeps contributions safe, structured, and beginner-friendly.
