@@ -1,4 +1,16 @@
+# Contributors 💚
+
 # Contributing Guide (Beginner Friendly)
+
+Thanks to everyone who helped improve this project.
+
+## Job Submissions
+
+- _Be the first contributor!_
+
+---
+
+Contributors are added after their first merged pull request.
 
 Thank you for your interest in contributing! 🎉  
 You do NOT need to know Python or Data Engineering to contribute.
