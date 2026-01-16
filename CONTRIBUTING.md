@@ -62,14 +62,5 @@ Pull Requests touching core logic will be closed.
 
 ---
 
-## 🟩 Contribution Credit
-
-Merged Pull Requests:
-
-- Count as GitHub contributions
-- Earn you contributor recognition
-- Help beginners gain open-source experience
-
----
 
 Thank you for contributing and learning with us! 🙌
