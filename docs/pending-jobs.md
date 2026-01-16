@@ -12,6 +12,12 @@ Approved entries will be added to the main dataset by the maintainer.
 3. Add your GitHub username
 4. Submit a Pull Request
 
+
+## ⚠️ Contribution Rules
+- Do NOT edit existing entries
+- Always append new jobs at the bottom
+- One job per block
+
 ---
 
 ## 🔽 Job Submission Template
