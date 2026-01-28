@@ -1,21 +1,25 @@
+import pandas as pd
+
 def render_markdown(df) -> str:
     blocks = []
-    
+
     for _, row in df.iterrows():
-        link_html = (
-            f'<a href="{row["Link"]}" '
-            f'target="_blank" rel="noopener noreferrer">Link</a>'
+        link = f"[Apply]({row['job_url']})"
+
+        # Handle date safely
+        date_posted = (
+            row["date_posted"].strftime("%d %b %Y")
+            if pd.notnull(row["date_posted"])
+            else "Unknown"
         )
 
-        deadline = row["deadline"].strftime("%d %b %Y")
-
-    for _, row in df.iterrows():
-        block = f"""### {row['Role']} – {row['Company']}
-📍 Location: {row['Location']}  
-🧠 Experience: {row['Experience']}
-⏳ Deadline: {row['deadline'].date()}   
-🔗 Apply: {link_html}
+        block = f"""### {row['title']} – {row['company']}
+📍 Location: {row['location']}  
+🧠 Job Type: {row.get('job_type', 'N/A')}  
+🗓 Posted on: {date_posted}  
+🔗 {link}
 """
         blocks.append(block)
 
     return "\n---\n\n".join(blocks)
+
