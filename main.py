@@ -1,7 +1,7 @@
 from src.pipeline import run_pipeline
 import pandas as pd
 
-README_PATH = "README.md"
+README_PATH = "READMe.md"
 START = "<!-- START:JOB_POSTINGS -->"
 END = "<!-- END:JOB_POSTINGS -->"
 
