@@ -36,7 +36,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           if git status --porcelain | grep .; then
-            git add README.md
+            git add READMe.md
             git commit -m "chore: daily job postings update"
             git push
           else
