@@ -13,6 +13,8 @@ You don’t need to know Python to contribute.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
+🔄 Jobs refresh daily at 9:00 PM UTC via GitHub Actions
+
 ## 📌 Active Job Openings
 <!-- START:JOB_POSTINGS -->
 
