@@ -18,7 +18,8 @@ DISPLAY_COLUMNS = [
 ]
 
 # ---------------------------
-# Keywords
+# Junior-focused search terms
+# (used only for scraping, not filtering)
 # ---------------------------
 JUNIOR_KEYWORDS = [
     "junior data engineer",
@@ -29,16 +30,73 @@ JUNIOR_KEYWORDS = [
 ]
 
 # ---------------------------
+# STRICT data-role whitelist
+# ---------------------------
+DATA_ROLE_KEYWORDS = [
+    "data engineer",
+    "analytics engineer",
+    "platform engineer (data)",
+    "data platform engineer",
+    "machine learning engineer",
+    "ml engineer",
+    "database administrator",
+    "database engineer",
+    "etl developer",
+    "data reliability engineer",
+    "big data engineer",
+    "data architect",
+    "cloud data engineer",
+    "bi engineer",
+    "business intelligence engineer",
+]
+
+# ---------------------------
 # Internal history file
 # ---------------------------
 HISTORY_PATH = "data/old_jobs.csv"
 
 
+# ---------------------------
+# strict title filter
+# ---------------------------
+import re
+
+def is_data_role(title: str) -> bool:
+    if not isinstance(title, str):
+        return False
+
+    title = title.lower()
+
+    patterns = [
+        r"\bdata engineer\b",
+        r"\banalytics engineer\b",
+        r"\bplatform engineer\b.*\bdata\b",
+        r"\bdata platform engineer\b",
+        r"\bmachine learning engineer\b",
+        r"\bml engineer\b",
+        r"\bdatabase administrator\b",
+        r"\bdatabase engineer\b",
+        r"\betl developer\b",
+        r"\bdata reliability engineer\b",
+        r"\bbig data engineer\b",
+        r"\bdata architect\b",
+        r"\bcloud data engineer\b",
+        r"\bbi engineer\b",
+        r"\bbusiness intelligence engineer\b",
+    ]
+
+    return any(re.search(pattern, title) for pattern in patterns)
+
+
+
+# ---------------------------
+# Main pipeline
+# ---------------------------
 def scrape_and_save(output_path: str, hours_old: int = 72) -> pd.DataFrame:
     all_jobs = []
 
     # ---------------------------
-    # Scrape
+    # Scrape broadly
     # ---------------------------
     for keyword in JUNIOR_KEYWORDS:
         jobs = scrape_jobs(
@@ -63,8 +121,16 @@ def scrape_and_save(output_path: str, hours_old: int = 72) -> pd.DataFrame:
     df = df.drop_duplicates(subset=["site", "job_url"])
 
     # ---------------------------
+    # STRICT data-role filtering
+    # ---------------------------
+    df = df[df["title"].apply(is_data_role)]
+
+    if df.empty:
+        raise RuntimeError("No data-engineering roles found after filtering")
+
+    # ---------------------------
     # ===== STREAM 1 =====
-    # Overwrite snapshot (clean, small)
+    # Snapshot (clean & small)
     # ---------------------------
     snapshot_df = df[DISPLAY_COLUMNS]
 
@@ -79,11 +145,9 @@ def scrape_and_save(output_path: str, hours_old: int = 72) -> pd.DataFrame:
 
     # ---------------------------
     # ===== STREAM 2 =====
-    # Append-only history (rich, analytical)
+    # Append-only history
     # ---------------------------
     history_df = df.copy()
-
-    # Add metadata for analysis
     history_df["scraped_at"] = pd.Timestamp.utcnow()
 
     os.makedirs(os.path.dirname(HISTORY_PATH), exist_ok=True)
@@ -100,5 +164,4 @@ def scrape_and_save(output_path: str, hours_old: int = 72) -> pd.DataFrame:
         escapechar="\\",
     )
 
-    # Return snapshot for pipeline use
     return snapshot_df
