@@ -18,6 +18,262 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 ## 📌 Active Job Openings
 <!-- START:JOB_POSTINGS -->
 
+### Senior AI/ML Engineer – Kallikor
+📍 Location: London, ENG, GB  
+🧠 Job Type: fulltime  
+🗓 Posted on: 03 Feb 2026  
+🔗 [Apply](https://uk.indeed.com/viewjob?jk=1631b1f7a4e1deb8)
+
+---
+
+### Senior Analytics Engineer – Concept AI Ltd
+📍 Location: London, ENG, GB  
+🧠 Job Type: fulltime  
+🗓 Posted on: 03 Feb 2026  
+🔗 [Apply](https://uk.indeed.com/viewjob?jk=05266b10e488a46b)
+
+---
+
+### Senior Data Engineer - Credit Platform – Lloyds Banking Group
+📍 Location: Halifax, ENG, GB  
+🧠 Job Type: fulltime  
+🗓 Posted on: 03 Feb 2026  
+🔗 [Apply](https://uk.indeed.com/viewjob?jk=5c376ca69b9f886d)
+
+---
+
+### Senior Data Engineer – IDEXX Laboratories
+📍 Location: London, ENG, GB  
+🧠 Job Type: fulltime  
+🗓 Posted on: 03 Feb 2026  
+🔗 [Apply](https://uk.indeed.com/viewjob?jk=4de4f2859eabe191)
+
+---
+
+### Data Engineer – BettingJobs
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357590961)
+
+---
+
+### Data Engineer | Remote – Datatech Analytics
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357444814)
+
+---
+
+### Analytics Engineer – Ocado Logistics
+📍 Location: Hatfield, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368327343)
+
+---
+
+### Data Scientist / Data Engineer within Defence & Security – Deloitte via AMS Skills Creation – Yoke for AMS Talent Lab
+📍 Location: Manchester, ENG, GB  
+🧠 Job Type: fulltime  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://uk.indeed.com/viewjob?jk=59263a393e723730)
+
+---
+
+### Data Scientist / Data Engineer within Defence & Security – Deloitte via AMS Skills Creation – Yoke for AMS Talent Lab
+📍 Location: Bristol, ENG, GB  
+🧠 Job Type: fulltime  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://uk.indeed.com/viewjob?jk=0eefce9194c5802b)
+
+---
+
+### Snowflake Data Engineer - Graduate Career Solutions – Jobster
+📍 Location: Brighton, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367863646)
+
+---
+
+### Data Engineer - Tata Consultancy Services – Jobster
+📍 Location: Burgess Hill, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367848725)
+
+---
+
+### Senior Data Engineer – Arenko
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367890267)
+
+---
+
+### Senior Data Engineer (Temp) – Pantheon
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367887992)
+
+---
+
+### Senior Data Engineer - Focused Futures Consultancy LTD – Jobster
+📍 Location: City Of London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367866764)
+
+---
+
+### Senior Data Engineer – Azure - Fynity – Jobster
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367877041)
+
+---
+
+### SQL Data Engineer – Pontoon Solutions
+📍 Location: Leeds, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357473597)
+
+---
+
+### Data Engineer (SC Cleared) – Scrumconnect Consulting
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357580792)
+
+---
+
+### Data Engineer – Stanford Black Limited
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357394012)
+
+---
+
+### Data Engineer | $80/hr Remote – Crossing Hurdles
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367887585)
+
+---
+
+### Data Engineer – Damia Group
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368369072)
+
+---
+
+### Analytics Engineer – Lorien
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368002760)
+
+---
+
+### Data Engineer – Tenth Revolution Group
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357461713)
+
+---
+
+### Data Engineer – Yoto
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4321526834)
+
+---
+
+### Data Engineer – Harnham
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368193338)
+
+---
+
+### Data Engineer – Harnham
+📍 Location: Brighton, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368183421)
+
+---
+
+### Data Engineer Contract - Inside IR35 - £700-£800/day - Oliver Bernard – Jobster
+📍 Location: City Of London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367845816)
+
+---
+
+### Data Engineer – Oxford Nanopore Technologies
+📍 Location: Oxford, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4366861535)
+
+---
+
+### Data Engineer – AECOM
+📍 Location: Stockland Bristol, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357502536)
+
+---
+
+### Data Engineer – Paradigm Tech
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4365661435)
+
+---
+
+### Data Engineer – Hydrogen Group
+📍 Location: Glasgow, Scotland, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368199292)
+
+---
+
+### Senior Data Engineer – Wave Talent
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357523384)
+
+---
+
+### Senior Machine Learning Engineer - Utilities – Kraken
+📍 Location: London, ENG, GB  
+🧠 Job Type: fulltime  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://uk.indeed.com/viewjob?jk=67f9a73e8daa741e)
+
+---
+
 ### Senior Data Engineer (Temp) – Pantheon Ventures
 📍 Location: London, ENG, GB  
 🧠 Job Type: nan  
@@ -34,22 +290,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
-### Data Scientist / Data Engineer within Defence & Security – Deloitte via AMS Skills Creation – Yoke for AMS Talent Lab
-📍 Location: Bristol, ENG, GB  
-🧠 Job Type: fulltime  
-🗓 Posted on: 02 Feb 2026  
-🔗 [Apply](https://uk.indeed.com/viewjob?jk=0eefce9194c5802b)
-
----
-
-### Data Scientist / Data Engineer within Defence & Security – Deloitte via AMS Skills Creation – Yoke for AMS Talent Lab
-📍 Location: Manchester, ENG, GB  
-🧠 Job Type: fulltime  
-🗓 Posted on: 02 Feb 2026  
-🔗 [Apply](https://uk.indeed.com/viewjob?jk=59263a393e723730)
-
----
-
 ### Big Data Architect – DataSpartan Consulting
 📍 Location: London, ENG, GB  
 🧠 Job Type: nan  
@@ -58,35 +298,139 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
-### Senior Data Engineer - Python - SQL - Fabric - eFinancialCareers – Jobs via eFinancialCareers
-📍 Location: London, England, UK  
+### Senior Data Engineer – G.Digital
+📍 Location: West Yorkshire, England, UK  
 🧠 Job Type: nan  
-🗓 Posted on: 01 Feb 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4358337629)
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368300121)
 
 ---
 
-### Analytics Engineer – Overwolf
-📍 Location: nan  
-🧠 Job Type: nan  
-🗓 Posted on: 01 Feb 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4301536405)
-
----
-
-### Data Engineer – Palantir Foundry – VE3
-📍 Location: City Of London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 01 Feb 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4367814446)
-
----
-
-### Data Engineer – Blockchain.com
+### Senior Data Engineer – Source
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
-🗓 Posted on: 01 Feb 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4315875542)
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368394946)
+
+---
+
+### Senior Data Engineer – Our Future Health UK
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4363604251)
+
+---
+
+### Senior Data Engineer – Immersum
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4354667283)
+
+---
+
+### Senior Data Engineer – ARC IT Recruitment
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357403521)
+
+---
+
+### Data Engineer – Blatchford
+📍 Location: Basingstoke, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368328107)
+
+---
+
+### Senior Software and Data Engineer – Oxford University Hospitals NHS Foundation Trust
+📍 Location: Oxford, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368306003)
+
+---
+
+### Senior Data Engineer – Xcede
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367838761)
+
+---
+
+### Senior Data Engineer - Contract – Oliver Bernard
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4353625312)
+
+---
+
+### Senior Analytics Engineer – Cera
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357503601)
+
+---
+
+### Senior Data Engineer – The Manchester Metropolitan University
+📍 Location: Manchester, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4357462905)
+
+---
+
+### Senior Data Engineer - Inpart – Jobster
+📍 Location: Sheffield, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367848839)
+
+---
+
+### Senior Data Engineer - WorkGenius Group – Jobster
+📍 Location: City Of London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367860740)
+
+---
+
+### Senior Data Engineer - WorkGenius Group – Jobster
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367881423)
+
+---
+
+### Senior Data Engineer - Searchability NS&D – Jobster
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367865634)
+
+---
+
+### Senior Data Engineer – Azure - Fynity – Jobster
+📍 Location: City Of London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367888282)
+
+---
+
+### Data Engineer – NewDay
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 02 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4295688579)
 
 ---
 
@@ -98,163 +442,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
-### Senior Data Architect - Client360 – JPMorganChase
-📍 Location: London, ENG, GB  
-🧠 Job Type: fulltime  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://uk.indeed.com/viewjob?jk=ff2a13339c481aed)
-
----
-
-### Senior Data Engineer – N-able
-📍 Location: Edinburgh, Scotland, UK  
+### Data Engineer – Blockchain.com
+📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4356792483)
+🗓 Posted on: 01 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4315875542)
 
 ---
 
-### Data Engineer – Foster + Partners
-📍 Location: London, England, UK  
+### Data Engineer – Person Centred Software Ltd
+📍 Location: Guildford, England, UK  
 🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4341194730)
-
----
-
-### Data Engineer – NC SAVE$ ENERGY
-📍 Location: Solihull, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4367952779)
-
----
-
-### Analytics Engineer – Deliveroo
-📍 Location: London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4328049066)
-
----
-
-### Data Engineer | $60/hr Remote – Crossing Hurdles
-📍 Location: nan  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4367561308)
-
----
-
-### Junior Data Engineer – The Business Gifts Co
-📍 Location: London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4367946854)
-
----
-
-### Senior Lead Software Engineer - Data Engineer - Credit Technology – JPMorganChase
-📍 Location: Greater London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4340132590)
-
----
-
-### Remote Senior Data Engineer (m/f/d) – Founderful
-📍 Location: Dover, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4367941236)
-
----
-
-### Data Engineer – PhysicsX
-📍 Location: City Of London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4359695757)
-
----
-
-### Snowflake Data Engineer | Senior Consultant – Slalom
-📍 Location: Manchester, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4328310920)
-
----
-
-### Senior Data Engineer | Digital Services – Lancashire County Council
-📍 Location: Preston, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4367577071)
-
----
-
-### Senior Data Engineer – RAC
-📍 Location: Walsall, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4352237787)
-
----
-
-### Senior Data Engineer – Bloomberg
-📍 Location: London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4352333852)
-
----
-
-### Senior Data Engineer – WGSN
-📍 Location: London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4345450449)
-
----
-
-### Senior Data Engineer – FanDuel
-📍 Location: Edinburgh, Scotland, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4352272896)
-
----
-
-### AI Data Engineer – Convatec
-📍 Location: Deeside, Wales, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 31 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4340102994)
-
----
-
-### Senior Data Engineer – N-Able
-📍 Location: Edinburgh, SCT, GB  
-🧠 Job Type: fulltime  
-🗓 Posted on: 30 Jan 2026  
-🔗 [Apply](https://uk.indeed.com/viewjob?jk=03ba4edab606c8a3)
-
----
-
-### Junior Data Engineer - Revenue Platform – Spotify
-📍 Location: London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 30 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4367637604)
-
----
-
-### Data Engineer – DICE
-📍 Location: London, England, UK  
-🧠 Job Type: nan  
-🗓 Posted on: 30 Jan 2026  
-🔗 [Apply](https://www.linkedin.com/jobs/view/4367658250)
+🗓 Posted on: 01 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4367759157)
 
 
 <!-- END:JOB_POSTINGS -->
