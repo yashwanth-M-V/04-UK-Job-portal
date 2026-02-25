@@ -1,25 +1,11 @@
 import csv
 import os
+import re
 import pandas as pd
 from jobspy import scrape_jobs
 
-
 # ---------------------------
-# Public / README-facing columns
-# ---------------------------
-DISPLAY_COLUMNS = [
-    "site",
-    "title",
-    "company",
-    "location",
-    "date_posted",
-    "job_type",
-    "job_url",
-]
-
-# ---------------------------
-# Junior-focused search terms
-# (used only for scraping, not filtering)
+# Search terms
 # ---------------------------
 JUNIOR_KEYWORDS = [
     "junior data engineer",
@@ -30,37 +16,14 @@ JUNIOR_KEYWORDS = [
 ]
 
 # ---------------------------
-# STRICT data-role whitelist
+# Silver path (source of truth)
 # ---------------------------
-DATA_ROLE_KEYWORDS = [
-    "data engineer",
-    "analytics engineer",
-    "platform engineer (data)",
-    "data platform engineer",
-    "machine learning engineer",
-    "ml engineer",
-    "database administrator",
-    "database engineer",
-    "etl developer",
-    "data reliability engineer",
-    "big data engineer",
-    "data architect",
-    "cloud data engineer",
-    "bi engineer",
-    "business intelligence engineer",
-]
-
-# ---------------------------
-# Internal history file
-# ---------------------------
-HISTORY_PATH = "data/old_jobs.csv"
+SILVER_PATH = "data/jobs_silver.csv"
 
 
 # ---------------------------
-# strict title filter
+# Title filter
 # ---------------------------
-import re
-
 def is_data_role(title: str) -> bool:
     if not isinstance(title, str):
         return False
@@ -88,16 +51,12 @@ def is_data_role(title: str) -> bool:
     return any(re.search(pattern, title) for pattern in patterns)
 
 
-
 # ---------------------------
-# Main pipeline
+# Scrape → Silver
 # ---------------------------
-def scrape_and_save(output_path: str, hours_old: int = 72) -> pd.DataFrame:
+def scrape_to_silver(hours_old: int = 72) -> pd.DataFrame:
     all_jobs = []
 
-    # ---------------------------
-    # Scrape broadly
-    # ---------------------------
     for keyword in JUNIOR_KEYWORDS:
         jobs = scrape_jobs(
             site_name=["indeed", "linkedin", "google"],
@@ -107,61 +66,42 @@ def scrape_and_save(output_path: str, hours_old: int = 72) -> pd.DataFrame:
             hours_old=hours_old,
             country_indeed="United Kingdom",
         )
-
         if not jobs.empty:
             all_jobs.append(jobs)
 
     if not all_jobs:
         raise RuntimeError("No jobs scraped")
 
-    # ---------------------------
-    # Combine & deduplicate
-    # ---------------------------
     df = pd.concat(all_jobs, ignore_index=True)
-    df = df.drop_duplicates(subset=["site", "job_url"])
 
-    # ---------------------------
-    # STRICT data-role filtering
-    # ---------------------------
+    # --- Basic cleaning ---
+    df = df.drop_duplicates(subset=["site", "job_url"])
     df = df[df["title"].apply(is_data_role)]
 
     if df.empty:
         raise RuntimeError("No data-engineering roles found after filtering")
 
-    # ---------------------------
-    # ===== STREAM 1 =====
-    # Snapshot (clean & small)
-    # ---------------------------
-    snapshot_df = df[DISPLAY_COLUMNS]
+    # Parse dates cleanly
+    df["date_posted"] = pd.to_datetime(df["date_posted"], errors="coerce")
+    df["date_posted"] = df["date_posted"].dt.tz_localize(None)
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    # Tag when it was scraped
+    df["scraped_at"] = pd.Timestamp.utcnow().replace(tzinfo=None)
 
-    snapshot_df.to_csv(
-        output_path,
+    # --- Append to silver (dedupe on site + job_url) ---
+    os.makedirs(os.path.dirname(SILVER_PATH), exist_ok=True)
+
+    if os.path.exists(SILVER_PATH):
+        existing = pd.read_csv(SILVER_PATH, parse_dates=["date_posted", "scraped_at"])
+        df = pd.concat([existing, df], ignore_index=True)
+        df = df.drop_duplicates(subset=["site", "job_url"], keep="first")
+
+    df.to_csv(
+        SILVER_PATH,
         index=False,
         quoting=csv.QUOTE_NONNUMERIC,
         escapechar="\\",
     )
 
-    # ---------------------------
-    # ===== STREAM 2 =====
-    # Append-only history
-    # ---------------------------
-    history_df = df.copy()
-    history_df["scraped_at"] = pd.Timestamp.utcnow()
-
-    os.makedirs(os.path.dirname(HISTORY_PATH), exist_ok=True)
-
-    if os.path.exists(HISTORY_PATH):
-        old_history = pd.read_csv(HISTORY_PATH)
-        history_df = pd.concat([old_history, history_df], ignore_index=True)
-        history_df = history_df.drop_duplicates(subset=["site", "job_url"])
-
-    history_df.to_csv(
-        HISTORY_PATH,
-        index=False,
-        quoting=csv.QUOTE_NONNUMERIC,
-        escapechar="\\",
-    )
-
-    return snapshot_df
+    print(f"✅ Silver saved → {SILVER_PATH} ({len(df)} total records)")
+    return df

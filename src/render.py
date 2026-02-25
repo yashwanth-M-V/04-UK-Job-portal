@@ -1,12 +1,15 @@
 import pandas as pd
 
-def render_markdown(df) -> str:
+
+def render_markdown(df: pd.DataFrame) -> str:
+    if df.empty:
+        return "_No active job postings found._"
+
     blocks = []
 
     for _, row in df.iterrows():
         link = f"[Apply]({row['job_url']})"
 
-        # Handle date safely
         date_posted = (
             row["date_posted"].strftime("%d %b %Y")
             if pd.notnull(row["date_posted"])
@@ -22,4 +25,3 @@ def render_markdown(df) -> str:
         blocks.append(block)
 
     return "\n---\n\n".join(blocks)
-

@@ -1,16 +1,25 @@
-from src.scrape.job_scraping import scrape_and_save
+from src.scrape.job_scraping import scrape_to_silver
+from src.transform import silver_to_gold
 from src.ingest import load_jobs
-from src.transform import filter_active_jobs
 from src.render import render_markdown
-import pandas as pd
 
-RAW_PATH = "data/jobs_raw.csv"
 
-def run_pipeline():
-    scrape_and_save(RAW_PATH)
-    df = load_jobs(RAW_PATH)
-    active_df = filter_active_jobs(df)
-    markdown = render_markdown(active_df)
+def run_pipeline() -> str:
+    # Step 1: Scrape → append to silver (source of truth)
+    scrape_to_silver()
+
+    # Step 2: Silver → gold (filtered, display-ready)
+    silver_to_gold()
+
+    # Step 3: Load gold
+    df = load_jobs()
+
+    # Step 4: Render to markdown
+    markdown = render_markdown(df)
+
     return markdown
 
-print("🚀 Running job pipeline...")
+
+if __name__ == "__main__":
+    print("🚀 Running job pipeline...")
+    run_pipeline()

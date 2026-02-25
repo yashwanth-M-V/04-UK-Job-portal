@@ -1,0 +1,1484 @@
+"site","title","company","location","date_posted","job_type","job_url","description"
+"indeed","GOSH BRC/DRIVE Data Engineer","GREAT ORMOND STREET HOSPITAL","London, ENG, GB","2026-02-25","fulltime","https://uk.indeed.com/viewjob?jk=9d0a3c8cc4f462b6","**Main area**
+Data engineer (paediatric rare diseases)
+**Grade**
+Band 7
+**Contract**
+12 months (12 month fixed term)
+**Hours**
+Full time \\\\- 37\\\\.5 hours per week
+**Job ref**
+271\\\\-R\\\\&I\\\\-7760697
+**Site**
+Great Ormond Street Hospital for Children NHS Foundation Trust
+**Town**
+London
+**Salary**
+£54,320 \\\\- £60,981 per annum inclusive
+**Salary period**
+Yearly
+**Closing**
+11/03/2026 23:59
+  
+### **Job overview**
+
+
+An exciting opportunity has arisen to join our Digital Research Environment (DRE) as a Data Engineer, funded through Great Ormond Street Hospital’s Biomedical Research Centre (GOSH BRC). In this role, you’ll work at the heart of the Digital Research Environment (DRE), partnering with clinicians and researchers to deliver high‑impact projects in AI, genomics and rare disease research. The role offers the chance to combine advanced data engineering, nationally leading research, and a clear social purpose \\\\- improving outcomes for children with rare and complex conditions, every single day.
+
+
+
+This role is ideal for a motivated data engineer who thrives in complex environments, enjoys solving challenging problems and wants their work to make a tangible difference. You’ll design and optimise data pipelines, support cutting‑edge analytics and collaborate across multiple Trusts and academic partners.
+
+
+
+We aim to hold interviews in the last week of February, please hold these dates and an invite will be sent to you, should you be shortlisted.
+
+
+### **Main duties of the job**
+
+
+The BRC Data Engineer will be a member of the DRE Team with a primary focus on working with researchers to deliver several specific research projects that will utilise the DRE. The post holder will provide essential technical support for a range of innovative research projects, including both GOSH initiatives and collaborative efforts with partner institutions, including:
+
+
+Real\\\\-Time Integration of Brain Tumour Volumetry into Neuro\\\\-Oncology Multidisciplinary Team Meetings (Kshitij Mankad)
+Multimodal Artificial Intelligence for the Detection of Necrotising Enterocolitis (Stavros Loukogeorgakis)
+Real\\\\-world EPIC data for health economic analysis of rapid genetic testing in epilepsy (Amy McTague)
+Support PEI projects and requests across all three partner sites (Sheffield, Birmingham and Alder Hey)
+A neonatal screen data project between GOSH and a partner site
+Developing a craniofacial database with 2 PEI partners
+Developing an NLP tool around babygram and friends and family tests between GOSH and a partner site.
+
+Through these activities, the Data Engineer will ensure that data\\\\-driven research and operational projects are effectively supported, contributing to advancements in paediatric healthcare.
+
+
+### **Working for our organisation**
+
+
+We are keen to make our workforce as diverse as the communities we serve, and we hope to attract applications from underrepresented groups, including people with Black, Asian and Minority Ethnic heritage, people with a disability, and people from LGBTQ\\\\+ communities. By growing an ever more diverse workforce, we’ll have a greater range of perspectives and knowledge, meaning that we can provide the children and young people at our hospital with even better care.
+
+
+
+Our hospital is committed to creating an environment that is open and inclusive. Our staff are encouraged to engage with colleagues through the following networks: REACH (Race, Ethnicity and Cultural Heritage) ENABLED (Enhancing Abilities \\\\& Leveraging Disabilities Network), PRIDE and Women’s networks; all of which are sponsored by a member of our Executive Management Team.
+
+
+
+We want to ensure that all of our people, regardless of their background, are seen and heard. We want to attract applicants that share our commitment to inclusion and that understand diversity is a strength that is embraced and valued.
+
+
+
+### **Detailed job description and main responsibilities**
+
+
+**Data Engineering**
+
+
+
+Provide Data Engineer support across multiple BRC projects
+Extract, process and provision data for research, audits and operational analysis;
+Optimise existing and develop new data pipelines, tools and quality controls to support additional data types and make the data integration and provisioning processes faster and more reliable;
+Develop data summaries and simple analytics to understand our processes and data;
+Initiate, arrange, chair and/or participate in meetings, with or without the supplier, researchers, Trust staff and colleagues to discuss data workflows, requirements, areas of concern and take notes of any action points;
+Document data integration and processing workflows, data collections and metadata, as well as support reporting requirements;
+Support the Data Scientists and users with tools that enable their analyses/research;
+Liaise with the REDCap supplier to optimise its use for projects;
+Liaise with Aridhia to optimise the use of the research platform for data engineering tasks;
+Assist in the co\\\\-ordinating and performing the validation of REDCap with the supplier and R\\\\&D;
+Be responsible for the implementation of best practice guidelines for the use of data and tools;
+Be responsible for the ongoing development and documentation of tools and methods which are FAIR (Findable, Accessible, Interoperable, Reusable);
+
+**Testing**
+
+
+
+Develop test scripts which cover wide ranging scenarios and involve interfaces with other systems;
+Self\\\\-teach from supplier manuals or open source tool documentation to solve problems in testing;
+Ensure testing activity is completed, tracked and meets published deadlines;
+Review progress with testing and analyse any variances highlighting any risks or issues to the Lead Engineer;
+Generate guidelines and other documentation in relation to testing;
+
+**Training and support**
+
+
+
+Develop and deliver user training programmes as required for systems within the DRE, and ensure user feedback is incorporated into development of systems wherever possible
+Support end\\\\-users through meetings, open sessions and email;
+Develop and deliver training to encourage adoption of best practice guidelines on the use of data for research and operational projects across GOSH, the BRC and ICH;
+Become an expert in REDCap and the research platform and associated systems and provide support to users and other engineers in interpreting user identified problems, solutions and possible side effects;
+
+**General**
+
+
+
+Supervise and provide day to day line management of junior staff and/or interns/students;
+Ensure the work of junior staff and/or interns/students conforms to the design integrity of the research platform and the overall DRE;
+Work autonomously to plan and organise workload to meet multiple and often conflicting deadlines;
+Participate in regular DRE Team and Data Engineering and ACHI monthly operational meetings;
+Produce reports or other documentation as required for management and the Groups that oversee the DRE;
+Log issues with the use of the system as they arise and escalate unresolved issues to the Lead Engineer;
+Present and publish tools and methods in meetings, workshops, conferences;
+Develop and maintain effective networks and relationships with internal and external contacts;
+Act as an ambassador for the Trust’s DRE and BRC Teams at all times.
+### **Person specification**
+
+
+GOSH Culture and Values
+
+
+Essential criteria
+
+
+Gash Values
+Demonstrable contribution to advancing Equality, Diversity and Inclusion in the WorkplaceAcademic/Professional qualification/Training
+
+
+Essential criteria
+
+
+Educated to degree level or equivalent experience
+Maths and English GCSE grade C or above or equivalent qualification
+Post graduate qualification or equivalent relevant experience
+Continuing Professional Development
+Epic CertificationDesirable criteria
+
+
+Project management foundation level or relevant experience
+Data analytics/research qualification or Higher degreeExperience/Knowledge
+
+
+Essential criteria
+
+
+Excellent knowledge of developing data workflows in a complex environment
+Experience of software engineering and the software development life\\\\-cycle, including issue tracking, testing, documentation, version control and continuous integration
+Experience of supervising staff and/or student projectsDesirable criteria
+
+
+Experience in data management for studies and use of electronic data capture systems
+Experience in text mining
+Experience in working with genomics data
+Experience of using data analytics in academic research projects
+Experience working with standards, terminologies and ontologies in healthcare (such as FHIR, OMOP), metadata and FAIR principles
+Previous experience in the NHS, healthcare or medical researchSkills/Abilities
+
+
+Essential criteria
+
+
+Excellent organisational and planning skills, including prioritising to achieve deadlines under pressure and with frequent interruptions
+Excellent written, verbal and presentation skills with the ability to communicate complex information to staff at all levels
+Excellent skills in database management, administration and advanced SQL
+Excellent skills in at least one commonly used programming language (Java, Python, C, Rust etc.) and a demonstrable ability to quickly learn new languages and paradigmsDesirable criteria
+
+
+Excellent skills in Python Pandas and/or R for data manipulation at scale
+Skills in presenting data interactively in e.g. dashboards, especially using programmatic approaches like R Shiny, Plotly/Dash etc.
+
+### ***Please be advised that:***
+
+
+*The recruitment process for all admin and clerical roles at Bands 2\\\\-4 will be a two stage recruitment process whereby shortlisted candidates will undertake an online literacy, numeracy, ICT and typing test. Only those candidates who pass the competency test will proceed to a formal interview.*
+
+
+*The closing date given is a guide only. There may be some occasions where we have to close a vacancy once sufficient applications have been received. It is therefore advisable that you submit your application as early as possible to avoid disappointment.*  
+
+  
+
+*Only those candidates who clearly demonstrate how they meet the person specification criteria for this post will be shortlisted. Please note that where high volumes of applicants have been received, additional criteria may on occasion be used to determine the final shortlist.*
+
+
+
+Applications from job seekers who require current Skilled worker sponsorship to work in the UK are welcome and will be considered alongside all other applications. For further information visit the UK Visas and Immigration website .
+
+
+*We are an accredited Living Wage Employer.*
+
+  
+
+
+### **Applicant requirements**
+
+
+The postholder will have regular contact with vulnerable people and as such this post is subject to the Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 (Amendment) (England and Wales) Order 2020 and as such it will be necessary for a submission for Disclosure to be made to the Disclosure and Barring Service to check for any previous criminal convictions.
+
+
+### **Application numbers**
+
+
+The closing date given is a guide only. There may be some occasions where we have to close a vacancy once sufficient applications have been received. It is therefore advisable that you submit your application as early as possible to avoid disappointment."
+"indeed","Senior Data Engineer","Immediate Media Co","London, ENG, GB","2026-02-25","fulltime","https://uk.indeed.com/viewjob?jk=76365b688a9365d7","**Senior Data Engineer (up to £75,000\\\\)**
+
+
+Immediate is home to some of the biggest and most loved consumer brands in the UK, including Radio Times, Good Food and BBC Gardeners World magazine. Our trusted, quality content reaches millions of people a month across digital, print, video, podcasts, apps and live events.
+
+
+We’re the destination for people looking to get more from the things they love. We’re here to inspire, fuel, encourage and educate.
+
+
+Whether it’s the big things, or the little things; from reaching fitness goals to savouring good food, cultivating outdoor spaces, or enjoying the latest TV sensation – we help bring our audiences joy!
+
+**About the team**
+
+
+The Data Engineering Team is a highly skilled and effective team, that is in high demand within the business. The team works within the Product \\\\& Technology department at Immediate Media to deliver multi\\\\-department projects and service the data requirements of the business.
+
+**About you**
+
+
+You will have technical experience and a passion for solving data problems. You will be comfortable handling data in any format, data modelling and ETL processes. You will have a demonstrable technical skillset as data engineering skills are paramount to this role. You will have good communication skills and be comfortable working with stakeholders and translating business requirements into technical specifications.
+
+
+You should be delivery driven, self\\\\-motivated and capable of independent working. You should strive for best practice and technical excellence and be a person that actively looks for continual improvement.
+
+
+You should be able and willing to guide and support other engineers, including juniors. This will involve coaching, knowledge\\\\-sharing, collaborative work, code reviews and unblocking.
+
+**As a Senior Data Engineer, you will;**
+
+* Build and manage robust data pipelines and integrations.
+* Develop and own data solutions to meet company needs.
+* Take ownership for delivering engineering tasks on time and to specifications
+* Be a technical expert in the data engineering discipline.
+* Build strong relationships with key stakeholders outside the team.
+* Be responsible for data quality and ensuring problems are resolved swiftly.
+* Co\\\\-responsible for robust processes and technical best practice.
+* Co\\\\-responsible for the data platform and technology.
+* Foster skills, share knowledge and cross\\\\-train with peers and juniors
+
+**Requirements**
+
+* Extensive experience delivering data engineering projects
+* Advanced SQL skills.
+* Advanced Python skills
+* Experience with PySpark library.
+* Experience with Databricks and Data Lakehouse.
+* Experience with code control/Git
+* Experience managing CI/CD processes.
+
+
+Advantageous, but not required:
+
+* DBT experience
+* Infrastructure as Code (e.g. Terraform)
+* Google Analytics
+* Google Ad Manager
+* Atlassian (Jira, Confluence)
+
+**Benefits**
+
+* A relaxed working environment with regular socials including a summer festival
+* Supportive well\\\\-being initiatives and benefits, talks \\\\& workshops, and Mental Health First aiders \\\\& Champions
+* 25 days holiday plus a day for your birthday. Our offices will be closed between Christmas and New Year’s which are in addition to your annual entitlement
+* Tailored training and development through both our inhouse learning platform and LinkedIn Learning
+* A progressive and transparent culture focused on your development
+* Flexible / hybrid working plus early finish Fridays
+* Cycle to work scheme
+* Enhanced Family Policies including paternity, adoption and surrogacy leave. We also provide a pregnancy loss, fertility, and carers policy
+* Competitive pension plans and Life Assurance
+* A newly renovated modern office with lots of collaborative spaces
+
+At Immediate, we pride ourselves on our open, collaborative, and dynamic culture that empowers our people to thrive and give their best. We care deeply about our people, environment, and impact. Our active Diversity \\\\& Inclusion network, comprehensive well\\\\-being programs, and clear sustainability strategies reflect this commitment.
+
+
+**People are at the heart of our business and creating a diverse and inclusive working environment is extremely important to us. Immediate is an equal opportunities employer. We’ll never treat anyone less favourably because of their sex, gender reassignment, pregnancy and maternity, marital/civil partnerships, sexual orientation, race, nationality, ethnic origin, age, religion or belief or disability. We’re also committed to supporting applications from those who are returning to work following a career break, maternity leave or caring responsibilities.**
+
+**Immediate is a place where you can grow, be supported, and make a difference**"
+"indeed","GOSH BRC/DRIVE Data Engineer","Great Ormond Street Hospital for Children NHS Foundation Trust","London, ENG, GB","2026-02-25","","https://uk.indeed.com/viewjob?jk=10656fcf71871ff2","Data Engineering Provide Data Engineer support across multiple BRC projects Extract, process and provision data for research, audits and operational analysis; Optimise existing and develop new data pipelines, tools and quality controls to support additional data types and make the data integration and provisioning processes faster and more reliable; Develop data summaries and simple analytics to understand our processes and data; Initiate, arrange, chair and/or participate in meetings, with or without the supplier, researchers, Trust staff and colleagues to discuss data workflows, requirements, areas of concern and take notes of any action points; Document data integration and processing workflows, data collections and metadata, as well as support reporting requirements; Support the Data Scientists and users with tools that enable their analyses/research; Liaise with the REDCap supplier to optimise its use for projects; Liaise with Aridhia to optimise the use of the research platform for data engineering tasks; Assist in the co\\\\-ordinating and performing the validation of REDCap with the supplier and R\\\\&D Be responsible for the implementation of best practice guidelines for the use of data and tools; Be responsible for the ongoing development and documentation of tools and methods which are FAIR (Findable, Accessible, Interoperable, Reusable); Testing Develop test scripts which cover wide ranging scenarios and involve interfaces with other systems; Self\\\\-teach from supplier manuals or open source tool documentation to solve problems in testing; Ensure testing activity is completed, tracked and meets published deadlines; Review progress with testing and analyse any variances highlighting any risks or issues to the Lead Engineer; Generate guidelines and other documentation in relation to testing; Training and support Develop and deliver user training programmes as required for systems within the DRE, and ensure user feedback is incorporated into development of systems wherever possible Support end\\\\-users through meetings, open sessions and email; Develop and deliver training to encourage adoption of best practice guidelines on the use of data for research and operational projects across GOSH, the BRC and ICH; Become an expert in REDCap and the research platform and associated systems and provide support to users and other engineers in interpreting user identified problems, solutions and possible side effects; General Supervise and provide day to day line management of junior staff and/or interns/students; Ensure the work of junior staff and/or interns/students conforms to the design integrity of the research platform and the overall DRE; Work autonomously to plan and organise workload to meet multiple and often conflicting deadlines; Participate in regular DRE Team and Data Engineering and ACHI monthly operational meetings; Produce reports or other documentation as required for management and the Groups that oversee the DRE; Log issues with the use of the system as they arise and escalate unresolved issues to the Lead Engineer; Present and publish tools and methods in meetings, workshops, conferences; Develop and maintain effective networks and relationships with internal and external contacts; Act as an ambassador for the Trusts DRE and BRC Teams at all times."
+"indeed","GOSH BRC/DRIVE Data Engineer","GREAT ORMOND STREET HOSPITAL","London, ENG, GB","2026-02-25","fulltime","https://uk.indeed.com/viewjob?jk=77fa3cdb18300dc3","**Main area**
+Data engineer (paediatric rare diseases)
+**Grade**
+Band 7
+**Contract**
+12 months (12 month fixed term)
+**Hours**
+Full time \\\\- 37\\\\.5 hours per week
+**Job ref**
+271\\\\-R\\\\&I\\\\-7760697
+**Site**
+Great Ormond Street Hospital for Children NHS Foundation Trust
+**Town**
+London
+**Salary**
+£54,320 \\\\- £60,981 per annum inclusive
+**Salary period**
+Yearly
+**Closing**
+11/03/2026 23:59
+  
+### **Job overview**
+
+
+An exciting opportunity has arisen to join our Digital Research Environment (DRE) as a Data Engineer, funded through Great Ormond Street Hospital’s Biomedical Research Centre (GOSH BRC). In this role, you’ll work at the heart of the Digital Research Environment (DRE), partnering with clinicians and researchers to deliver high‑impact projects in AI, genomics and rare disease research. The role offers the chance to combine advanced data engineering, nationally leading research, and a clear social purpose \\\\- improving outcomes for children with rare and complex conditions, every single day.
+
+
+
+This role is ideal for a motivated data engineer who thrives in complex environments, enjoys solving challenging problems and wants their work to make a tangible difference. You’ll design and optimise data pipelines, support cutting‑edge analytics and collaborate across multiple Trusts and academic partners.
+
+
+
+We aim to hold interviews in the last week of February, please hold these dates and an invite will be sent to you, should you be shortlisted.
+
+
+### **Main duties of the job**
+
+
+The BRC Data Engineer will be a member of the DRE Team with a primary focus on working with researchers to deliver several specific research projects that will utilise the DRE. The post holder will provide essential technical support for a range of innovative research projects, including both GOSH initiatives and collaborative efforts with partner institutions, including:
+
+
+Real\\\\-Time Integration of Brain Tumour Volumetry into Neuro\\\\-Oncology Multidisciplinary Team Meetings (Kshitij Mankad)
+Multimodal Artificial Intelligence for the Detection of Necrotising Enterocolitis (Stavros Loukogeorgakis)
+Real\\\\-world EPIC data for health economic analysis of rapid genetic testing in epilepsy (Amy McTague)
+Support PEI projects and requests across all three partner sites (Sheffield, Birmingham and Alder Hey)
+A neonatal screen data project between GOSH and a partner site
+Developing a craniofacial database with 2 PEI partners
+Developing an NLP tool around babygram and friends and family tests between GOSH and a partner site.
+
+Through these activities, the Data Engineer will ensure that data\\\\-driven research and operational projects are effectively supported, contributing to advancements in paediatric healthcare.
+
+
+### **Working for our organisation**
+
+
+We are keen to make our workforce as diverse as the communities we serve, and we hope to attract applications from underrepresented groups, including people with Black, Asian and Minority Ethnic heritage, people with a disability, and people from LGBTQ\\\\+ communities. By growing an ever more diverse workforce, we’ll have a greater range of perspectives and knowledge, meaning that we can provide the children and young people at our hospital with even better care.
+
+
+
+Our hospital is committed to creating an environment that is open and inclusive. Our staff are encouraged to engage with colleagues through the following networks: REACH (Race, Ethnicity and Cultural Heritage) ENABLED (Enhancing Abilities \\\\& Leveraging Disabilities Network), PRIDE and Women’s networks; all of which are sponsored by a member of our Executive Management Team.
+
+
+
+We want to ensure that all of our people, regardless of their background, are seen and heard. We want to attract applicants that share our commitment to inclusion and that understand diversity is a strength that is embraced and valued.
+
+
+
+### **Detailed job description and main responsibilities**
+
+
+**Data Engineering**
+
+
+
+Provide Data Engineer support across multiple BRC projects
+Extract, process and provision data for research, audits and operational analysis;
+Optimise existing and develop new data pipelines, tools and quality controls to support additional data types and make the data integration and provisioning processes faster and more reliable;
+Develop data summaries and simple analytics to understand our processes and data;
+Initiate, arrange, chair and/or participate in meetings, with or without the supplier, researchers, Trust staff and colleagues to discuss data workflows, requirements, areas of concern and take notes of any action points;
+Document data integration and processing workflows, data collections and metadata, as well as support reporting requirements;
+Support the Data Scientists and users with tools that enable their analyses/research;
+Liaise with the REDCap supplier to optimise its use for projects;
+Liaise with Aridhia to optimise the use of the research platform for data engineering tasks;
+Assist in the co\\\\-ordinating and performing the validation of REDCap with the supplier and R\\\\&D;
+Be responsible for the implementation of best practice guidelines for the use of data and tools;
+Be responsible for the ongoing development and documentation of tools and methods which are FAIR (Findable, Accessible, Interoperable, Reusable);
+
+**Testing**
+
+
+
+Develop test scripts which cover wide ranging scenarios and involve interfaces with other systems;
+Self\\\\-teach from supplier manuals or open source tool documentation to solve problems in testing;
+Ensure testing activity is completed, tracked and meets published deadlines;
+Review progress with testing and analyse any variances highlighting any risks or issues to the Lead Engineer;
+Generate guidelines and other documentation in relation to testing;
+
+**Training and support**
+
+
+
+Develop and deliver user training programmes as required for systems within the DRE, and ensure user feedback is incorporated into development of systems wherever possible
+Support end\\\\-users through meetings, open sessions and email;
+Develop and deliver training to encourage adoption of best practice guidelines on the use of data for research and operational projects across GOSH, the BRC and ICH;
+Become an expert in REDCap and the research platform and associated systems and provide support to users and other engineers in interpreting user identified problems, solutions and possible side effects;
+
+**General**
+
+
+
+Supervise and provide day to day line management of junior staff and/or interns/students;
+Ensure the work of junior staff and/or interns/students conforms to the design integrity of the research platform and the overall DRE;
+Work autonomously to plan and organise workload to meet multiple and often conflicting deadlines;
+Participate in regular DRE Team and Data Engineering and ACHI monthly operational meetings;
+Produce reports or other documentation as required for management and the Groups that oversee the DRE;
+Log issues with the use of the system as they arise and escalate unresolved issues to the Lead Engineer;
+Present and publish tools and methods in meetings, workshops, conferences;
+Develop and maintain effective networks and relationships with internal and external contacts;
+Act as an ambassador for the Trust’s DRE and BRC Teams at all times.
+### **Person specification**
+
+
+GOSH Culture and Values
+
+
+Essential criteria
+
+
+Gash Values
+Demonstrable contribution to advancing Equality, Diversity and Inclusion in the WorkplaceAcademic/Professional qualification/Training
+
+
+Essential criteria
+
+
+Educated to degree level or equivalent experience
+Maths and English GCSE grade C or above or equivalent qualification
+Post graduate qualification or equivalent relevant experience
+Continuing Professional Development
+Epic CertificationDesirable criteria
+
+
+Project management foundation level or relevant experience
+Data analytics/research qualification or Higher degreeExperience/Knowledge
+
+
+Essential criteria
+
+
+Excellent knowledge of developing data workflows in a complex environment
+Experience of software engineering and the software development life\\\\-cycle, including issue tracking, testing, documentation, version control and continuous integration
+Experience of supervising staff and/or student projectsDesirable criteria
+
+
+Experience in data management for studies and use of electronic data capture systems
+Experience in text mining
+Experience in working with genomics data
+Experience of using data analytics in academic research projects
+Experience working with standards, terminologies and ontologies in healthcare (such as FHIR, OMOP), metadata and FAIR principles
+Previous experience in the NHS, healthcare or medical researchSkills/Abilities
+
+
+Essential criteria
+
+
+Excellent organisational and planning skills, including prioritising to achieve deadlines under pressure and with frequent interruptions
+Excellent written, verbal and presentation skills with the ability to communicate complex information to staff at all levels
+Excellent skills in database management, administration and advanced SQL
+Excellent skills in at least one commonly used programming language (Java, Python, C, Rust etc.) and a demonstrable ability to quickly learn new languages and paradigmsDesirable criteria
+
+
+Excellent skills in Python Pandas and/or R for data manipulation at scale
+Skills in presenting data interactively in e.g. dashboards, especially using programmatic approaches like R Shiny, Plotly/Dash etc.
+
+### ***Please be advised that:***
+
+
+*The recruitment process for all admin and clerical roles at Bands 2\\\\-4 will be a two stage recruitment process whereby shortlisted candidates will undertake an online literacy, numeracy, ICT and typing test. Only those candidates who pass the competency test will proceed to a formal interview.*
+
+
+*The closing date given is a guide only. There may be some occasions where we have to close a vacancy once sufficient applications have been received. It is therefore advisable that you submit your application as early as possible to avoid disappointment.*  
+
+  
+
+*Only those candidates who clearly demonstrate how they meet the person specification criteria for this post will be shortlisted. Please note that where high volumes of applicants have been received, additional criteria may on occasion be used to determine the final shortlist.*
+
+
+
+Applications from job seekers who require current Skilled worker sponsorship to work in the UK are welcome and will be considered alongside all other applications. For further information visit the UK Visas and Immigration website .
+
+
+*We are an accredited Living Wage Employer.*
+
+  
+
+
+### **Applicant requirements**
+
+
+The postholder will have regular contact with vulnerable people and as such this post is subject to the Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 (Amendment) (England and Wales) Order 2020 and as such it will be necessary for a submission for Disclosure to be made to the Disclosure and Barring Service to check for any previous criminal convictions.
+
+
+### **Application numbers**
+
+
+The closing date given is a guide only. There may be some occasions where we have to close a vacancy once sufficient applications have been received. It is therefore advisable that you submit your application as early as possible to avoid disappointment."
+"linkedin","Junior Data Engineer","Oliver Bernard","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4374834057",""
+"linkedin","Data Analytics Engineer","Fruition Group","","2026-02-24","","https://www.linkedin.com/jobs/view/4377447821",""
+"linkedin","Data Analytics Engineer (Microsoft Fabric)","Concepts for Business, LLC","Huddersfield, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4377540312",""
+"linkedin","Data Engineer","Unity Advisory","London, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4332549507",""
+"linkedin","SQL Data Engineer","Eden Scott","Scotland, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4374593433",""
+"linkedin","Data Engineer","Wave Talent","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4374831574",""
+"linkedin","Data Engineer","NewDay","London, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4295688579",""
+"linkedin","Junior Data Engineer - Finance - Up to £60k","Oliver Bernard","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4374819915",""
+"linkedin","Junior Data Engineer","Xcede","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4376067247",""
+"indeed","Data Engineer - Investments","hip international","London, ENG, GB","2026-02-24","","https://uk.indeed.com/viewjob?jk=5e7dda25fc445b68","**Company Overview:**
+
+
+
+Hillwood Investment Properties is a leader in acquiring and developing high\\\\-quality industrial properties with 307\\\\.1M SF acquired and developed across the U.S., Canada, the United Kingdom, and Europe. Hillwood pursues well\\\\-located, functional land in the path of progress and has one of the largest land banks with a capacity of over 129\\\\.2M SF for future development. Hillwood collaboratively builds successful partnerships with public and private landowners, as well as other developers, to execute and invest in a broad spectrum of industrial projects. As a privately held company, Hillwood possesses the depth of capital, market expertise, industry relationships, and a forward\\\\-thinking vision to buy and build industrial properties that meet evolving markets' logistics, distribution, and manufacturing demands.
+
+  
+
+
+
+For more information on Hillwood's latest industrial availabilities across the U.S., U.K., and E.U., visit Hillwood.com.
+
+
+**Position Summary:**
+
+Hillwood Investment Properties (HIP) is seeking a technically strong and analytically driven **Data Engineer** to join our London office and support our institutional real estate investment platform.
+
+
+
+This role sits at the intersection of data engineering and investment strategy. The selected candidate will design and build the data infrastructure that supports underwriting, forecasting, scenario modeling, and portfolio analytics across the UK and European platform.
+
+
+
+Working closely with investment professionals in both London, Europe and the United States the Data Engineer will identify workflow inefficiencies, develop scalable technical solutions, and help institutionalize data architecture across the business. This is a high\\\\-impact role with meaningful ownership over the evolution of the team’s analytics and data platform.
+
+
+
+Success in this role requires strong attention to detail, disciplined data governance practices, and the ability to proactively communicate across cross\\\\-functional teams and geographies. The ideal candidate will be comfortable translating technical concepts for investment professionals, collaborating across time zones, and ensuring data integrity in a fast\\\\-paced, deal\\\\-driven environment.
+
+
+
+The position is well suited for an early\\\\-career data engineer or strong STEM graduate who thrives in a rigorous investment setting, values precision and accountability, and is motivated to build production\\\\-grade data systems that directly inform capital allocation decisions.
+
+
+**Responsibilities:**
+
+
+*Data Architecture \\\\& Pipeline Development:*
+
+
+* Design, build, and maintain scalable ETL/ELT pipelines supporting underwriting, forecasting, scenario modeling, and portfolio analytics.
+* Develop robust data ingestion processes integrating financial models, property management systems, market data providers, internal databases, and third\\\\-party APIs.
+* Implement batch and real\\\\-time processing frameworks to support investment decision\\\\-making.
+* Optimize pipeline performance, reliability, and scalability to support growing datasets.
+
+
+*Data Warehousing \\\\& Modeling:*
+
+
+* Design and maintain structured data warehouses and lakehouse environments to support analytics and reporting.
+* Develop optimized data models (fact/dimension schemas, financial reporting models, reconciliation layers) tailored to investment workflows.
+* Create curated data layers enabling efficient dashboarding, BI tools, and ad hoc analysis.
+* Continuously improve data storage architecture to reduce redundancy and enhance performance.
+
+
+*Data Governance, Quality \\\\& Controls:*
+
+
+* Establish and monitor data quality controls, validation checks, and reconciliation frameworks.
+* Implement governance standards to ensure data consistency, integrity, and traceability across investment datasets.
+* Partner with investment professionals to define data definitions, metrics, and standardized reporting methodologies.
+* Document data pipelines, system architecture, and workflows to enhance transparency and institutional knowledge.
+
+
+*Business Partnership \\\\& Solution Design:*
+
+
+* Collaborate with analysts and senior investment professionals to translate business requirements into scalable technical solutions.
+* Identify process inefficiencies within underwriting and portfolio management workflows and propose automation or system enhancements.
+* Support advanced analytics, modeling, and scenario analysis initiatives.
+* Serve as a technical advisor on data\\\\-related strategy and infrastructure decisions.
+
+
+*Continuous Improvement \\\\& Innovation:*
+
+
+* Evaluate and implement modern data engineering tools, frameworks, and best practices.
+* Stay current on emerging technologies in cloud data platforms, streaming architectures, and financial data systems.
+* Contribute to the long\\\\-term roadmap for evolving the firm’s data and analytics infrastructure.
+
+
+**Required Skills and Abilities:**
+
+
+* Strong proficiency in SQL and Python.
+* Demonstrated experience building and maintaining scalable ETL/ELT pipelines.
+* Experience designing data warehouses and optimized data models.
+* Familiarity with cloud\\\\-based data platforms (e.g., Azure).
+* Experience with enterprise data warehouses such as Snowflake, Redshift, BigQuery, or Databricks.
+* Hands\\\\-on experience with data ingestion and streaming tools (Kafka, Airbyte, Debezium).
+* Experience working with lakehouse table formats such as Iceberg, Delta Lake, or Hudi.
+* Practical experience with distributed processing frameworks such as Spark, Flink, or Databricks.
+* Familiarity with Git and version control systems (preferably Azure DevOps).
+* Strong analytical thinking, performance optimization skills, and attention to data quality and reconciliation.
+* Demonstrated interest in financial markets, real estate investment, or quantitative modeling.
+* Ability to communicate technical concepts to non\\\\-technical stakeholders.
+
+
+**Education and Experience:**
+
+
+* Bachelor’s degree in physics, Engineering, Mathematics, Computer Science, or related STEM field.
+* 1–3 years of experience as a Data Engineer or in a comparable technical role.
+* Strong internship, research, or applied project experience in data engineering, distributed systems, or analytics infrastructure.
+
+
+\\\\#HIP"
+"linkedin","Data Engineer [207684]","Aquent","","2026-02-24","","https://www.linkedin.com/jobs/view/4377425520",""
+"linkedin","Data Engineer - Investments","Hillwood Investment Properties","London, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4374598353",""
+"indeed","Data Engineer - Finance - Counter Terrorism Policing HQ","Metropolitan Police","West Brompton, ENG, GB","2026-02-24","fulltime","https://uk.indeed.com/viewjob?jk=8707f344b8037066","**Data Engineer \\\\- Finance \\\\- Counter Terrorism Policing HQ**
+=============================================================
+
+
+Vacancy Reference Number
+20611
+
+
+Number of Vacancies
+1
+(B) OCU
+CTPHQ Counter Terrorism Policing Headquarters
+Location
+West Brompton
+Band
+Band M
+Part/Full Time
+Full Time
+Hours per Week
+36 hours per week
+Type of Contract
+Permanent
+Job Advert
+**Job Title:** Data Engineer \\\\- Finance \\\\- Counter Terrorism Policing HQ
+
+**Salary:** The starting salary is £63,409 which includes allowances totalling £3,009\\\\.
+
+
+The salary is broken down as £60,400 basic salary, which will increase annually until you reach the top of the scale £65,886 Plus, a location allowance of £2,009 and a non\\\\-pensionable allowance of £1,000\\\\.
+
+**Location****:** West Brompton
+
+**Job Summary**
+
+
+Working within Counter Terrorism Policing Headquarters (CTPHQ), the Data Engineer will work within the Business Intelligence Function to provide ownership of the architecture, implementation, and ongoing optimisation of ART’s data pipelines and transformation processes. Working alongside a BI/Analytics Lead, the Data Engineer focuses on building efficient, robust systems that automate data validation, transformation, and delivery from source to output—powering dashboards, reports, and downstream analytical models.
+
+
+The Data Engineer is an experienced hands\\\\-on engineering role that blends architecture, performance tuning, and process automation. The engineer will contribute significantly to both the backend design and the operational efficiency of the overall data infrastructure.
+
+
+The role \\\\- in conjunction with the BI/Analytics Lead \\\\- will be jointly responsible for developing a BI strategy for CTPHQ corporate pillars, including a Roadmap/Plan to deliver it. This will require regular consultation and engagement with senior stakeholders to elicit requirements and translate them into BI initiatives.
+
+**Key Tasks**
+
+
+The post holder will be required to do the following:
+
+
+Data Pipeline Maintenance and ongoing design
+
+* Maintain current build and design future scalable, reusable ETL/ELT pipelines using tools such as Alteryx, Power Query, and batch scripting, with awareness and technical skill to adapt to changing data tooling landscape and availability. This includes modular workflows.
+* Develop and enforce schema standards across the many user\\\\-input and back\\\\-end data layers.
+
+
+Workflow Automation \\\\& Process Optimisation
+
+* Enhance automation of complex tasks such as monthly cleansing, cross\\\\-validation, reporting and derived attribute creation.
+* Drive improvements in processing time, memory efficiency, and refresh logic.
+
+
+Collaboration with BI/Analytics Lead
+
+* Translate analytical needs from the BI/Analytics Lead into reliable, performant data products.
+* Build re\\\\-usable datasets and derived attributes to ensure front\\\\-end dashboards (e.g. in Power BI or Excel) are fed from stable, validated sources.
+* Co\\\\-design validation layers that flag errors and anomalies early in the pipeline.
+
+
+Data Quality \\\\& Governance
+
+* Implement data validation checkpoints, unique key tests, and error\\\\-handling macros to ensure integrity.
+* Maintain version control and change management for workflows and calculated attributes.
+* Lead technical documentation of field definitions, transformation logic, and workflow dependencies.
+
+
+Strategic Input
+
+* Contribute to discussions on scalability, cloud migration, or development of current product.
+* Translate complex technical challenges and data architecture decisions into clear, actionable insights for non\\\\-technical leaders, ensuring alignment with business goals and promoting confidence in Functional products.
+
+**Vetting and STRAP**
+
+
+This post requires access to the most sensitive intelligence material on a daily basis. Applicants must hold or be prepared to undergo National Security Vetting (NSV) Security Check (enhanced) (SC(e)) level before taking up the post; with a willingness to undergo Developed Vetting (DV) once in post, if required.
+
+
+This post requires British nationality (some dual nationals may be ineligible) and an Enhanced Security Check (eSC).
+
+
+As the post holder will have access to very sensitive information, there are limitations on travelling to a small number of countries and we will undertake additional security checks as part of the recruitment process. Applications from candidates with close connections to certain countries may take considerably longer to process, or in some cases result in a withdrawal of an offer of employment. Further details will be provided at the conditional offer stage.
+
+**Confidentiality Agreement**
+
+
+Applicants should also be aware of the need to sign a confidentiality agreement on taking up the post.
+
+**Our Employee Commitments**
+
+
+Counter Terrorism Policing aims to create an inclusive and welcoming atmosphere and culture and an environment where all our people feel a strong sense of belonging and are able to reach their full potential. Where any group or individual can be and feel respected, supported and valued to fully participate and contribute to our mission of “Working to keep people safe from Terrorism”.
+
+
+Inclusion, diversity and equality is at the front and centre of our approach to make the composition of Counter Terrorism Policing more representative of the communities we serve. As Counter Terrorism is rooted in Local Policing, to tackle today’s complex policing challenges, applications from across all communities are therefore essential and encouraged. Counter Terrorism Policing as a network is committed to ensuring that disabled people and those with long\\\\-term health conditions have the opportunities to fulfil their potential and realise their aspirations’.
+
+
+Counter Terrorism Policing is committed to creating an inclusive working environment. We welcome and encourage applications from candidates who are seeking flexible working arrangements, including part time working or job share. In addition, this role has been reviewed following learning from work during the Covid pandemic and may be done in an agile manner. In the first instance, please contact the vacancy holder to discuss how such arrangements could be accommodated (where applicable).
+
+**How to apply**
+
+
+To begin your career at the Met, please click the ""apply button “. The application process requires a comprehensive CV, a Personal Statement, and an online application form. In your Personal Statement, you should explain your interest in the position and illustrate how your skills and experiences make you a suitable candidate. Please note that you should not submit two copies of your CV and ensure that your documents are saved in either PDF or Word format, clearly labelled as CV and/or Personal Statement.
+
+**Completed applications must be submitted by 23:55 on 17th March 2026\\\\.**
+
+
+Once received, your application will be reviewed against eligibility criteria, following this, your application will be reviewed by the hiring manager. The application review for this vacancy will commence 1\\\\-2 weeks after the vacancy has closed.
+
+
+Following application review, successful candidates will be invited to interview. Interview dates will commence 1\\\\-2 weeks after hiring managers review.
+
+**www.metpolicecareers.co.uk**
+
+
+
+Essential For The Role
+**Essential Criteria**
+
+* Deep understanding of data modelling, schema design, and transformation logic.
+* Strong Alteryx Designer and Power Query (M) development skills. (current system)
+* Proven experience in data pipeline engineering within a BI or reporting context.
+* Experience with hierarchical or dependency\\\\-based workflow orchestration.
+* Excellent problem\\\\-solving skills and attention to data quality.
+* Significant experience in data analysis, analytical modelling and data visualisation;
+* Expertise in Excel and Power BI;
+* Excellent time management and organisational skills;
+* Ability to be proactive, problem solve and present new solutions;
+
+**Desirable Criteria**
+
+* Awareness of Workforce data, Finance budgeting and annual planning cycles;
+* Familiarity with PowerApps, Python, SQL, VBA and other complementary BI/ETL tooling.
+* Experience working with structured controller processes and metadata\\\\-driven automation.
+* Experience in SharePoint Development.
+* Strong written and verbal communication skills with a range of audiences.
+
+
+Required Languages
+English
+Reports To
+Head of Strategic Finance
+Additional Information
+CTP CVF Staff Band.pdf – 807KB Opens in a new window
+**Disability Confident Statement**  
+
+  
+
+The Met is committed to being an equitable (fair and impartial) and inclusive employer for disabled people, striving to have a diverse and representative workforce at all levels. We encourage applications from people from the widest possible range of backgrounds, cultures and experiences. We particularly welcome applications from people with disabilities and long\\\\-term conditions, ethnic minority groups and women.  
+
+  
+
+As a Disability Confident Leader, the Met has committed to making disability equality part of our everyday practice. We ensure that people with disabilities and those with long term conditions have the opportunities to fulfil their potential and realise their aspirations.  
+
+  
+
+The Met is committed to making reasonable adjustments to the recruitment process to ensure disabled applicants can perform at their best. If you need any reasonable adjustments or changes to the application and recruitment process, we ask that you include this information within your application form. All matters will be treated in strict confidence.
+  
+
+  
+
+Please note, if you are applying for a police officer role or to become a police community support officer (PCSO) or designated detention officer (DDO), there is a minimum requirement that you must pass a job\\\\-related fitness test (JRFT) at point of entry. This does not apply to police staff roles. Find out more about police fitness standards.  
+
+  
+
+Read our full disability confidence statement."
+"indeed","Associate Principal AI& ML Engineer – Evinova","AstraZeneca","London, ENG, GB","2026-02-24","fulltime","https://uk.indeed.com/viewjob?jk=19539d718d1980aa","It currently takes over **10 years and $1\\\\.3B** to develop a drug. More than 70% of that investment goes into clinical trials, yet only \\\\~10% of candidates make it from Phase I to approval. **Evinova \\\\-** a new health\\\\-tech business within the AstraZeneca Group—is here to change the math. We use advanced algorithms and GenAI to aim high: boosting clinical trial success by **20%**, cutting development time by **3 years**, and halving study costs.
+
+
+As **Associate Principal AI\\\\&ML Engineer,** you will build the AI engines that make those targets real—blending forecasting, optimization, and evidence synthesis to drive transparent and actionable recommendations. You’ll transform multi‑source data—historical signals, external context, and real‑world data (RWD)— into production‑grade intelligence and connect those insights into automated authoring and planning workflows, accelerating timelines, reducing cost, and raising the probability of success.
+
+
+If you are a solid coder with hands on experience of developing AI agentic solutions, modern deep learning skills, strong AWS fundamentals, and a bias for rapid learning you can make a real impact here.
+
+
+This is a hands\\\\-on role, expect around 80% time spent on coding.
+
+**What the role involves:**
+
+* Build sophisticated GenAI applications, Machine Learning models, and Optimization solutions tailored to life sciences, taking them from initial PoC through to impactful applications.
+* Deliver high‑quality, production‑ready code on AWS; stand up robust APIs, orchestration endpoints (MCPs), and flexible data pipelines with strong lineage and observability.
+* Transform external signals and real‑world data (RWD) into trusted, actionable evidence for ML/DL and agentic systems.
+* Collaborate in a dynamic ecosystem where AI, Product, Strategy, and UX intersect. You will act as a key translator, connecting cutting\\\\-edge AI capabilities with real\\\\-world pharmaceutical requirements to deliver meaningful digital transformation.
+* Communicate technical concepts and results clearly and effectively to technical and non\\\\-technical audiences
+* Keep pace with industry advancements by reviewing academic papers and attending conferences
+
+**SKILLS AND CAPABILITIES NEEDED**
+
+* Ph.D. or equivalent experience in a relevant field (such as Mathematics, Computer Science, Machine Learning, Statistics etc).
+* Previous demonstrated experience building applied ML/AI systems, including deep learning, NLP, and generative AI.
+* Proven track record of developing creative and novel AI solutions with measurable business impact (e.g. cost, accuracy, adoption, latency).
+* Knowledge of agentic design patterns (planning, memory, tool use/function calling, RAG) with evaluation, and guardrails.
+* Proficiency in Python; PyTorch or TensorFlow; Hugging Face (Transformers/PEFT); experience with managed endpoints (OpenAI, Anthropic, AWS Bedrock) and at least one agent framework for tool orchestration.
+* Ability to build secure, compliant ingestion and retrieval pipelines with provenance, hands\\\\-on experience with web automation, parsing, and document processing to enable high\\\\-quality RAG.
+* Strong AWS fundamentals to deploy production workloads (model hosting, data, orchestration), including robust APIs/orchestration endpoints and observable data pipelines.
+* Experience with containers and services (Docker, FastAPI, async patterns), CI/CD (GitHub Actions), and security/privacy\\\\-by\\\\-design suitable for regulated environments.
+* Comfortable leveraging GenAI coding assistants (GitHub Copilot, Cursor, etc.) to accelerate development.
+
+**NICE TO HAVE**
+
+* Experience with real\\\\-world data (Electronic Health Records, claims data, pharmacy\\\\& prescription databases).
+* Knowledge of drug development and prior pharma experience.
+* Reinforcement learning and LM fine\\\\-tuning; TypeScript or AWS CDK.
+* Contributions to open\\\\-source or internal frameworks.
+
+**Location:** St Pancras London
+
+**Salary:** Competitive \\\\+ Excellent Benefits!
+
+**Why Evinova (AstraZeneca)?**
+
+
+Evinova draws on AstraZeneca’s deep experience developing novel therapeutics, informed by insights from thousands of patients and clinical researchers. Together, we can accelerate the delivery of life\\\\-changing medicines, improve the design and delivery of clinical trials for better patient experiences and outcomes, and think more holistically about patient care before, during, and after treatment.
+
+
+We know that regulators, healthcare professionals, and care teams at clinical trial sites do not want a fragmented approach. They do not want a future where every pharmaceutical company provides its own, different digital solutions. They want solutions that work across the sector, simplify their workload, and benefit patients broadly. By bringing our solutions to the wider healthcare community, we can help build more unified approaches to how we all develop and deploy digital technologies, better serving our teams, physicians, and ultimately patients.
+
+
+Evinova represents a unique opportunity to deliver meaningful outcomes with digital and AI to serve the wider healthcare community and create new standards for the sector. Join us on our journey of building a new kind of health tech business to reset expectations of what a bio\\\\-pharmaceutical company can be. This means we’re opening new ways to work, pioneering cutting\\\\-edge methods, and bringing unexpected teams together. Interested? Come and join our journey.
+
+**So, what’s next?**
+
+
+Are you already imagining yourself joining our team? Good, because we can’t wait to hear from you.
+
+**Where can I find out more?**
+
+
+Learn more about Evinova: www.evinova.com
+
+
+Follow Evinova on LinkedIn: https://www.linkedin.com/company/evinova/"
+"linkedin","Senior Data Engineer","Starcom","London, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4271835573",""
+"linkedin","Senior Data Engineer","Quantum","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4376078986",""
+"linkedin","Senior Data Engineer","FDM Group","Edinburgh, Scotland, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4374591468",""
+"linkedin","Junior Data Engineer","Oliver Bernard","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4374820880",""
+"linkedin","Data Engineer - £150k-£200k TC","Saragossa","Greater London, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4374814884",""
+"linkedin","Data Engineer","Experis","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4376080283",""
+"linkedin","Data Engineer","Revolent Group","Glasgow City, Scotland, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4371971196",""
+"linkedin","Senior Data Engineer","Michael James Associates","City Of London, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4374599370",""
+"linkedin","Senior Data Engineer (Flink)","N Consulting Global","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4377157603",""
+"linkedin","Senior ML Data Engineer","Intuition Machines","","2026-02-24","","https://www.linkedin.com/jobs/view/4377165617",""
+"linkedin","Senior Data Engineer","WRK digital","Leeds, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4364661991",""
+"linkedin","Senior Data Engineer","Amtis - Digital, Technology, Transformation","West Midlands, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4377182926",""
+"linkedin","Senior Data Engineer - Leeds","Gravitas Recruitment Group (Global) Ltd","Leeds, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4374573661",""
+"linkedin","Senior Analytics Engineer","Besque","Leeds, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4377128292",""
+"linkedin","Data Engineer","Oliver Bernard","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4374820888",""
+"linkedin","Senior Data Engineer - Contract","Oliver Bernard","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4353625312",""
+"linkedin","Senior Data Engineer","Synthesia","London, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4377448182",""
+"linkedin","Senior Data Engineer","Places for People","England, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4361219552",""
+"linkedin","Senior Data Engineer","LSEG","London, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4376407508",""
+"linkedin","Senior Data Engineer (Agentic AI)","pubX","London Area, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4377132837",""
+"indeed","Junior ML engineer","Xantura","London, ENG, GB","2026-02-24","fulltime","https://uk.indeed.com/viewjob?jk=51710941bf7938a3","### **Description**
+
+  
+
+In this role you will work in the Customer Success team, within the Technical Operations function responsible for the ongoing monitoring end technical support of projects and deployment of the OneView solution and deployment of the OneView platform.  
+
+As a Junior ML Engineer here, your core work is monitoring, training, evaluating, and productionising machine learning models on complex, multi‑source datasets from local authorities.  
+
+You’ll work closely with our Customer Success team, Technical Operations colleagues within the team and internal teams to deliver data engineering, data science, platform configuration, and data visualisation. You’ll own technical components of deployments, delivering high\\\\-quality work on time and solving problems independently. You’ll also help optimise how we work, supporting our ability to scale.  
+
+You’ll collaborate with Customer Success Managers, who oversee the non\\\\-technical elements of delivery, as well as other key teams including Information Governance (privacy and security), Platform Delivery (core product development), and Quality Assurance (testing and validation).  
+
+### **Key Responsibilities**
+
+  
+
+**Technical delivery**  
+
+* **Machine learning engineering –** Demonstrate previous experience and capability to optimise predictive models using advanced architectures such as gradient‑boosted trees, temporal models and embedding‑based models.
+* **Data science** \\\\- Configure existing predictive models to meet the client’s needs, apply descriptive analytics techniques to extract meaningful insight from client data, build simple proxy predictive models to demonstrate value early on.
+* **Cohort building** \\\\- Build preventative cohorts, test and adapt these with the client to optimise accuracy \\\\& efficacy
+* **Dashboards** – Design, build and adapt dashboards to meet the client’s needs and tell them what they need to know in a clear, intuitive way
+* **Platform evolution** – Feed innovations back into the core platform
+
+**Technical project work**  
+
+* Own and deliver the technical components of deployments
+* Prioritise effectively, flag and resolve blockers early, and collaborate well across teams
+
+**Problem solving and storytelling**  
+
+* Use your analytical skills to extract meaningful insights from data
+
+Translate complex analysis into clear, actionable recommendations for clients  
+* 
+
+**Communication and stakeholder support**  
+
+* Support client upskilling by sharing knowledge and documentation
+
+  
+
+**Collaboration**  
+
+* Work closely with Customer Success colleagues to deliver successful solutions and measure the impact
+* Identify opportunities to improve how we deliver as a team and share best practices
+  
+
+  
+
+### **What are we looking for?**
+
+  
+
+We’d love to hear from you if you have:  
+
+  
+
+**A degree in a quantitative or technical field** such as Machine Learning, Data Science, Computer Science, Maths, Engineering etc  
+
+  
+
+**Previous experience in data and analytics,** including exposure to data engineering, data science and data visualisation:  
+
+* Proficiency in Python and/or SQL for data wrangling and analysis
+* Previous data science knowledge, with experience in machine learning techniques
+* Experience with relational databases (e.g., SQL Server or Oracle)
+* Familiarity with tools like Power BI or Tableau to build clear, insightful dashboards
+
+Experience writing clean, testable, traceable code using good QA practices  
+* 
+
+**Experience delivering technical work**, with strong attention to detail and ability to manage your own deadlines  
+
+**Strong analytical and problem\\\\-solving skills**, with experience in techniques such as regression, correlation analysis, or EDA  
+
+**Clear communication skills**, both written and verbal. Able to explain technical work to non\\\\-technical audiences  
+
+A **continuous improvement mindset**, you look for opportunities to improve our tools, documentation, or ways of working  
+
+**A passion for social impact** – you’re excited about what we’re doing and driven to help Xantura succeed  
+
+
+  
+
+Bonus Points if you have:  
+
+**Experience working with the public sector** (local or central government) or as a vendor/consultant to public sector clients  
+
+  
+
+Familiarity with **privacy, security, and information governance** in data projects  
+
+Familiarity with cloud tools and services such as **Azure Data Factory, Azure ML or AWS equivalents**  
+
+  
+
+  
+
+**Location –** This is a hybrid role based in our office in London (Borough). You would be expected to be able to work from the office at least 1\\\\-2 days per week. Some travel is also required for on\\\\-site client engagements as needed.### **What can we offer you?**
+
+  
+
+* Competitive salary reviewed annually
+* Work for a passionate, mission\\\\-driven company solving society’s big problems
+* Work flexible hours around life commitments with a focus on delivering company value rather than hours worked
+* Ability to work remotely (excluding face\\\\-to\\\\-face Team Meetings and client meetings)
+* Training and development opportunities
+* 25 days annual leave (plus bank holidays)
+* Company pension
+* Private medical insurance
+* Generous enhanced parental leave policies
+* Cycle to work scheme
+* Flu Vaccinations,
+* Eye Test and contribution towards Glasses for VDU use
+* Employee Assistance Programme
+	+ Mental health and wellbeing support
+	+ Remote GP access
+	+ Counselling/therapy
+	+ Physiotherapy
+	+ Medical second opinions
+
+  
+
+### **About Xantura**
+
+
+At Xantura, we’re on a mission to reduce societal inequality by helping local authorities use data more effectively. Our AI\\\\-driven platform empowers frontline workers with the insights they need to prevent complex issues like homelessness or children being taken into care — before they happen. We make this possible by connecting siloed datasets, applying advanced machine learning to enrich the data, and using predictive analytics to identify those most at risk. Our platform then distills this into clear, actionable insights that help frontline staff intervene early and make a real difference.  
+
+  
+
+It’s an exciting time to join Xantura. We’re scaling quickly, bringing on new clients, strengthening our platform, and expanding into new areas. While we’re a technology company at heart, our true focus is on improving lives — and we’re looking for people who share that vision."
+"linkedin","Senior SAP Data Engineer","Nomad Foods","Woking, England, UK","2026-02-24","","https://www.linkedin.com/jobs/view/4374804286",""
+"linkedin","Senior Azure Data Engineer","DiverseJobsMatter","England, United Kingdom","2026-02-24","","https://www.linkedin.com/jobs/view/4377438190",""
+"linkedin","Data Engineer","Morson Edge (Financial Services)","Edinburgh, Scotland, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4376587377",""
+"linkedin","Data Engineer","Anson McCade","Manchester Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4374299763",""
+"linkedin","Data Engineer","Eclectic Recruitment Ltd","Stevenage, England, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4374276124",""
+"linkedin","Data Engineer - FinTech - Up to £95k","Oliver Bernard","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4374241696",""
+"linkedin","Data Engineer","Brio Digital","","2026-02-23","","https://www.linkedin.com/jobs/view/4376804260",""
+"linkedin","Data Engineer","Hexegic","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4366118567",""
+"linkedin","Data Engineer","Blockchain","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4315875542",""
+"linkedin","Data Engineer - Quant Hedge Fund","Paragon Alpha - Hedge Fund Talent Business","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4376563837",""
+"linkedin","Data Engineer","Harnham","West Midlands, England, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4375744508",""
+"linkedin","Senior Data Engineer (Remote)","Lumenalta","","2026-02-23","","https://www.linkedin.com/jobs/view/4376542272",""
+"linkedin","Data Architect / Data Analyst in Financial Crime","Capgemini","London, England, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4375467688",""
+"linkedin","Senior BigQuery Data Engineer - Contract","Augustinus Bader","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4374504979",""
+"indeed","Senior Data Engineer (Weymouth based)","New Look","Weymouth, ENG, GB","2026-02-23","fulltime","https://uk.indeed.com/viewjob?jk=ed86ba912f20b0ba","We’re the feel\\\\-good fashion brand making style accessible and fun for over 55 years, on our website, mobile app and over 300 stores in the UK.
+  
+  
+
+By living our values \\\\- we play to win, customer obsessed, we are one and it starts with me \\\\- we deliver That New Look Feeling for our customers and each other.
+  
+  
+
+THE ROLE
+  
+New Look is operating a modern Enterprise Data Platform stack — including a Databricks\\\\-based lakehouse architecture, Amperity for Customer Data Platform (CDP) enrichment, Power BI for enterprise analytics with InfoRiver writeback extension and SAP Business Objects for self\\\\-service reporting.
+  
+  
+
+This role will lead a delivery squad, shaping and implementing robust data solutions aligned with business requirements. The Senior Data Engineer provides hands\\\\-on technical delivery and guides junior team members in the building of scalable pipelines, report models and industrialised data science model feeds.
+  
+  
+
+**WHATS IN IT FOR YOU :**  
+
+* 40% staff discount plus friends \\\\& family discounts throughout the year
+* Access to our reward platform for external discount and offers
+* Private pension scheme
+* Profit related bonus scheme
+* Option to join our Healthcare Private Medical Scheme
+* Virtual GP access for you and your children – it allows you to speak to a doctor at a time and date that suits you
+* All employees are covered by our life assurance policy from day one
+* Unlock extra leave with our buy more holiday scheme.
+* Celebrate YOU! Enjoy an extra paid day off on your birthday each year
+* Enhanced maternity, paternity and adoption leave, and shared parental leave (eligible after 2 years service)
+* Spread the cost of your commute with interest\\\\-free season ticket loans
+* Do your bit for the environment and save money with our Cycle2Work scheme
+* We're proud to partner with the Retail Trust and Fashion \\\\& Textile Children's Trust
+
+
+**WHAT YOU’LL BE DOING:**  
+
+* Fulfil the tech lead role in a delivery squad, owning the technical delivery of data initiatives.
+* Translate functional designs into scalable technical solutions leveraging and building reusable assets.
+* Collaborate with solution designers and business analysts to refine user needs and technical solutions.
+* Build and test high\\\\-performance ELT pipelines in Databricks.
+* Mentor junior engineers within the squad and broader team and champion best practice.
+* Ensure quality, reliability, and documentation of deliverables from the squad through peer reviews.
+* Option to support the on\\\\-call support for the platform, which would require additional effort outside office hours as required to fulfil duties.
+
+
+**WHO YOU ARE:**  
+
+* Expertise in Databricks, Spark, and cloud data architecture preferably on Azure (4\\\\+ years).
+* Strong coding ability in Python and SQL.
+* Experience in orchestration with Azure Data Factory and Databricks Workflows.
+* Understanding of Lakehouse and modern data engineering and data warehousing principles.
+* Understanding of data modelling, ETL/ELT, and testing frameworks.
+* Familiarity with CI/CD, version control, and DevOps practices.
+* Strong problem\\\\-solving and debugging skills.
+* Knowledge of security, data governance, and cost optimisation practices.
+* A degree in IT or related business topic (desirable)
+
+
+Why New Look?
+  
+  
+
+We care about you and the planet and believe fashion should be a force for positive change. We celebrate inclusion and diversity in everything we do. We’re proud of our inclusive culture and our talented team members who embrace our shared purpose, behaviours and values.
+  
+  
+
+We prioritise development, offering training to support your progression, so you can be your absolute best and achieve your goals.
+  
+  
+
+We pride ourselves on being a flexible employer, our colleagues work a range of patterns. If you have a specific pattern in mind, we're keen to discuss this with you in line with the output needed for the role.
+  
+  
+
+Please ensure that your CV is in simple format e.g. Microsoft Word when applying using your CV to ensure smooth application process"
+"indeed","Lead Data Engineer","New Look","London, ENG, GB","2026-02-23","fulltime","https://uk.indeed.com/viewjob?jk=4eff49dbb692da51","We’re the feel\\\\-good fashion brand making style accessible and fun for over 55 years, on our website, mobile app and over 300 stores in the UK.
+  
+  
+
+By living our values \\\\- we play to win, customer obsessed, we are one and it starts with me \\\\- we deliver That New Look Feeling for our customers and each other.
+  
+  
+
+**THE ROLE:**  
+
+New Look is operating a modern Enterprise Data Platform stack — including a Databricks\\\\-based lakehouse architecture, Amperity for Customer Data Platform (CDP) enrichment, Power BI for enterprise analytics with InfoRiver writeback extension and SAP Business Objects for self\\\\-service reporting.
+  
+  
+
+This role will lead a delivery squad, shaping and implementing robust data solutions aligned with business requirements. The Lead Data Engineer provides hands\\\\-on technical delivery, strategic project alignment, team coordination and guides junior team members in the building of scalable pipelines, report models and industrialised data science model feeds.
+  
+  
+
+**WHATS IN IT FOR YOU:**  
+
+* 40% staff discount plus friends \\\\& family discounts throughout the year
+* Access to our reward platform for external discount and offers
+* Private pension scheme
+* Profit related bonus scheme
+* Option to join our Healthcare Private Medical Scheme
+* Virtual GP access for you and your children – it allows you to speak to a doctor at a time and date that suits you
+* All employees are covered by our life assurance policy from day one
+* Unlock extra leave with our buy more holiday scheme.
+* Celebrate YOU! Enjoy an extra paid day off on your birthday each year
+* Enhanced maternity, paternity and adoption leave, and shared parental leave (eligible after 2 years service)
+* Spread the cost of your commute with interest\\\\-free season ticket loans
+* Do your bit for the environment and save money with our Cycle2Work scheme
+* We're proud to partner with the Retail Trust and Fashion \\\\& Textile Children's Trust
+
+
+**WHAT YOU’LL BE DOING:**  
+
+* Fulfil the tech lead role over multiple delivery squads, ensuring the data engineering patterns are adhered to across squads and providing consistency across technical delivery of data initiatives.
+* Coordinate technical solutions and manage team efforts
+* Translate functional designs into scalable technical solutions leveraging and building reusable assets.
+* Collaborate with solution designers and business analysts to refine user needs and technical solutions.
+* Build and test high\\\\-performance ELT pipeline patterns in Databricks.
+* Teaching and upskilling the team, creating development plans.
+* Mentor junior engineers within the squad and broader team and champion best practice.
+* Ensure quality, reliability, and documentation of deliverables from the squad through peer reviews.
+* Option to support the on\\\\-call support for the platform, which would require additional effort outside office hours as required to fulfil duties
+
+
+**WHO YOU ARE:**  
+
+* Experience in team management and strategic project alignment.
+* Expertise in Databricks, Spark, and cloud data architecture preferably on Azure (4\\\\+ years).
+* Strong coding ability in Python and SQL.
+* Experience in orchestration with Azure Data Factory and Databricks Workflows.
+* Understanding of Lakehouse and modern data engineering and data warehousing principles.
+* Understanding of data modelling, ETL/ELT, and testing frameworks.
+* Familiarity with CI/CD, version control, and DevOps practices.
+* Strong problem\\\\-solving and debugging skills.
+* Knowledge of security, data governance, and cost optimisation practices.
+* A degree in IT or related business topic (desirable)
+
+
+Why New Look?
+  
+  
+
+We care about you and the planet and believe fashion should be a force for positive change. We celebrate inclusion and diversity in everything we do. We’re proud of our inclusive culture and our talented team members who embrace our shared purpose, behaviours and values.
+  
+  
+
+We prioritise development, offering training to support your progression, so you can be your absolute best and achieve your goals.
+  
+  
+
+We pride ourselves on being a flexible employer, our colleagues work a range of patterns. If you have a specific pattern in mind, we're keen to discuss this with you in line with the output needed for the role.
+  
+  
+
+Please ensure that your CV is in simple format e.g. Microsoft Word when applying using your CV to ensure smooth application process"
+"indeed","Data Engineer - Newcastle","Accenture","Newcastle upon Tyne, ENG, GB","2026-02-23","fulltime","https://uk.indeed.com/viewjob?jk=6d514decc92e4e3e","Data Engineer
+
+
+ Data Engineer  
+
+Location: Newcastle Upon Tyne  
+
+Salary: TBC – Depending on experience  
+
+Levels: Senior Analyst, Specialist
+
+
+Hybrid Working: 3 days per week in our Newcastle, Cobalt business park office
+
+**Please Note:** Any offer of employment is subject to satisfactory BPSS and SC security clearance which requires 5 years continuous UK address history (typically including no periods of 30 consecutive days or more spent outside of the UK) and declaration of being a British or EU passport holder or hold Indefinite Leave to remain within the UK at the point of application.
+
+
+Note: The above information relates to a specific client requirement
+
+**About the Team**
+
+
+Our Advanced Technology Centre is a hub of innovation where we deliver high‑quality data and technology services to clients across both the public and private sectors. You’ll join a collaborative culture that values diverse thinking, continuous learning, and opportunities for career growth within a global network of experts.
+
+
+If you're looking for a dynamic that offers hands‑on experience with modern data technologies and the chance to shape large‑scale data solutions, this position offers you the opportunity to develop and progress rapidly.
+
+
+Overview
+
+
+As a Data Engineer, you will design, build, and maintain scalable data solutions that enable analytics, AI, and operational insights. You’ll work alongside client and internal teams to create robust data pipelines, ensure data reliability, and support cloud‑based architectures that power intelligent decision‑making.
+
+**Key Responsibilities**
+
+**Data Pipeline Development**
+
+* Build, optimize, and maintain scalable data pipelines using Java (primary), plus exposure to Python, Flink, Kafka, or Spark.
+* Develop and support real‑time streaming pipelines and event‑driven integrations.
+* Integrate data from multiple sources (streaming, batch, APIs) using AWS managed services (e.g., Kinesis, MSK, Lambda, Glue).
+
+**Data Architecture \\\\& Standards**
+
+* Contribute to data modelling, data architecture best practices, and modern patterns (e.g., medallion architecture).
+* Ensure data quality, lineage, governance, and security controls are applied consistently.
+
+**DevOps \\\\& Deployment**
+
+* Deploy and maintain data applications using CI/CD tooling (Azure DevOps, GitHub Actions, Jenkins).
+* Use Infrastructure as Code (e.g., Terraform, CloudFormation) to manage cloud environments.
+* Work with container technologies such as Docker and Kubernetes‑based workloads.
+
+**Collaboration**
+
+* Work closely with analytics, ML/AI, and product teams to deliver clean, well‑structured datasets.
+* Participate in code reviews and internal knowledge‑sharing sessions.
+* Provide guidance to junior engineers where needed.
+
+  
+
+**Core Data Engineering**
+
+* Strong programming proficiency in Java (preferred) or Python.
+* Hands\\\\-on experience with at least one of: Kafka, Flink, Spark (Flink/Kafka preferred for streaming).
+* Solid understanding of stream processing concepts (e.g., event time, state, backpressure).
+* Understanding of software engineering best practices: testing, design patterns, CI/CD, Git.
+* Experience building ETL/ELT or streaming data pipelines.
+* Exposure to microservices and distributed system concepts.
+* Experience working with cloud platforms, ideally AWS, but Azure/GCP also acceptable.
+* Understanding of distributed compute, large\\\\-scale data systems, and performance considerations.
+
+**DevOps \\\\& Engineering Practices**
+
+* Experience with CI/CD tools (Azure DevOps, GitHub Actions, Jenkins etc.).
+* Infrastructure‑as‑Code (Terraform preferred).
+* Experience with containerisation (Docker) and orchestration platforms (Kubernetes/EKS).
+
+**Certifications \\\\& Tools**
+
+* Exposure to enterprise data platforms (Databricks, Snowflake, BigQuery, or similar).
+* Cloud certifications (AWS, Azure, GCP) are beneficial but not required.
+
+**Other Requirements**
+
+* Minimum 3 years’ experience working on data engineering or large\\\\-scale data solutions.
+* Comfortable working in Agile delivery teams.
+* Strong communication skills and ability to collaborate with technical and non‑technical stakeholders.
+
+**Desirable**
+
+* Experience in client\\\\-facing or consulting environments.
+* Professional cloud or data engineering certifications.
+* Experience mentoring or supporting junior engineers.
+* Background in designing or operating real‑time, low\\\\-latency systems."
+"indeed","Senior Data Engineer","Three Support Limited","Birmingham, ENG, GB","2026-02-23","temporary","https://uk.indeed.com/viewjob?jk=2c37c778ba6c5cd0","**Contract Type:** Fixed Term
+
+**Location:** West Midlands / Hybrid
+
+**Role: Senior Data Engineer / Data Engineer**
+
+**IR35:** Inside PAYE
+
+**Salary:** £55,000 \\\\- £70,000 per annum
+
+**Start Date:** ASAP
+
+**Right to Work:** No Visa / sponsorship
+
+Background check required
+
+**Reporting To:** Data Analytics Lead
+
+**Role Overview**
+
+We are seeking an experienced Senior Data Engineer / Data Engineer to design, build, and maintain robust data pipelines and architectures within NHS or Local Government environments.  
+The postholder will ensure efficient data collection, storage, and access to support analytical, operational, and decision\\\\-making processes.
+
+This role will work closely with data scientists, analysts, and operational teams to
+
+ensure high\\\\-quality, secure, and accessible data across the organization.
+
+**Key Responsibilities** 
+
+· Design, develop, and maintain scalable data pipelines, architectures, and ETL/ELT processes to support NHS or Local Authority data initiatives.
+
+· Ensure efficient collection, storage, transformation, and access to both structured
+
+and unstructured data from multiple sources.
+
+· Collaborate with data scientists, analysts, and business stakeholders to enable analytics, reporting, and operational use of data.
+
+· Implement data integration solutions that comply with NHS Digital standards, Data
+
+· Security \\\\& Protection Toolkit (DSPT), and Local Authority policies.
+
+· Ensure data pipelines and architecture adhere to UK GDPR, Data Protection Act 2018, and other relevant compliance and security requirements.
+
+· Monitor, troubleshoot, and optimise data pipelines and infrastructure for performance, reliability, and scalability.
+
+· Develop and maintain data documentation, metadata, and data quality standards.
+
+· Advise on best practices for data storage, governance, and security in public sector contexts.
+
+· Mentor and support junior data engineers and contribute to continuous improvement within the data engineering team.
+
+**Essential Skills \\\\& Experience**
+
+· Proven experience as a Senior Data Engineer or similar role, ideally within NHS, Local Authority, or public sector environments.
+
+· Strong expertise in ETL/ELT pipelines, data integration, and data architecture design.
+
+· Proficiency with SQL, Python, or R for data manipulation and automation.
+
+· Experience with data warehouses, data lakes, cloud platforms (Azure, AWS – (Glue, Redshift \\\\& EMR), GCP) and analytics tools.
+
+· Knowledge of data governance, privacy, and security standards, particularly within NHS / public sector.
+
+· Experience working with large, complex datasets and multiple data sources.
+
+· Strong problem\\\\-solving skills and ability to work collaboratively with
+
+· cross\\\\-functional teams.
+
+· Experience mentoring junior staff or leading technical initiatives.
+
+**Desirable**
+
+· Experience with real\\\\-time or streaming data pipelines (e.g., Kafka, Spark Streaming).
+
+· Knowledge of NHS Data Security \\\\& Protection Toolkit (DSPT) compliance requirements
+
+· Familiarity with business intelligence tools such as Microsoft Fabric or Power BI, Tableau or Qlik.
+
+· Professional certifications in cloud platforms, data engineering, or analytics.
+
+**Qualifications**
+
+Degree in Computer Science, Data Engineering, Information Systems, or related field, or equivalent experience.
+
+Relevant professional certifications desirable (e.g., Microsoft Certified: Azure Data
+
+Engineer (DP\\\\-203\\\\), AWS Certified Data Engineer – Associate \\\\& AWS Certified Solutions Architect – Associate
+
+**Personal Attributes**
+
+· Highly analytical with strong attention to detail.
+
+· Ability to translate technical solutions into business value.
+
+· Excellent communication and stakeholder engagement skills.
+
+· Proactive, collaborative, and adaptable to changing public sector priorities.
+
+Job Types: Temporary, Fixed term contract  
+Contract length: 6 months
+
+Pay: £55,000\\\\.00\\\\-£70,000\\\\.00 per year
+
+Work Location: Hybrid remote in Birmingham B1 1BD"
+"linkedin","Senior Analytics Engineer","NALA","London, England, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4376893933",""
+"linkedin","Senior Data Engineer","elasticStage","London, England, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4321053359",""
+"linkedin","Senior Data Engineer","Our Future Health UK","London, England, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4363604251",""
+"linkedin","Senior Data Engineer","Burns Sheehan","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4376556976",""
+"linkedin","Senior Data Engineer","Retelligence","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4375385901",""
+"linkedin","Senior Data Engineer - Up to £800 p/d","Oliver Bernard","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4374252638",""
+"linkedin","Senior Data Engineer, Data Platform","Recursion","London, England, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4315533677",""
+"linkedin","Data Engineer","Eclectic Recruitment Ltd","Bolton, England, UK","2026-02-23","","https://www.linkedin.com/jobs/view/4374278066",""
+"linkedin","Data Engineer","Government Digital Service","England, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4374260343",""
+"linkedin","Data Analytics Engineer","Huspy","","2026-02-23","","https://www.linkedin.com/jobs/view/4375701576",""
+"linkedin","Senior Data Engineer - AWS - Energy Trading","Orbis Group","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4376581171",""
+"linkedin","Lead Azure Data Engineer","KPMG UK","London Area, United Kingdom","2026-02-23","","https://www.linkedin.com/jobs/view/4374265045",""
+"indeed","AI/ML Engineer","Roke Manor Research","Romsey, ENG, GB","2026-02-22","","https://uk.indeed.com/viewjob?jk=b51d2417a8225670","Roke, Roke Manor, Romsey, Hampshire, United Kingdom
+
+
+
+Job Description
+Posted Sunday, 22 February 2026, 19:00
+Great ideas come from different minds. That’s why we bring together engineers, scientists, analysts, and creatives from every background — and give them the trust, tools, and freedom to make a difference. What connects us is the mission: solving meaningful problems and building capability that protects what matters most.  
+
+  
+
+And as the challenges evolve, so do we — working on the technologies that will shape tomorrow, not just today.
+
+
+**The role**
+
+
+
+As an AI/ML Engineer, you will be an experienced researcher or developer with a strong interest in state\\\\-of\\\\-the\\\\-art AI and Machine Learning technologies.
+
+
+
+The AI/ML Engineer is responsible for delivering novel solutions to our customers challenging problems (Technically Complex or Novel Research), leading teams of engineers in delivering a mixture of small, early\\\\-stage research projects and algorithmic components of larger, multi\\\\-disciplinary development programmes.
+
+
+
+Roke is a leading technology \\\\& engineering company with clients spanning National Security, Defence, Intelligence and Commercial markets. You will work alongside our customers to solve their complex and unique challenges.
+
+
+
+As our next Senior AI/ML Engineer, you’ll be primarily “hands on” and actively providing technical expertise across a broad range of AI/ML disciplines, including Computer Vision, Reinforcement Learning, LLMs and NLP.
+
+
+
+**The Key Requirements...**
+
+
+
+* Proven experience in AI/ML R\\\\&D (e.g. computer vision, reinforcement learning, NLP, also including Large Language Models).
+
+
+
+* Significant experience conceiving novel applications of AI/ML techniques, particularly adapting and applying academic research.
+
+
+
+* Strong understanding of and experience in software engineering \\\\- Experience of working in, and leading, agile teams and delivering complexity at pace. This includes experience developing with widely used software tooling and development languages (including Python).
+
+
+
+Built over a 70\\\\-year heritage, Roke offers specialist knowledge in sensors, communications, cyber, and AI and ML. We change the way organisations think and act – through dynamic insights from the analysis of multiple layers of data. We take care of the innovative, technical stuff that keeps everyone safe – that’s our mission, passion, and motivation.
+
+
+
+Joining a team united by purpose and ambition, you’ll be at the heart of an exciting growth journey. At Roke, every individual counts. We push technical boundaries, together. We re\\\\-invest in product innovation, and we empower our people to make a difference.
+
+
+
+With us you’ll be taking a leading role within engineering teams (sometimes multiple concurrently) on AI/ML related R\\\\&D projects, specifically providing technical guidance and mentoring to junior engineers. Also, supporting business winning efforts by contributing to early\\\\-stage client interactions and leading technical bidding activities, including defining the solution, estimating task breakdowns and authoring technical content.
+
+
+
+We promise interesting work with smart people
+
+
+
+**Where** **you’ll** **work**
+
+
+
+Alongside hybrid and flexible working options, you’ll find our Romsey site located within beautiful Hampshire countryside, close to the picturesque New Forest District and not far from a superb stretch of the south coast. This is no corporate concrete jungle; this is a manor house site, with ample parking an on\\\\-site gym and a driveway full of daffodils in the spring.
+
+
+**Why You Should Join Us**
+
+
+
+We have a competitive salary and access to a number of additional flexible benefits, which will cover Health and Wellbeing, Savings and Protection \\\\& Life, Leisure and Entertainment.
+
+
+
+Roke has a great community of groups with shared interests. These enable people to share ideas and be passionate about tools, technologies \\\\& techniques, which interest them.
+
+
+**Clearances**
+
+
+
+Due to the nature of this role, we require you to be eligible to achieve SC clearance.
+
+
+**The Next Step**  
+
+Click apply, submitting an up\\\\-to\\\\-date CV. We look forward to hearing from you.  
+
+
+
+Take a look around the company https://www.roke.co.uk/
+Job Details
+
+
+Pay Type**Salary**
+
+Roke, Roke Manor, Romsey, Hampshire, United Kingdom"
