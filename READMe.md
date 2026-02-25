@@ -47,6 +47,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 🧠 Job Type: fulltime  
 🗓 Posted on: 25 Feb 2026  
 🔗 [Apply](https://uk.indeed.com/viewjob?jk=77fa3cdb18300dc3)
+<<<<<<< HEAD
 
 ---
 
@@ -119,6 +120,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4376067247)
+=======
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -130,11 +133,83 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Data Engineer [207684] – Aquent
 📍 Location: nan  
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4377425520)
+=======
+### Data Engineer – Wipro
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376403368)
+
+---
+
+### Data Analytics Engineer (Microsoft Fabric) – Concepts for Business, LLC
+📍 Location: Huddersfield, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4377540312)
+
+---
+
+### Data Engineer – Rightmove
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374827269)
+
+---
+
+### Data Engineer (5872) – Irwin Mitchell
+📍 Location: England, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4352545184)
+
+---
+
+### SQL Data Engineer – Eden Scott
+📍 Location: Scotland, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374593433)
+
+---
+
+### Data Engineer – Wave Talent
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374831574)
+
+---
+
+### Data Engineer – NewDay
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4295688579)
+
+---
+
+### Junior Data Engineer - Finance - Up to £60k – Oliver Bernard
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374819915)
+
+---
+
+### Junior Data Engineer – Xcede
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376067247)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -146,6 +221,17 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
+=======
+### Data Engineer – Experis
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376080283)
+
+---
+
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 ### Data Engineer - Finance - Counter Terrorism Policing HQ – Metropolitan Police
 📍 Location: West Brompton, ENG, GB  
 🧠 Job Type: fulltime  
@@ -162,11 +248,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Senior Data Engineer – Starcom
 📍 Location: London, England, UK  
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4271835573)
+=======
+### Senior Data Engineer – Marks Sattin
+📍 Location: Greater Manchester, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374585485)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -178,11 +272,35 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Senior Data Engineer – FDM Group
 📍 Location: Edinburgh, Scotland, UK  
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4374591468)
+=======
+### Data Engineer [207684] – Aquent
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4377425520)
+
+---
+
+### Data Engineer – Revolent Group
+📍 Location: Glasgow City, Scotland, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4371971196)
+
+---
+
+### Junior Data Engineer – Oliver Bernard
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374834057)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -202,6 +320,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Data Engineer – Experis
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
@@ -215,6 +334,29 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4371971196)
+=======
+### Data Engineer – MRP-Global
+📍 Location: West Midlands, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376065411)
+
+---
+
+### Senior Azure Data Engineer – DiverseJobsMatter
+📍 Location: England, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4377438190)
+
+---
+
+### Senior Data Engineer - Leeds – Gravitas Recruitment Group (Global) Ltd
+📍 Location: Leeds, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374573661)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -226,6 +368,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Senior Data Engineer (Flink) – N Consulting Global
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
@@ -239,6 +382,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4377165617)
+=======
+### Intermediate Data Engineer – IDEXX
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4368601524)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -258,11 +408,27 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Senior Data Engineer - Leeds – Gravitas Recruitment Group (Global) Ltd
 📍 Location: Leeds, England, UK  
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4374573661)
+=======
+### Senior ML Data Engineer – Intuition Machines
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4377165617)
+
+---
+
+### Junior ML engineer – Xantura
+📍 Location: London, ENG, GB  
+🧠 Job Type: fulltime  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://uk.indeed.com/viewjob?jk=51710941bf7938a3)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -274,6 +440,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Data Engineer – Oliver Bernard
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
@@ -287,6 +454,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4353625312)
+=======
+### Senior Data Engineer (Flink) – N Consulting Global
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4377157603)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -306,6 +480,17 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
+=======
+### Senior Data Engineer – Starcom
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4271835573)
+
+---
+
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 ### Senior Data Engineer – LSEG
 📍 Location: London, England, UK  
 🧠 Job Type: nan  
@@ -322,6 +507,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Junior ML engineer – Xantura
 📍 Location: London, ENG, GB  
 🧠 Job Type: fulltime  
@@ -330,6 +516,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+=======
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 ### Senior SAP Data Engineer – Nomad Foods
 📍 Location: Woking, England, UK  
 🧠 Job Type: nan  
@@ -338,11 +526,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Senior Azure Data Engineer – DiverseJobsMatter
 📍 Location: England, United Kingdom  
 🧠 Job Type: nan  
 🗓 Posted on: 24 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4377438190)
+=======
+### Senior Data Engineer – FDM Group
+📍 Location: Edinburgh, Scotland, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 24 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374591468)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -354,6 +550,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Data Engineer – Anson McCade
 📍 Location: Manchester Area, United Kingdom  
 🧠 Job Type: nan  
@@ -383,6 +580,29 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 🧠 Job Type: nan  
 🗓 Posted on: 23 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4376804260)
+=======
+### Data Engineer - Quant Trading – Acquire Me
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374254888)
+
+---
+
+### Data Engineer – Harnham
+📍 Location: West Midlands, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4375744508)
+
+---
+
+### Data Engineer – Valor Real Estate Partners LLP
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376814236)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -394,6 +614,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Data Engineer – Blockchain
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
@@ -406,10 +627,17 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
 🗓 Posted on: 23 Feb 2026  
+=======
+### Data Engineer - Quant Hedge Fund – Paragon Alpha - Hedge Fund Talent Business
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 🔗 [Apply](https://www.linkedin.com/jobs/view/4376563837)
 
 ---
 
+<<<<<<< HEAD
 ### Data Engineer – Harnham
 📍 Location: West Midlands, England, UK  
 🧠 Job Type: nan  
@@ -423,6 +651,21 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 🧠 Job Type: nan  
 🗓 Posted on: 23 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4376542272)
+=======
+### Data Engineer – Blockchain
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4315875542)
+
+---
+
+### Data & Analytics Engineer – Torchbox
+📍 Location: City Of Bristol, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376564349)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -434,11 +677,27 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Senior BigQuery Data Engineer - Contract – Augustinus Bader
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
 🗓 Posted on: 23 Feb 2026  
 🔗 [Apply](https://www.linkedin.com/jobs/view/4374504979)
+=======
+### Data Engineer - FinTech - Up to £95k – Oliver Bernard
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374241696)
+
+---
+
+### Data Engineer – Opus Recruitment Solutions
+📍 Location: Nottingham, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4375741238)
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 
 ---
 
@@ -498,6 +757,17 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
+=======
+### Senior Data Engineer – Ethiq
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376561503)
+
+---
+
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 ### Senior Data Engineer – Burns Sheehan
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
@@ -506,6 +776,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Senior Data Engineer – Retelligence
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
@@ -554,6 +825,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+=======
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 ### Senior Data Engineer - AWS - Energy Trading – Orbis Group
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
@@ -562,10 +835,65 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full steps.
 
 ---
 
+<<<<<<< HEAD
 ### Lead Azure Data Engineer – KPMG UK
 📍 Location: London Area, United Kingdom  
 🧠 Job Type: nan  
 🗓 Posted on: 23 Feb 2026  
+=======
+### Senior Data Engineer (Remote) – Lumenalta
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376542272)
+
+---
+
+### Senior Data Engineer, Data Platform – Recursion
+📍 Location: London, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4315533677)
+
+---
+
+### Data Engineer – Brio Digital
+📍 Location: nan  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376804260)
+
+---
+
+### Data Engineer – Eclectic Recruitment Ltd
+📍 Location: Bolton, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374278066)
+
+---
+
+### Senior Data Engineer – itokani
+📍 Location: West Midlands, England, UK  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4376819095)
+
+---
+
+### Senior BigQuery Data Engineer - Contract – Augustinus Bader
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+🔗 [Apply](https://www.linkedin.com/jobs/view/4374504979)
+
+---
+
+### Lead Azure Data Engineer – KPMG UK
+📍 Location: London Area, United Kingdom  
+🧠 Job Type: nan  
+🗓 Posted on: 23 Feb 2026  
+>>>>>>> d21796a5fc6e651959e8063d540e34621cad3627
 🔗 [Apply](https://www.linkedin.com/jobs/view/4374265045)
 
 ---
