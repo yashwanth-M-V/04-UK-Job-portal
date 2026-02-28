@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UK Data Engineering Jobs</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f4f6f9;
+      color: #1a1a2e;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #1a1a2e;
+    }
+
+    header p {
+      color: #666;
+      margin-top: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    /* ── GitHub button ── */
+    .github-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+      padding: 0.45rem 1.1rem;
+      background: #1a1a2e;
+      color: white;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .github-btn:hover { background: #3730a3; }
+
+    .github-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: white;
+    }
+
+    /* ── Filter sections ── */
+    .filter-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .filter-label {
+      width: 100%;
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.1rem;
+    }
+
+    .filter-btn {
+      padding: 0.45rem 1.1rem;
+      border: 2px solid #4f46e5;
+      border-radius: 999px;
+      background: white;
+      color: #4f46e5;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: #4f46e5;
+      color: white;
+    }
+
+    /* date filter uses a slightly different accent so it's visually distinct */
+    .date-btn {
+      border-color: #0891b2;
+      color: #0891b2;
+    }
+
+    .date-btn:hover,
+    .date-btn.active {
+      background: #0891b2;
+      color: white;
+    }
+
+    .filter-divider {
+      width: 100%;
+      max-width: 500px;
+      margin: 0.5rem auto 0.75rem;
+      border: none;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    /* ── Job count ── */
+    .job-count {
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.4rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-left: 4px solid #4f46e5;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.11);
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .card-company {
+      font-size: 0.9rem;
+      color: #4f46e5;
+      font-weight: 600;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.2rem;
+    }
+
+    .badge {
+      background: #f0f0ff;
+      color: #4f46e5;
+      border-radius: 6px;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    .badge.site-indeed   { background: #fff3e0; color: #e65100; }
+    .badge.site-linkedin { background: #e3f2fd; color: #0a66c2; }
+    .badge.site-google   { background: #e8f5e9; color: #2e7d32; }
+
+    .card-date {
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: auto;
+    }
+
+    .apply-btn {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.5rem 1.2rem;
+      background: #4f46e5;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-align: center;
+      transition: background 0.2s;
+    }
+
+    .apply-btn:hover { background: #3730a3; }
+
+    /* ── Empty state ── */
+    .empty {
+      text-align: center;
+      color: #999;
+      padding: 3rem;
+      grid-column: 1 / -1;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #aaa;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🇬🇧 UK Data Engineering Jobs</h1>
+    <p>Updated daily · {{ total_jobs }} roles found · Last run: {{ last_updated }}</p>
+
+    <!-- GitHub button -->
+    <a class="github-btn"
+       href="https://github.com/yashwanth-m-v/UK-Job-portal"
+       target="_blank"
+       rel="noopener">
+      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                 -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                 .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                 -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
+                 .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+                 .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      ⭐ Star on GitHub · Raise an Issue
+    </a>
+  </header>
+
+  <!-- Date range filter -->
+  <div class="filter-section">
+    <div class="filter-label">Filter by date posted</div>
+    <button class="filter-btn date-btn active" data-days="14">Last 14 days</button>
+    <button class="filter-btn date-btn" data-days="7">Last 7 days</button>
+    <button class="filter-btn date-btn" data-days="3">Last 3 days</button>
+    <button class="filter-btn date-btn" data-days="1">Today</button>
+  </div>
+
+  <hr class="filter-divider" />
+
+  <!-- Role filter -->
+  <div class="filter-section">
+    <div class="filter-label">Filter by role</div>
+    <button class="filter-btn active" data-filter="all">All Roles</button>
+    {% for role in roles %}
+      <button class="filter-btn" data-filter="{{ role | lower | replace(' ', '-') }}">
+        {{ role }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <p class="job-count" id="job-count">Showing {{ total_jobs }} jobs</p>
+
+  <!-- Job cards — date_posted_iso is used by JS for date filtering -->
+  <div class="grid" id="job-grid">
+    {% for job in jobs %}
+    <div class="card"
+         data-role="{{ job.role_group | lower | replace(' ', '-') }}"
+         data-date="{{ job.date_posted_iso }}">
+
+      <div class="card-title">{{ job.title }}</div>
+      <div class="card-company">{{ job.company }}</div>
+
+      <div class="card-meta">
+        <span class="badge site-{{ job.site | lower }}">{{ job.site | capitalize }}</span>
+        {% if job.location %}
+          <span class="badge">📍 {{ job.location }}</span>
+        {% endif %}
+        {% if job.job_type and job.job_type != 'N/A' %}
+          <span class="badge">🧠 {{ job.job_type }}</span>
+        {% endif %}
+      </div>
+
+      <div class="card-date">
+        🗓 Posted: {{ job.date_posted }}
+      </div>
+
+      <a class="apply-btn" href="{{ job.job_url }}" target="_blank" rel="noopener">
+        Apply →
+      </a>
+
+    </div>
+    {% else %}
+      <div class="empty">No jobs found for this filter.</div>
+    {% endfor %}
+  </div>
+
+  <footer>
+    Built with Python · jobspy · Jinja2 · Hosted on GitHub Pages
+  </footer>
+
+  <script>
+    const roleButtons = document.querySelectorAll(".filter-btn:not(.date-btn)");
+    const dateButtons = document.querySelectorAll(".date-btn");
+    const cards       = document.querySelectorAll(".card");
+    const counter     = document.getElementById("job-count");
+
+    let activeRole = "all";
+    let activeDays = 14;
+
+    function applyFilters() {
+      const cutoff = new Date();
+      cutoff.setDate(cutoff.getDate() - activeDays);
+      cutoff.setHours(0, 0, 0, 0);
+
+      let visible = 0;
+
+      cards.forEach(card => {
+        const roleMatch = activeRole === "all" || card.dataset.role === activeRole;
+        const cardDate  = new Date(card.dataset.date);
+        const dateMatch = cardDate >= cutoff;
+
+        const show = roleMatch && dateMatch;
+        card.style.display = show ? "flex" : "none";
+        if (show) visible++;
+      });
+
+      counter.textContent = `Showing ${visible} job${visible !== 1 ? "s" : ""}`;
+    }
+
+    // Role filter
+    roleButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        roleButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeRole = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+
+    // Date filter
+    dateButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        dateButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeDays = parseInt(btn.dataset.days);
+        applyFilters();
+      });
+    });
+  </script>
+
+</body>
+</html>

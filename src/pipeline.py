@@ -1,7 +1,7 @@
 from src.scrape.job_scraping import scrape_to_silver
 from src.transform import silver_to_gold
 from src.ingest import load_jobs
-from src.render import render_markdown
+from src.render import render_markdown, render_html
 
 
 def run_pipeline() -> str:
@@ -14,7 +14,10 @@ def run_pipeline() -> str:
     # Step 3: Load gold
     df = load_jobs()
 
-    # Step 4: Render to markdown
+    # Step 4a: Render to HTML (GitHub Pages)
+    render_html(df)
+
+    # Step 4b: Render to markdown (README — kept for now)
     markdown = render_markdown(df)
 
     return markdown
