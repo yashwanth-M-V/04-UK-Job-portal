@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          lfs: true   # <-- important for Git LFS
 
       - name: Install uv
         uses: astral-sh/setup-uv@v4
@@ -32,15 +34,16 @@ jobs:
         run: |
           uv run python main.py
 
+      - name: Set up Git LFS
+        run: |
+          git lfs install
+          git lfs track "data/jobs_silver.csv" || echo "Already tracked"
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git status --porcelain | grep .; then
-            git add READMe.md index.html data/jobs_silver.csv data/jobs_gold.csv
-            git commit -m "chore: daily job postings update"
-            git push
-          else
-            echo "No changes to commit"
-          fi
+          git add .
+          git diff --cached --quiet || git commit -m "chore: daily job postings update"
+          git push
