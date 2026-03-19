@@ -297,15 +297,103 @@ What’s on offer:
   
 
 If you’re looking to make a real impact in a growing organisation and build modern, scalable data solutions, we’d love to hear from you!"
-"linkedin","Data Engineer - Investments","Hillwood Investment Properties","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4374598353",""
-"linkedin","Junior Collibra Data Engineer","Brickendon Consulting","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386857340",""
-"linkedin","Data Engineer","De Stroopwafel","Manchester, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387635333",""
-"linkedin","Data Engineer","Harnham","West Midlands, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387115074",""
-"linkedin","Data Engineer","Vivo Talent Solutions","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384142725",""
-"linkedin","Data Analytics Engineer","Fruition Group","","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377447821",""
-"linkedin","Data Engineer","Coforge","Waterside, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386868703",""
-"linkedin","Data Engineer","Aurum Search Limited","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385018506",""
-"linkedin","Senior Data Engineer","La Fosse","Milton Keynes, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384953478",""
+"indeed","Technology Consultant - Data Platform Engineer","ScottishPower","Glasgow, SCT, GB","2026-03-19","N/A","https://uk.indeed.com/viewjob?jk=e10883aa649c5797","Technology Consultant \\- Data Platform Engineer
+ScottishPower HQ, Glasgow (hybrid)
+Salary up to £77,000 \\+ up to 15% bonus and excellent benefits
+Closing date – 27th of March 2026
+Help us create a better future, quicker
+ScottishPower is seeking a Cloud Data Platform Engineer with expertise in building, securing, and operating cloud‑native data infrastructure. This role is central to ensuring our data platforms on AWS and Azure are robust, scalable, and engineered to the highest standards. You’ll play a key part in enabling the organisation’s digital and data ambitions by delivering resilient cloud foundations that our business can trust.
+What you'll be doing* Build and maintain cloud‑native data platform infrastructure on AWS and Azure aligned to global standards
+* Provision core services such as storage, compute, networking, identity, and data‑platform components
+* Use Infrastructure‑as‑Code via Terraform to deliver repeatable, automated deployments
+* Implement secure and scalable data‑platform environments
+* Manage lifecycle operations including patching, upgrades, scaling, and performance tuning
+* Ensure high availability and resilience across data platform components
+* Implement monitoring, alerting, and observability for platform health and performance.
+* Troubleshoot complex infrastructure issues across networking, compute, and storage layers
+* Apply cloud security best practices, including identity management, encryption, network segmentation, and secrets management
+* Ensure compliance with Iberdrola Group policies, industry regulations, and sector standards
+* Implement guardrails, policies, and automated controls to protect data and platform integrity
+* Support audits and maintain applicable evidence of compliance through metrics and reporting
+* Drive automation across provisioning, configuration, and operational workflows
+* Introduce improvements that enhance reliability, reduce manual effort, and optimise cost
+* Evaluate and adopt modern cloud‑native tooling to strengthen platform capabilities
+* Collaborate with global data engineering and security teams to streamline platform usage and onboarding
+* Understand, communicate and educate business users on appropriate technical standards within the relevant technology domain
+* Review and approve the design of data related solutions, ensuring compliance with Group standards and direction
+* Provide technical expertise to assist with projects and with the resolution of escalated operational problems and restoration of service to customers
+* Review and approve data infrastructure domain related changes to the IT estate, in accordance with the Change Management process, as required by operational or security requirements
+* Assess and acting on FinOps suggestions for platform and service resizing to realise efficiencies in deployed platforms while ensuring that all known factors affecting future performance are addressed through plans for upgrades, enhancements, etc.
+* Utilise relevant expertise to ensure that architectural plans and budgets reflect the activities and investment required to move from the current state to the desired state
+
+
+What you'll bring
+The Iberdrola group is an AWS\\-first organisation; however, Azure is the predominant Cloud data infrastructure estate, with AWS in the early adoption stage.* Infrastructure automation using Terraform
+* Application of AWS and/or Azure security best practices
+* Strong Azure Synapse and ML experience is advantageous
+* Solid knowledge of cloud networking (VPC/VNet, load balancers, DNS, ingress/egress)
+* Experience with GitOps tooling (Argo CD, GitHub Actions) and CI/CD pipelines
+* Strong Infrastructure‑as‑Code skills (Terraform, Bicep, CloudFormation)
+* Understanding of cloud‑native security principles and zero‑trust models
+* Familiarity with data‑platform components such as object storage, managed databases, event streaming, and data processing services
+* Influencing of colleagues, both in Spain and the UK will be an important aspect of the job and the role holder must be able to demonstrate an inter\\-personal style that strikes a good balance between being collaborative and direct/determined
+* Networking with peers and business IT suppliers will be an essential ingredient to this job to ensure that technology decisions are based on a range of information sources
+
+
+Desirable Criteria
+One or more of the following certifications is desirable:
+AWS* AWS Certified Solutions Architect – Associate or Professional
+* AWS Certified DevOps Engineer – Professional
+* AWS Certified Security – Specialty
+
+
+Azure* Microsoft Certified: Azure Administrator Associate (AZ‑104\\)
+* Microsoft Certified: Azure Solutions Architect Expert
+* Microsoft Certified: Azure Security Engineer Associate (AZ‑500\\)
+
+
+Security \\& DevOps* HashiCorp Terraform Associate
+* CompTIA Security\\+ or equivalent
+* ISC2 CC or CCSP (for cloud security awareness)
+
+
+Minimum Criteria* Minimum of two years of experience working on Cloud Data platforms and services
+* Demonstrable knowledge of AWS and/or Azure technologies and services
+* Minimum five years working in a technical IT role
+* Record of academic achievement, including some form of recognised qualification from further education, such as a degree or diploma
+* Good oral and written communication skills
+* Ability to work under pressure (tight budgets, tight timelines, workload peaks, resourcing constraints etc.)
+* Numerate and able to deal with finances for the purposes of providing accurate estimates of resource cost to projects and provide management reports on cloud usage costs
+* Willingness to travel by train nationally, and aircraft internationally on business
+* Must be a proven team player to work, promote and consolidate efficient team working relationships
+
+
+What’s in it for you
+As well as a competitive salary which is reviewed annually, you can also enjoy a number of other benefits. With our pension scheme, we’ll double match your contribution up to a company contribution of 10%.
+At ScottishPower, we believe it’s the little things we do in life that make a big difference. From helping you look after your family’s wellbeing, save for your future and take personal steps for climate action – our benefits are designed to help you do just that \\- so that you have everything you need to take care of your world – today and tomorrow. That’s why our benefits include:* 36 days annual leave
+* Holiday Purchase – perfect your work/life balance with extra annual leave
+* Share Schemes
+* Payroll Giving and Charity Matched Funding
+* Technology Vouchers – save more and spread the cost of your technology purchases
+* Electric Vehicle Schemes – to help you transition to green/clean driving
+* Cycle to Work scheme and Public Transport Season Ticket Loans
+* Healthcare benefit options including: Dental Insurance, Private Medical Insurance, Health Cash Plan and annual Health Assessments
+* Life Assurance (4x salary)
+* Access to Savesmart financial wellbeing support
+* Plus shopping, leisure, restaurant and gym discounts, and unique employee deals on travel insurance and more
+
+
+Why ScottishPower
+ScottishPower is part of the Iberdrola Group, one of the world’s largest integrated utility companies and a world leader in wind energy. With a commitment to generate all of our energy from renewable resources and a drive to create the energy infrastructure of the future, we’re at the forefront of the journey to Net Zero and investing over £6m every working day to make this happen. With diverse opportunities across our businesses and a commitment to invest in our own internal talent, ScottishPower can offer people real career opportunities that meet personal and professional goals, in a global organisation.
+Inclusion, diversity, and a social purpose are at the heart of everything we do. Together with our values, they bring us together into a stronger, more sustainable business with direct links to the communities we serve. It takes all kinds of people to build a large\\-scale business like ours, so whatever your background, you’ll fit right in.
+ScottishPower is committed to providing reasonable support or adjustments in our recruiting processes for candidates with disabilities, long term conditions, mental health conditions, or who are neurodivergent or require pregnancy\\-related support. If you need support, please reach out to careers@scottishpower.com.  
+
+Mobility
+Please note that any applicant who is not a citizen of the country of the vacancy will be subject to compliance with the applicable immigration requirements to legally work in that country. If/when required, the Company will support the employee with the necessary Immigration requirements.
+IMPORTANT
+Advert will close at 23:59 GMT the day before Job Posting End Date below
+March\\-27\\-2026"
+"linkedin","Data Engineer","Gravitas Recruitment Group (Global) Ltd","England, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385016458",""
 "indeed","Cloud Database Administrator (DBA)","Instanda","London, ENG, GB","2026-03-18","N/A","https://uk.indeed.com/viewjob?jk=b5def019a195335d","**An Inclusive, Impactful Place to Work**
 
 
@@ -404,8 +492,18 @@ Desirable Skills:
 * £100 per month to put towards wellness activities.
 * Annual learning \\& development allowance of £1,250
 * Free access to LinkedIn learning and Microsoft ESI learning platform"
+"linkedin","Data Engineer - Investments","Hillwood Investment Properties","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4374598353",""
+"linkedin","Data Engineer","Aurum Search Limited","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385018506",""
+"linkedin","Data Engineer","Coforge","Waterside, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386868703",""
+"linkedin","Data Analytics Engineer","Fruition Group","","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377447821",""
+"linkedin","Data Engineer","Vivo Talent Solutions","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384142725",""
+"linkedin","Data Engineer","Harnham","West Midlands, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387115074",""
+"linkedin","Senior Data Engineer","Made Tech","City Of Bristol, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4378160594",""
+"linkedin","Data Engineer","De Stroopwafel","Manchester, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387635333",""
 "linkedin","Senior Data Engineer","Codat","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377852071",""
-"linkedin","Senior Data Engineer","Synthesia","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377448182",""
+"linkedin","Senior Data Engineer","Arenko","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4367890267",""
+"linkedin","Data / ML Engineer","martee ai","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4383148774",""
+"linkedin","Senior Data Engineer","83zero","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384798550",""
 "indeed","Junior Data Engineer, Revenue","Spotify","London, ENG, GB","2026-03-18","N/A","https://uk.indeed.com/viewjob?jk=b339f452d1ab7c3b","Engineering
 Data
 Permanent
@@ -459,9 +557,6 @@ Flexible share incentives letting you choose how you share in our success.
 Global parental leave, six months off \\- for all new parents.
 All The Feels, our employee assistance program and self\\-care hub.
 Flexible public holidays, swap days off according to your values and beliefs."
-"linkedin","Senior Data Engineer","Anson McCade","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385023179",""
-"linkedin","Senior Data Engineer","Intent HQ","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386880083",""
-"linkedin","Senior Data Engineer","Qodea","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4370314955",""
 "indeed","Senior Data Architect - Client360","JPMorganChase","London, ENG, GB","2026-03-18","fulltime","https://uk.indeed.com/viewjob?jk=bc71b1e1a33bf2d2","**JOB DESCRIPTION**  
 
 You want to be an essential member of a diverse team of architects determined to deliver a modern, AI enabled data platform. Don’t pass up this opportunity to collaborate with some of the brightest minds in the field and deliver best\\-in\\-class solutions to the industry.
@@ -516,31 +611,43 @@ We recognize that our people are our strength and the diverse talents they bring
   
 
 J.P. Morgan’s Commercial \\& Investment Bank is a global leader across banking, markets, securities services and payments. Corporations, governments and institutions throughout the world entrust us with their business in more than 100 countries. The Commercial \\& Investment Bank provides strategic advice, raises capital, manages risk and extends liquidity in markets around the world."
+"linkedin","Senior Data Engineer","Qodea","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4370314955",""
+"linkedin","Data Engineer","Method Resourcing","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386870440",""
+"linkedin","Senior Data Engineer","Anson McCade","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385023179",""
+"linkedin","Senior Data Engineer","Intent HQ","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386880083",""
+"linkedin","Senior Data Engineer","Synthesia","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377448182",""
 "linkedin","Senior Data Engineer - (Genetics) Maternity Cover - 12 months FTC","Our Future Health UK","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4260898310",""
 "linkedin","Senior Data Engineer – Lloyd’s Insurance (Essential)","NINE by SATIGO","","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385023637",""
-"linkedin","Senior Data Engineer","83zero","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384798550",""
-"linkedin","Data Engineer","St. James’s Place","Cirencester, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386717044",""
-"linkedin","Staff Data Engineer","Data Idols","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384490934",""
-"linkedin","Senior Data Engineer","UK Home Office","Liverpool, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384454802",""
-"linkedin","Microsoft Fabric Data Engineer","Movar","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386754094",""
-"linkedin","Data Engineer","Somerset Council","Somerset, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384489481",""
-"linkedin","Data Engineer - Private Equity","Jobs via eFinancialCareers","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386751974",""
-"linkedin","Data Engineer","Eclectic Recruitment Ltd","Stevenage, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385931784",""
-"linkedin","Data Engineer","myGwork - LGBTQ+ Business Community","Cirencester, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384475542",""
-"linkedin","Data Engineer","easyJet holidays","Luton, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386701950",""
-"linkedin","Data Engineer","Reach plc","","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385697282",""
-"linkedin","Data Engineer (Platform)","hackajob","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385950017",""
-"linkedin","Data Engineer - Private Equity","McGregor Boyall","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385683348",""
+"linkedin","Junior Collibra Data Engineer","Brickendon Consulting","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386857340",""
+"linkedin","Data Engineer","British Gas","Leicester, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387129544",""
+"linkedin","Senior Data Engineer","La Fosse","Milton Keynes, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384953478",""
 "linkedin","Data Engineer","Fairmont Recruitment Technology","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386775928",""
 "linkedin","Data Engineer","Peaple Talent","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384495755",""
-"linkedin","Senior Data Engineer","Morson Edge","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386766194",""
+"linkedin","Data Engineer","Peaple Talent","Edinburgh, Scotland, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384499594",""
 "linkedin","Data Engineer","Addition","Hertfordshire, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385919143",""
+"linkedin","Data Engineer - Private Equity","Jobs via eFinancialCareers","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386751974",""
 "linkedin","Data Engineer","Lorien","Harrogate, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386920299",""
 "linkedin","Data Engineer","Blockchain","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4315875542",""
-"linkedin","Data Engineer","Peaple Talent","Edinburgh, Scotland, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384499594",""
-"linkedin","Senior Data Engineer","Eden Smith Group","Warrington, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384704589",""
-"linkedin","Lead Data Engineer - PropTech - Up to £110k","Oliver Bernard","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384702701",""
+"linkedin","Data Engineer (Platform)","hackajob","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385950017",""
+"linkedin","Data Engineer","St. James’s Place","Cirencester, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386717044",""
+"linkedin","Data Engineer","easyJet holidays","Luton, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386701950",""
+"linkedin","Data Engineer","myGwork - LGBTQ+ Business Community","Cirencester, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384475542",""
+"linkedin","Data Engineer","Eclectic Recruitment Ltd","Stevenage, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385931784",""
+"linkedin","Data Engineer","Reach plc","","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385697282",""
+"linkedin","Data Engineer","Somerset Council","Somerset, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384489481",""
+"linkedin","Microsoft Fabric Data Engineer","Movar","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386754094",""
+"linkedin","Senior Data Engineer","UK Home Office","Liverpool, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384454802",""
+"linkedin","Data Engineer","St. James’s Place","Bristol, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386597688",""
+"linkedin","Data Platform Engineer","Hays","Milton Keynes, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385678980",""
+"linkedin","Data Engineer","Peaple Talent","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384491876",""
+"linkedin","Data Engineer - Private Equity","McGregor Boyall","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385683348",""
 "linkedin","Senior Data Engineer","Publicis Production","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4373946102",""
+"linkedin","Staff Data Engineer","Data Idols","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384490934",""
+"linkedin","Lead Data Engineer - PropTech - Up to £110k","Oliver Bernard","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384702701",""
+"linkedin","Senior Data Engineer","iO Associates","Milton Keynes, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385697318",""
+"linkedin","Senior Data Engineer","Vertus Partners","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384448702",""
+"linkedin","Senior Data Engineer","Eden Smith Group","Warrington, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384704589",""
+"linkedin","Senior Data Engineer","Morson Edge","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386766194",""
 "linkedin","Mid-Senior Data Engineer - Investment Firm - Up to £90k + Bonus","Oliver Bernard","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384701721",""
 "linkedin","Data Engineer III - Python, SQL - Senior Associate","JPMorganChase","Greater London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386962186",""
 "linkedin","2x Senior Data Engineer (Financial Services)","Hays","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385930731",""
@@ -553,9 +660,7 @@ J.P. Morgan’s Commercial \\& Investment Bank is a global leader across banking
 "linkedin","Senior Analytics Engineer","CMR Surgical","Cambridge, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384479460",""
 "linkedin","Senior Data Engineer","Starcom","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4271835573",""
 "linkedin","Global IT Data Engineer Senior Specialist","Boston Consulting Group (BCG)","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385947678",""
-"linkedin","Senior Data Engineer","Vertus Partners","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384448702",""
 "linkedin","Data Engineer","Unity Advisory","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4332549507",""
-"linkedin","Senior Data Engineer","iO Associates","Milton Keynes, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385697318",""
 "indeed","Data Engineer (Data Architecture & Integration)","Goaco","Ebbsfleet, ENG, GB","2026-03-17","fulltime","https://uk.indeed.com/viewjob?jk=13065f8bcaff0f95","Job Categories: Data Engineer
 
 
@@ -745,8 +850,8 @@ As a business regulated by the FCA we would advise you to familiarise yourself w
 "linkedin","Senior Data Engineer","Quantum","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385675851",""
 "linkedin","Senior Data Engineer","UK Home Office","Croydon, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384460509",""
 "linkedin","Senior Data Engineer","UK Home Office","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384463406",""
-"linkedin","Data Engineer","St. James’s Place","Bristol, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386597688",""
-"linkedin","Senior Data Engineer","Anson McCade","London Area, United Kingdom","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4384069900",""
-"linkedin","Senior Data Engineer, Vice President","State Street","London, England, UK","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4383361516",""
+"linkedin","Analytics Data Engineer","Profitero+","Reading, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4380933757",""
 "linkedin","Data Engineer","Scrumconnect Consulting","Edinburgh, Scotland, UK","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4384406358",""
 "linkedin","Data Engineer","Vintage Cash Cow","Morley, England, UK","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4385238531",""
+"linkedin","Senior Data Engineer","Anson McCade","London Area, United Kingdom","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4384069900",""
+"linkedin","Senior Data Engineer, Vice President","State Street","London, England, UK","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4383361516",""
