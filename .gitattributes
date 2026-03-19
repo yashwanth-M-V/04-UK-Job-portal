@@ -2,7 +2,6 @@
 # Normalize line endings
 # --------------------------------
 * text=auto
-
 # Ensure common code files stay consistent
 *.py text
 *.html text
@@ -13,13 +12,11 @@
 *.toml text
 *.yml text
 *.yaml text
-
 # --------------------------------
 # Data files (do not modify line endings)
 # --------------------------------
 *.csv -text
 *.parquet -text
-
 # --------------------------------
 # Binary files
 # --------------------------------
@@ -31,3 +28,4 @@
 *.ico binary
 *.pdf binary
 *.zip binary
+data/jobs_silver.csv filter=lfs diff=lfs merge=lfs -text
