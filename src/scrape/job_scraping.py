@@ -1,8 +1,8 @@
-import csv
 import os
 import re
 import pandas as pd
 from jobspy import scrape_jobs
+from tqdm import tqdm
 
 # ---------------------------
 # Search terms
@@ -18,7 +18,7 @@ JUNIOR_KEYWORDS = [
 # ---------------------------
 # Silver path (source of truth)
 # ---------------------------
-SILVER_PATH = "data/jobs_silver.csv"
+SILVER_PATH = "data/jobs_silver.parquet"
 
 
 # ---------------------------
@@ -55,9 +55,13 @@ def is_data_role(title: str) -> bool:
 # Scrape → Silver
 # ---------------------------
 def scrape_to_silver(hours_old: int = 72) -> pd.DataFrame:
-    all_jobs = []
+    print("\n🔎 Starting job scraping...\n")
 
-    for keyword in JUNIOR_KEYWORDS:
+    all_jobs = []
+    total_scraped = 0
+
+    # Progress bar for keywords
+    for keyword in tqdm(JUNIOR_KEYWORDS, desc="Scraping job keywords"):
         jobs = scrape_jobs(
             site_name=["indeed", "linkedin", "google"],
             search_term=keyword,
@@ -66,42 +70,74 @@ def scrape_to_silver(hours_old: int = 72) -> pd.DataFrame:
             hours_old=hours_old,
             country_indeed="United Kingdom",
         )
-        if not jobs.empty:
+
+        if jobs is not None and not jobs.empty:
+            count = len(jobs)
+            total_scraped += count
+            tqdm.write(f"Collected {count} jobs for '{keyword}'")
             all_jobs.append(jobs)
 
     if not all_jobs:
-        raise RuntimeError("No jobs scraped")
+        raise RuntimeError("No jobs scraped from any source")
+
+    print(f"\n📦 Total raw jobs collected: {total_scraped}")
 
     df = pd.concat(all_jobs, ignore_index=True)
 
-    # --- Basic cleaning ---
+    # ---------------------------
+    # Cleaning stage
+    # ---------------------------
+    print("\n🧹 Cleaning and filtering jobs...")
+
+    # Remove duplicates
     df = df.drop_duplicates(subset=["site", "job_url"])
-    df = df[df["title"].apply(is_data_role)]
+
+    # Filter only relevant roles (with progress bar)
+    tqdm.pandas(desc="Filtering job titles")
+    df = df[df["title"].progress_apply(is_data_role)]
 
     if df.empty:
         raise RuntimeError("No data-engineering roles found after filtering")
 
-    # Parse dates cleanly
+    print(f"Remaining jobs after filtering: {len(df)}")
+
+    # ---------------------------
+    # Date handling
+    # ---------------------------
     df["date_posted"] = pd.to_datetime(df["date_posted"], errors="coerce")
     df["date_posted"] = df["date_posted"].dt.tz_localize(None)
 
-    # Tag when it was scraped
+    # Remove rows without valid date
+    df = df[df["date_posted"].notna()]
+
+    # Tag when pipeline scraped this job
     df["scraped_at"] = pd.Timestamp.utcnow().replace(tzinfo=None)
 
-    # --- Append to silver (dedupe on site + job_url) ---
+    # ---------------------------
+    # Save to Silver (Parquet history)
+    # ---------------------------
+    print("\n💾 Updating Silver dataset...")
+
     os.makedirs(os.path.dirname(SILVER_PATH), exist_ok=True)
 
     if os.path.exists(SILVER_PATH):
-        existing = pd.read_csv(SILVER_PATH, parse_dates=["date_posted", "scraped_at"])
+        existing = pd.read_parquet(SILVER_PATH)
+
+        before = len(existing)
+
         df = pd.concat([existing, df], ignore_index=True)
         df = df.drop_duplicates(subset=["site", "job_url"], keep="first")
 
-    df.to_csv(
-        SILVER_PATH,
-        index=False,
-        quoting=csv.QUOTE_NONNUMERIC,
-        escapechar="\\",
-    )
+        after = len(df)
+        added = after - before
 
-    print(f"✅ Silver saved → {SILVER_PATH} ({len(df)} total records)")
+        print(f"New unique jobs added: {added}")
+
+    # Save updated dataset
+    df = df.reset_index(drop=True)
+    df.to_parquet(SILVER_PATH, index=False)
+
+    print(f"\n✅ Silver saved → {SILVER_PATH}")
+    print(f"📊 Total jobs stored in history: {len(df)}\n")
+
     return df

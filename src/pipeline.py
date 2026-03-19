@@ -3,26 +3,23 @@ from src.transform import silver_to_gold
 from src.ingest import load_jobs
 from src.render import render_markdown, render_html
 
-
 def run_pipeline() -> str:
-    # Step 1: Scrape → append to silver (source of truth)
+    print("\n🚀 Starting Job Data Pipeline\n")
+
+    print("Step 1/4: Scraping jobs...")
     scrape_to_silver()
 
-    # Step 2: Silver → gold (filtered, display-ready)
+    print("Step 2/4: Building gold dataset...")
     silver_to_gold()
 
-    # Step 3: Load gold
+    print("Step 3/4: Loading dataset...")
     df = load_jobs()
 
-    # Step 4a: Render to HTML (GitHub Pages)
+    print("Step 4/4: Rendering website...")
     render_html(df)
 
-    # Step 4b: Render to markdown (README — kept for now)
     markdown = render_markdown(df)
 
+    print("\n✅ Pipeline completed successfully\n")
+
     return markdown
-
-
-if __name__ == "__main__":
-    print("🚀 Running job pipeline...")
-    run_pipeline()

@@ -1,2 +1,7 @@
 .env
 job-posting
+
+__pycache__/
+*.pyc
+.venv/
+.env

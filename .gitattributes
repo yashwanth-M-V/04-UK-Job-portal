@@ -1,1 +1,33 @@
-data/jobs_silver.csv filter=lfs diff=lfs merge=lfs -text
+# --------------------------------
+# Normalize line endings
+# --------------------------------
+* text=auto
+
+# Ensure common code files stay consistent
+*.py text
+*.html text
+*.css text
+*.js text
+*.json text
+*.md text
+*.toml text
+*.yml text
+*.yaml text
+
+# --------------------------------
+# Data files (do not modify line endings)
+# --------------------------------
+*.csv -text
+*.parquet -text
+
+# --------------------------------
+# Binary files
+# --------------------------------
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
