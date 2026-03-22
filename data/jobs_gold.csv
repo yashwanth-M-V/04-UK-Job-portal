@@ -1,4 +1,5 @@
 "site","title","company","location","date_posted","job_type","job_url","description"
+"linkedin","Data Engineer (Azure)","Hays","London, England, UK","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4386140720",""
 "indeed","Sr. BI engineer [Fixed - Term Contract]","CINT","Remote, GB","2026-03-21","fulltime","https://uk.indeed.com/viewjob?jk=d89d76504e5a00a1","**Company Description** **Who We Are**
 
 
@@ -91,6 +92,361 @@ Cint Group AB (publ), listed on Nasdaq Stockholm, this growth has made Cint a st
   
 
 Additionally, in a world of AI, we want our candidates to understand our approach to the use of AI during the interview and hiring process, so we'd appreciate you reading our AI usage guide."
+"linkedin","Principal Data Engineer","Specsavers","Nottingham, England, UK","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4377872284",""
+"linkedin","Senior Analytics Engineer","Synthesia","London, England, UK","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4362733638",""
+"linkedin","Senior Databricks Data Engineer","Blue Wolf Digital","","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4388381999",""
+"linkedin","Associate Data Engineer","Radius","Crewe, England, UK","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4379270237",""
+"linkedin","Senior Data Engineer","Apadmi","Manchester, England, UK","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4385775713",""
+"linkedin","Sr. AI Data Engineer (UK Remote)","Turnitin","Leeds, England, UK","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4298299753",""
+"linkedin","Sr. AI Data Engineer (UK Remote)","Turnitin","Birmingham, England, UK","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4298404472",""
+"linkedin","Sr. AI Data Engineer (UK Remote)","Turnitin","Newcastle Upon Tyne, England, UK","2026-03-21","N/A","https://www.linkedin.com/jobs/view/4295820847",""
+"linkedin","Data Engineer","Prima","","2026-03-21","N/A","https://www.linkedin.com/jobs/view/3930442053",""
+"linkedin","Junior Data Engineer","Helic & Co.","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388543903",""
+"linkedin","Data Engineer","Leap29","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388344170",""
+"linkedin","AWS Python Backend / Data Engineer (Hybrid)","Omnigen Biodata","Cambridge, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388142276",""
+"linkedin","Data Engineer","Cortech Talent Solutions Ltd","Glasgow, Scotland, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4377817863",""
+"linkedin","Data Platform Engineer / Data Integration Lead (28.9% Pension)","Michael Page","West Midlands, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388394229",""
+"linkedin","Data Engineer (For temp workers)","Booking.com","Greater Manchester, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388543061",""
+"linkedin","Senior Data Engineer","SOLVACE","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388390822",""
+"linkedin","Senior Analytics Engineer, Client Strategy Visualization","Deutsche Bank","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4342075159",""
+"linkedin","Senior Data Engineer","Robson Bale","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385738902",""
+"linkedin","Senior Data Engineer Consultant (ADF, Microsoft Fabric)","TEKenable Ltd","Greater London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387959769",""
+"linkedin","Data Engineer","Huron","Belfast, Northern Ireland, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4346173838",""
+"linkedin","Data Engineer","Tenth Revolution Group","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385736509",""
+"linkedin","Data Analytics Engineer","Semble","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385740571",""
+"linkedin","Data Engineer","Castle Trust Bank","Basingstoke, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388396696",""
+"linkedin","Data Engineer","RedRock Consulting","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387920504",""
+"linkedin","Data Engineer","Network Plus","Worsley, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388507278",""
+"linkedin","Senior Data Engineer","MrQ","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387980140",""
+"linkedin","Data Engineer","Oxford Data Plan","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388345421",""
+"linkedin","Senior Data Engineer (Ref: 15991)","Ministry of Justice UK","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387969269",""
+"linkedin","Senior Data Engineer","Loop Recruitment","Manchester Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388507369",""
+"linkedin","Senior Data Engineer","Digital Waffle","City Of London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387929143",""
+"indeed","Analytics Engineer (Mid-level)","zaha hadid architects","London, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=ce7dfd252fad2355","#### **Key points**
+
+**Contract:** Full time, permanent contract (hybrid working)  
+
+**Team:** Knowledge Management  
+
+**Reports To:** Associate Knowledge Management
+
+#### **Overview**
+
+
+Zaha Hadid Architects is evolving its data capabilities to support world‑leading design, project delivery and decision‑making. We are seeking an Analytics Engineer to help advance the practice’s data ecosystem by transforming raw information into well‑modelled, actionable datasets that empower our teams to explore, analyse and innovate.  
+
+Working at the intersection of data engineering and analytics, you will develop the pipelines, transformations and models that underpin our modern lakehouse platform; enabling advanced reporting, data visualisation, digital tools and emerging AI workflows. You will collaborate with teams across the business, helping to make their data more accessible, reliable and impactful.  
+
+This role is an opportunity to help define how a leading practice leverages data: creating clarity, consistency and confidence in the information that drives both our creative and operational excellence.
+
+#### **Main responsibilities**
+
+* Develop and maintain scalable ELT/ETL pipelines in Azure Data Factory and Databricks, supporting both existing and new data sources.
+* Build, refine and optimise transformation logic using Databricks notebooks, Python, SQL and Spark.
+* Model data across Bronze, Silver and Gold layers to ensure structure, consistency and clarity.
+* Collaborate with colleagues across architecture, finance, operations, and technology to understand data needs and translate them into well\\-designed models and solutions.
+* Ensure data quality through validation, testing and clear documentation.
+* Implement data governance controls and access policies with Unity Catalog.
+* Support business\\-critical system transformations by managing data migrations and ensuring data quality and continuity.
+* Champion best practices in data engineering, analytics, version control and development workflows.
+
+#### **Your profile**
+
+* You are passionate about data and analytics, with a drive to solve real business problems with data.
+* You are proactive, detail\\-oriented and committed to continuous improvement and learning.
+* You enjoy solving complex business challenges with data and are comfortable with ambiguity and change.
+* You value clear documentation, knowledge sharing and collaboration.
+
+
+You can communicate complex technical concepts in a way that is accessible and relevant to business stakeholders.#### **Skills Required**
+
+* Bachelor’s Degree in Computer Science, Data Engineering, Information Systems or related STEM field.
+* Minimum 2\\+ years’ experience in analytics engineering, data engineering or data platform development.
+* Experience with Azure, Microsoft 365, Power Platform and Microsoft Graph API.
+* Exposure to AI/ML workflows and understanding of data requirements for model training and deployment.
+* Familiarity with Architectural, Design or Creative industries is a plus.
+
+#### **About us**
+
+
+Zaha Hadid Architects (ZHA) redefined architecture for the 21st century with a repertoire of projects that have captured imaginations across the globe. Creating buildings uniquely tailored to the communities they serve, ZHA has been awarded the highest honours from professional and academic institutions worldwide. Founded by Zaha Hadid in 1979, ZHA is one of the world’s most consistently inventive architectural studios—and has been for four decades. These decades of pioneering research are inscribed within our architecture to become more spatially inventive, more structurally efficient, more technologically advanced, and more environmentally considerate with every new design. Combining innovative architectural solutions with ecologically sound materials and sustainable construction practices, we do not look at the disparate parts, but work to understand them as a whole to meet the aspirations of each new generation. As an employee\\-owned business, we reinvest all profits back into our people and our company; continually enhancing our multidisciplinary research to address the challenges impacting communities around the world."
+"indeed","Lead Data Engineer","Castle Trust Bank","Basingstoke, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=046f864167d2d4b2","**“Lead the evolution of the next\\-generation data platform at Castle Trust Bank.”**
+
+
+At Castle Trust Bank we pride ourselves in being a fintech challenger bank, providing specialist property mortgages, retail finance lending and savings accounts to a variety of customers.
+
+
+We’re **investing in the people and technologies** that turn data into our biggest advantage. As our new **Lead Data Engineer**, you will own the evolution of our Azure\\-Databricks platform and SQL infrastructure, delivering scalable, reliable solutions that power the Bank’s strategic goals.
+
+**What you’ll lead and deliver:**
+
+
+As Lead Data Engineer, you’ll take ownership of our Azure\\-based data platform: shaping its roadmap, driving engineering excellence, and leading a team of data engineers to deliver scalable, secure, and high\\-performing solutions.
+
+
+Working closely with business and technology stakeholders, you’ll translate strategic goals into robust data solutions that unlock insight and innovation across the Bank. Skilled at stakeholder management and prioritisation, you'll balance competing demands whilst ensuring clear plans and timely delivery.
+
+
+You’ll take pride in delivering high\\-quality, reliable platforms using your core toolkits: **SQL, Azure DevOps, and Azure Synapse. Experience with Azure Databricks** would be beneficial. Improving platform resilience, incident response, and data governance will be central to your impact.
+
+
+You’ll **lead a team of data engineers** driving a culture of technical excellence and innovation within the team. You’ll shape the platform roadmap, drive engineering excellence, and enable innovation across the organisation.
+
+
+You have a passion for emerging technologies, whether it's natural language query tools, machine learning, or generative AI, and you're excited to champion innovations that deliver business value.
+
+**This is a hybrid role based in Basingstoke, with flexibility to work 2 days from home per week.**
+
+**What you’ll bring:**
+
+You bring deep expertise in modern data platform architecture, a sharp eye for quality, and a passion for building resilient, high\\-impact solution. Analytical and business\\-focused, with a commitment to delivering high\\-quality, reliable solutions. You will need to be an effective communicator, able to engage confidently with technical and non\\-technical stakeholders.
+
+
+In addition you will have:
+
+**Essential**
+
+* Proficiency in **SQL** and **Python**, with experience of Synapse/ADF and **Azure DevOps**.
+* A strong background in **data modelling, orchestration**, and ELT development.
+* Experience implementing **data quality, observability**, and **monitoring frameworks**.
+* Familiarity with **data governance, security,** and **compliance** (e.g. GDPR)
+* Hands\\-on experience with **CI/CD**, **infrastructure as code**, and **automated testing**
+* Confidence working with stakeholders to **align data solutions** with business needs.
+
+**Desirable**
+
+* Experience with **Azure Databricks, Unity Catalog** and database administration.
+* Relevant industry certifications such as **Azure Data Engineer Associate** or equivalent.
+* Experience mentoring engineers or enabling **data capability** across teams.
+* Exposure to **Power BI** or other visualisation tools.
+* Interest in **machine learning** or **generative AI**.
+* Experience with **ITIL\\-aligned change management**.
+* A background in **regulated** or **financial services** environments.
+
+**Why join Castle Trust Bank?**
+
+* Competitive salary
+* Performance bonus (based on individual and company performance)
+* Generous contributory pension through Hargreaves Lansdown
+* Life Assurance
+* 25 days’ holiday \\+ option to buy/sell 5 days
+* Additional paid volunteering day
+* Private healthcare through Equipsme (includes cash back for Dental and Optical treatment)
+* Free access to BHSF Rise EAP to support colleague health and wellbeing
+* Gym discounts
+* Season ticket travel loans (if applicable)
+* Hybrid working (3 days in Basingstoke)
+* A supportive, inclusive culture where your work has real impact
+
+**Caught your attention?** If so, we’d love to talk to you and tell you more about what it’s like to work at Castle Trust Bank – The Place To Work!
+
+
+Castle Trust Bank is an equal opportunity employer where we celebrate diversity and are committed to creating an inclusive environment for all our colleagues to thrive. We welcome applications from all and will not discriminate against any status/characteristic protected by law and will always base our decisions on merit.
+
+
+We are proud to support people with disabilities and are committed to be a Disability Confident employer. If you are a person with a disability and meet the minimum criteria for the role you will be offered an interview. Should you require any reasonable adjustment to support you in your application for one of our opportunities, please contact talent@castletrust.co.uk
+
+
+https://www.castletrust.co.uk/careers/who\\-we\\-are"
+"indeed","Data Engineer","Castle Trust Bank","Basingstoke, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=956b759137245cfe","**“Shape the future of data at a bank that sees data as its greatest asset.”**
+
+
+At Castle Trust Bank we pride ourselves in being a fintech challenger bank, providing specialist property mortgages, retail finance lending and savings accounts to a variety of customers.
+
+
+We’re **investing in the people and technologies** that turn data into our biggest advantage.
+
+
+As a **Data Engineer**, you’ll build and optimise our **Azure\\-based data platform**, helping us deliver scalable, reliable solutions that power strategic decision‑making across the Bank.
+
+**What you’ll deliver:**
+
+
+Reporting to the Lead Data Engineer, you’ll collaborate across the Data Team and wider business to build high\\-quality data pipelines and models that enable trusted insight and innovation.
+
+
+Building production‑grade data pipelines is one of your core strengths. You’ll use **Azure Databricks** and **Azure DevOps** to develop, test, and maintain reliable **ELT workflows**, to ensure accurate, accessible, and trusted data across the organisation.
+
+
+You're curious about new technologies, whether it's **orchestration tools**, **data quality frameworks**, or **AI data pipelines**, and you're excited to contribute ideas that drive innovation across the Bank.
+
+**This is a hybrid role based in Basingstoke, with flexibility to work 2 days from home per week.**
+
+**What you’ll bring:**
+
+You’re a hands\\-on engineer with a sharp eye for detail, a passion for clean data, and a drive to turn complexity into clarity. With high attention to detail and a commitment to delivering high\\-quality outcomes, you will also be a strong communicator and able to work effectively with technical and non\\-technical stakeholders. You will also need to have the below experience:
+
+**Essential**
+
+* Proficient in **Databricks, SQL, Python** and **Azure Synapse**.
+* Strong grasp of **data modelling** (e.g., Kimball).
+* Familiarity with **CI/CD practices** for data pipelines (e.g., Azure DevOps)
+* Experience applying **data quality and validation techniques**.
+
+**Desirable**
+
+* Relevant industry certifications such as **Databricks**, **Azure Data Engineer Associate**.
+* Degree or equivalent practical experience in **computer science** or **data engineering**.
+* Exposure to **Power BI** or other visualisation tools.
+* Interest in **machine learning** or **generative AI** tools and techniques.
+* A background in **regulated** or **financial services** environments.
+
+
+We value continuous personal development and will support you with opportunities to build your skills, gain certifications, and grow your career..
+
+**Why join Castle Trust Bank?**
+
+* Competitive salary
+* Performance bonus (based on individual and company performance)
+* Generous contributory pension through Hargreaves Lansdown
+* Life Assurance
+* 25 days’ holiday \\+ option to buy/sell 5 days
+* Additional paid volunteering day
+* Private healthcare through Equipsme (includes cash back for Dental and Optical treatment)
+* Free access to BHSF Rise EAP to support colleague health and wellbeing
+* Gym discounts
+* Season ticket travel loans (if applicable)
+* Hybrid working (3 days in Basingstoke)
+* A supportive, inclusive culture where your work has real impact
+
+**Caught your attention?** If so, we’d love to talk to you and tell you more about what it’s like to work at Castle Trust Bank – The Place To Work!
+
+
+Castle Trust Bank is an equal opportunity employer where we celebrate diversity and are committed to creating an inclusive environment for all our colleagues to thrive. We welcome applications from all and will not discriminate against any status/characteristic protected by law and will always base our decisions on merit.
+
+
+We are proud to support people with disabilities and are committed to be a Disability Confident employer. If you are a person with a disability and meet the minimum criteria for the role you will be offered an interview. Should you require any reasonable adjustment to support you in your application for one of our opportunities, please contact talent@castletrust.co.uk
+
+
+https://www.castletrust.co.uk/careers/who\\-we\\-are"
+"indeed","Analytics Engineer","Lift Schools","London, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=862afe4b42dc9a8f","**Analytics Engineer**
+
+
+**Location:** Hybrid – London (EdCity, White City, W12 7TF), 3 days in the office
+
+ **Salary:** £35,000 – £40,000 \\+ wellbeing cash plan \\+ pension scheme (LGPS) \\+ additional Lift Schools benefits
+
+
+**Hours:** 37
+
+**Contract:** Full\\-time, permanent
+
+**Start:** ASAP
+
+ **Start your data career where it really matters**
+
+  
+
+At Lift Schools, we use data to make better decisions for the children and young people we serve every day.
+
+  
+
+We’re looking for an **Analytics Enginee**r at the start of their career to join our Systems and Data team. This is a unique opportunity to work on a **sector\\-leading research project with UCL**, while building your technical skills in a real\\-world, high\\-impact environment. Find out more about the new**Key stage 3 futures programme**here.
+
+
+If you enjoy solving problems, working with data, and turning complexity into clarity, this could be the perfect next step.
+
+**What you’ll be doing**
+
+  
+
+You’ll play a key role in turning raw data into meaningful insight.
+
+  
+
+* Build high\\-quality datasets using advanced SQL, including window functions
+* Transform data from our systems into clean, reporting\\-ready tables
+* Work closely with our Insights team to understand and deliver data requirements
+* Support dashboards and reporting used across the trust
+* Validate and quality check data to ensure accuracy and consistency
+* Help reduce the time it takes to turn data requests into usable insights
+
+
+You’ll act as the bridge between raw data and decision\\-making, helping teams access the information they need to improve outcomes.
+
+ **What makes this role different**
+
+  
+
+* Work on a high\\-profile UCL research project, using real data to support sector\\-leading insights
+* Be part of a growing data function, with the chance to shape how we use data across the trust
+* Focus on data transformation and modelling, without needing to manage infrastructure or pipelines
+* Learn quickly in a supportive team, with real responsibility from day one
+
+**What we’re looking for**
+
+  
+
+You might be:
+
+  
+
+* A recent graduate in a relevant subject such as data science, maths or computer science
+* Or someone with early experience working with data and SQL
+
+
+You’ll bring:
+
+  
+
+* Strong SQL skills, including joins, subqueries and ideally window functions
+* A clear interest in data, analytics and problem solving
+* The ability to understand requirements and communicate clearly with others
+* Curiosity – you enjoy learning, building and exploring data beyond the basics
+
+  
+
+Bonus if you have:
+
+  
+
+* Experience with BigQuery or similar tools
+* An understanding of data modelling or warehouse concepts
+* Experience working with education data
+
+ **Closing date: Friday 3rd April 2026**
+
+**Who is Lift Schools?**  
+
+
+
+
+We’re a diverse and inclusive network of schools with one clear mission; to provide an excellent education to every child \\- in every classroom, every day. And we do this across each of our 58 schools. As with our students, we want our team to be empowered to do their best work, supported by the best leadership they’ve ever had.
+
+
+We acknowledge and appreciate the exceptional efforts of everyone here in making this an incredible organisation.
+
+**We offer you:**
+
+* **Comprehensive training****:** Access a wide range of developmental training to boost your career.
+* **Generous benefits****:** From your pension plan to healthcare and financial support, we've got you covered.
+* **Lifestyle perks****:** Enjoy discounted gym memberships and travel deals.
+
+
+We reserve the right to close this vacancy early should we receive an overwhelming response. All candidates are advised to refer to the job description and person specification before making an application.
+
+
+
+Lift Schools are committed to ensuring the highest levels of safeguarding and promoting the welfare of our pupils, and we expect all our people and volunteers to share this commitment. We adopt a fair and consistent recruitment process which is inline with Keeping Children Safe in Education guidance. This includes online checks for shortlisted candidates. All offers of employment are subject to an Enhanced DBS check, references, and where applicable, a prohibition from teaching check.
+
+
+Lift Schools embraces diversity and promotes equality of opportunity. Job share, part\\-time and flexible working opportunities will be considered.
+
+
+We are a Disability Confident Employer and there is a guaranteed interview scheme for candidates with disabilities who meet the minimum selection criteria.
+
+
+Follow us on **Facebook**, **X**, **Instagram** and **Linkedin**. Further details can be found on our careers page.
+
+
+Lift Schools is recruiting for Teacher Training placements. Please click **here** to view the website for further details."
+"linkedin","Senior Data Engineer","Searchability NS&D","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388399109",""
+"linkedin","Senior Data Engineer","Gravitas Recruitment Group (Global) Ltd","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4384483851",""
+"linkedin","Data Engineer","Searchability NS&D","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388337496",""
+"linkedin","Senior Data Engineer","Bridewell","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387960014",""
+"linkedin","Junior Analytics Engineer","Lendable","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388506814",""
+"linkedin","Analytics Engineer (Mid-level)","Zaha Hadid Architects","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385734320",""
+"linkedin","Data Engineer","UK Biobank","Stockport, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388334728",""
 "indeed","Lead Data Engineer","Intellectual Property Office","Newport, WLS, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=690f4c84fbc03168","**Details**
 -----------
 
@@ -441,11 +797,6 @@ Newport,
   
 
 NP10 8QQ."
-"linkedin","Data Engineer","Huron","Belfast, Northern Ireland, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4346173838",""
-"linkedin","Senior Data Engineer","SOLVACE","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388390822",""
-"linkedin","Junior Data Engineer","Helic & Co.","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388543903",""
-"linkedin","Data Platform Engineer / Data Integration Lead (28.9% Pension)","Michael Page","West Midlands, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388394229",""
-"linkedin","Data Engineer","Cortech Talent Solutions Ltd","Glasgow, Scotland, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4377817863",""
 "indeed","Junior Analytics Engineer","Lendable","London, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=dc68f3a6a83929f3","**About Lendable**
 ------------------
 
@@ -562,436 +913,60 @@ The goal is to move beyond static reporting and enable **faster, more scalable d
 
 
 Check out our blog!"
-"linkedin","AWS Python Backend / Data Engineer (Hybrid)","Omnigen Biodata","Cambridge, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388142276",""
-"linkedin","Data Engineer","Leap29","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388344170",""
-"linkedin","Senior Data Engineer","MrQ","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387980140",""
-"linkedin","Senior Analytics Engineer, Client Strategy Visualization","Deutsche Bank","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4342075159",""
-"linkedin","Senior Data Engineer (Ref: 15991)","Ministry of Justice UK","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387969269",""
-"linkedin","Senior Data Engineer","Bridewell","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387960014",""
-"linkedin","Senior Data Engineer (AWS, Airflow, Python)","Triad Group Plc","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387985049",""
-"linkedin","Data Engineer","Oxford Data Plan","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388345421",""
-"linkedin","Data Engineer","UK Biobank","Stockport, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388334728",""
-"linkedin","Analytics Engineer (Mid-level)","Zaha Hadid Architects","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385734320",""
-"linkedin","Junior Analytics Engineer","Lendable","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388506814",""
-"linkedin","Data Engineer","Searchability NS&D","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388337496",""
-"linkedin","Senior Data Engineer","Loop Recruitment","Manchester Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388507369",""
-"linkedin","Senior Data Engineer","Gravitas Recruitment Group (Global) Ltd","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4384483851",""
-"linkedin","Senior Data Engineer","Searchability NS&D","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388399109",""
-"linkedin","Senior Data Engineer Consultant (ADF, Microsoft Fabric)","TEKenable Ltd","Greater London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387959769",""
-"linkedin","Senior Data Engineer","Robson Bale","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385738902",""
-"linkedin","Data Engineer","Tenth Revolution Group","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385736509",""
 "linkedin","Data Engineer (LDW / BI & Analytics)","PURVIEW","Telford, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387939163",""
-"indeed","Analytics Engineer","Lift Schools","London, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=862afe4b42dc9a8f","**Analytics Engineer**
-
-
-**Location:** Hybrid – London (EdCity, White City, W12 7TF), 3 days in the office
-
- **Salary:** £35,000 – £40,000 \\+ wellbeing cash plan \\+ pension scheme (LGPS) \\+ additional Lift Schools benefits
-
-
-**Hours:** 37
-
-**Contract:** Full\\-time, permanent
-
-**Start:** ASAP
-
- **Start your data career where it really matters**
-
-  
-
-At Lift Schools, we use data to make better decisions for the children and young people we serve every day.
-
-  
-
-We’re looking for an **Analytics Enginee**r at the start of their career to join our Systems and Data team. This is a unique opportunity to work on a **sector\\-leading research project with UCL**, while building your technical skills in a real\\-world, high\\-impact environment. Find out more about the new**Key stage 3 futures programme**here.
-
-
-If you enjoy solving problems, working with data, and turning complexity into clarity, this could be the perfect next step.
-
-**What you’ll be doing**
-
-  
-
-You’ll play a key role in turning raw data into meaningful insight.
-
-  
-
-* Build high\\-quality datasets using advanced SQL, including window functions
-* Transform data from our systems into clean, reporting\\-ready tables
-* Work closely with our Insights team to understand and deliver data requirements
-* Support dashboards and reporting used across the trust
-* Validate and quality check data to ensure accuracy and consistency
-* Help reduce the time it takes to turn data requests into usable insights
-
-
-You’ll act as the bridge between raw data and decision\\-making, helping teams access the information they need to improve outcomes.
-
- **What makes this role different**
-
-  
-
-* Work on a high\\-profile UCL research project, using real data to support sector\\-leading insights
-* Be part of a growing data function, with the chance to shape how we use data across the trust
-* Focus on data transformation and modelling, without needing to manage infrastructure or pipelines
-* Learn quickly in a supportive team, with real responsibility from day one
-
-**What we’re looking for**
-
-  
-
-You might be:
-
-  
-
-* A recent graduate in a relevant subject such as data science, maths or computer science
-* Or someone with early experience working with data and SQL
-
-
-You’ll bring:
-
-  
-
-* Strong SQL skills, including joins, subqueries and ideally window functions
-* A clear interest in data, analytics and problem solving
-* The ability to understand requirements and communicate clearly with others
-* Curiosity – you enjoy learning, building and exploring data beyond the basics
-
-  
-
-Bonus if you have:
-
-  
-
-* Experience with BigQuery or similar tools
-* An understanding of data modelling or warehouse concepts
-* Experience working with education data
-
- **Closing date: Friday 3rd April 2026**
-
-**Who is Lift Schools?**  
-
-
-
-
-We’re a diverse and inclusive network of schools with one clear mission; to provide an excellent education to every child \\- in every classroom, every day. And we do this across each of our 58 schools. As with our students, we want our team to be empowered to do their best work, supported by the best leadership they’ve ever had.
-
-
-We acknowledge and appreciate the exceptional efforts of everyone here in making this an incredible organisation.
-
-**We offer you:**
-
-* **Comprehensive training****:** Access a wide range of developmental training to boost your career.
-* **Generous benefits****:** From your pension plan to healthcare and financial support, we've got you covered.
-* **Lifestyle perks****:** Enjoy discounted gym memberships and travel deals.
-
-
-We reserve the right to close this vacancy early should we receive an overwhelming response. All candidates are advised to refer to the job description and person specification before making an application.
-
-
-
-Lift Schools are committed to ensuring the highest levels of safeguarding and promoting the welfare of our pupils, and we expect all our people and volunteers to share this commitment. We adopt a fair and consistent recruitment process which is inline with Keeping Children Safe in Education guidance. This includes online checks for shortlisted candidates. All offers of employment are subject to an Enhanced DBS check, references, and where applicable, a prohibition from teaching check.
-
-
-Lift Schools embraces diversity and promotes equality of opportunity. Job share, part\\-time and flexible working opportunities will be considered.
-
-
-We are a Disability Confident Employer and there is a guaranteed interview scheme for candidates with disabilities who meet the minimum selection criteria.
-
-
-Follow us on **Facebook**, **X**, **Instagram** and **Linkedin**. Further details can be found on our careers page.
-
-
-Lift Schools is recruiting for Teacher Training placements. Please click **here** to view the website for further details."
-"indeed","Data Engineer","Castle Trust Bank","Basingstoke, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=956b759137245cfe","**“Shape the future of data at a bank that sees data as its greatest asset.”**
-
-
-At Castle Trust Bank we pride ourselves in being a fintech challenger bank, providing specialist property mortgages, retail finance lending and savings accounts to a variety of customers.
-
-
-We’re **investing in the people and technologies** that turn data into our biggest advantage.
-
-
-As a **Data Engineer**, you’ll build and optimise our **Azure\\-based data platform**, helping us deliver scalable, reliable solutions that power strategic decision‑making across the Bank.
-
-**What you’ll deliver:**
-
-
-Reporting to the Lead Data Engineer, you’ll collaborate across the Data Team and wider business to build high\\-quality data pipelines and models that enable trusted insight and innovation.
-
-
-Building production‑grade data pipelines is one of your core strengths. You’ll use **Azure Databricks** and **Azure DevOps** to develop, test, and maintain reliable **ELT workflows**, to ensure accurate, accessible, and trusted data across the organisation.
-
-
-You're curious about new technologies, whether it's **orchestration tools**, **data quality frameworks**, or **AI data pipelines**, and you're excited to contribute ideas that drive innovation across the Bank.
-
-**This is a hybrid role based in Basingstoke, with flexibility to work 2 days from home per week.**
-
-**What you’ll bring:**
-
-You’re a hands\\-on engineer with a sharp eye for detail, a passion for clean data, and a drive to turn complexity into clarity. With high attention to detail and a commitment to delivering high\\-quality outcomes, you will also be a strong communicator and able to work effectively with technical and non\\-technical stakeholders. You will also need to have the below experience:
-
-**Essential**
-
-* Proficient in **Databricks, SQL, Python** and **Azure Synapse**.
-* Strong grasp of **data modelling** (e.g., Kimball).
-* Familiarity with **CI/CD practices** for data pipelines (e.g., Azure DevOps)
-* Experience applying **data quality and validation techniques**.
-
-**Desirable**
-
-* Relevant industry certifications such as **Databricks**, **Azure Data Engineer Associate**.
-* Degree or equivalent practical experience in **computer science** or **data engineering**.
-* Exposure to **Power BI** or other visualisation tools.
-* Interest in **machine learning** or **generative AI** tools and techniques.
-* A background in **regulated** or **financial services** environments.
-
-
-We value continuous personal development and will support you with opportunities to build your skills, gain certifications, and grow your career..
-
-**Why join Castle Trust Bank?**
-
-* Competitive salary
-* Performance bonus (based on individual and company performance)
-* Generous contributory pension through Hargreaves Lansdown
-* Life Assurance
-* 25 days’ holiday \\+ option to buy/sell 5 days
-* Additional paid volunteering day
-* Private healthcare through Equipsme (includes cash back for Dental and Optical treatment)
-* Free access to BHSF Rise EAP to support colleague health and wellbeing
-* Gym discounts
-* Season ticket travel loans (if applicable)
-* Hybrid working (3 days in Basingstoke)
-* A supportive, inclusive culture where your work has real impact
-
-**Caught your attention?** If so, we’d love to talk to you and tell you more about what it’s like to work at Castle Trust Bank – The Place To Work!
-
-
-Castle Trust Bank is an equal opportunity employer where we celebrate diversity and are committed to creating an inclusive environment for all our colleagues to thrive. We welcome applications from all and will not discriminate against any status/characteristic protected by law and will always base our decisions on merit.
-
-
-We are proud to support people with disabilities and are committed to be a Disability Confident employer. If you are a person with a disability and meet the minimum criteria for the role you will be offered an interview. Should you require any reasonable adjustment to support you in your application for one of our opportunities, please contact talent@castletrust.co.uk
-
-
-https://www.castletrust.co.uk/careers/who\\-we\\-are"
-"indeed","Lead Data Engineer","Castle Trust Bank","Basingstoke, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=046f864167d2d4b2","**“Lead the evolution of the next\\-generation data platform at Castle Trust Bank.”**
-
-
-At Castle Trust Bank we pride ourselves in being a fintech challenger bank, providing specialist property mortgages, retail finance lending and savings accounts to a variety of customers.
-
-
-We’re **investing in the people and technologies** that turn data into our biggest advantage. As our new **Lead Data Engineer**, you will own the evolution of our Azure\\-Databricks platform and SQL infrastructure, delivering scalable, reliable solutions that power the Bank’s strategic goals.
-
-**What you’ll lead and deliver:**
-
-
-As Lead Data Engineer, you’ll take ownership of our Azure\\-based data platform: shaping its roadmap, driving engineering excellence, and leading a team of data engineers to deliver scalable, secure, and high\\-performing solutions.
-
-
-Working closely with business and technology stakeholders, you’ll translate strategic goals into robust data solutions that unlock insight and innovation across the Bank. Skilled at stakeholder management and prioritisation, you'll balance competing demands whilst ensuring clear plans and timely delivery.
-
-
-You’ll take pride in delivering high\\-quality, reliable platforms using your core toolkits: **SQL, Azure DevOps, and Azure Synapse. Experience with Azure Databricks** would be beneficial. Improving platform resilience, incident response, and data governance will be central to your impact.
-
-
-You’ll **lead a team of data engineers** driving a culture of technical excellence and innovation within the team. You’ll shape the platform roadmap, drive engineering excellence, and enable innovation across the organisation.
-
-
-You have a passion for emerging technologies, whether it's natural language query tools, machine learning, or generative AI, and you're excited to champion innovations that deliver business value.
-
-**This is a hybrid role based in Basingstoke, with flexibility to work 2 days from home per week.**
-
-**What you’ll bring:**
-
-You bring deep expertise in modern data platform architecture, a sharp eye for quality, and a passion for building resilient, high\\-impact solution. Analytical and business\\-focused, with a commitment to delivering high\\-quality, reliable solutions. You will need to be an effective communicator, able to engage confidently with technical and non\\-technical stakeholders.
-
-
-In addition you will have:
-
-**Essential**
-
-* Proficiency in **SQL** and **Python**, with experience of Synapse/ADF and **Azure DevOps**.
-* A strong background in **data modelling, orchestration**, and ELT development.
-* Experience implementing **data quality, observability**, and **monitoring frameworks**.
-* Familiarity with **data governance, security,** and **compliance** (e.g. GDPR)
-* Hands\\-on experience with **CI/CD**, **infrastructure as code**, and **automated testing**
-* Confidence working with stakeholders to **align data solutions** with business needs.
-
-**Desirable**
-
-* Experience with **Azure Databricks, Unity Catalog** and database administration.
-* Relevant industry certifications such as **Azure Data Engineer Associate** or equivalent.
-* Experience mentoring engineers or enabling **data capability** across teams.
-* Exposure to **Power BI** or other visualisation tools.
-* Interest in **machine learning** or **generative AI**.
-* Experience with **ITIL\\-aligned change management**.
-* A background in **regulated** or **financial services** environments.
-
-**Why join Castle Trust Bank?**
-
-* Competitive salary
-* Performance bonus (based on individual and company performance)
-* Generous contributory pension through Hargreaves Lansdown
-* Life Assurance
-* 25 days’ holiday \\+ option to buy/sell 5 days
-* Additional paid volunteering day
-* Private healthcare through Equipsme (includes cash back for Dental and Optical treatment)
-* Free access to BHSF Rise EAP to support colleague health and wellbeing
-* Gym discounts
-* Season ticket travel loans (if applicable)
-* Hybrid working (3 days in Basingstoke)
-* A supportive, inclusive culture where your work has real impact
-
-**Caught your attention?** If so, we’d love to talk to you and tell you more about what it’s like to work at Castle Trust Bank – The Place To Work!
-
-
-Castle Trust Bank is an equal opportunity employer where we celebrate diversity and are committed to creating an inclusive environment for all our colleagues to thrive. We welcome applications from all and will not discriminate against any status/characteristic protected by law and will always base our decisions on merit.
-
-
-We are proud to support people with disabilities and are committed to be a Disability Confident employer. If you are a person with a disability and meet the minimum criteria for the role you will be offered an interview. Should you require any reasonable adjustment to support you in your application for one of our opportunities, please contact talent@castletrust.co.uk
-
-
-https://www.castletrust.co.uk/careers/who\\-we\\-are"
-"indeed","Analytics Engineer (Mid-level)","zaha hadid architects","London, ENG, GB","2026-03-20","fulltime","https://uk.indeed.com/viewjob?jk=ce7dfd252fad2355","#### **Key points**
-
-**Contract:** Full time, permanent contract (hybrid working)  
-
-**Team:** Knowledge Management  
-
-**Reports To:** Associate Knowledge Management
-
-#### **Overview**
-
-
-Zaha Hadid Architects is evolving its data capabilities to support world‑leading design, project delivery and decision‑making. We are seeking an Analytics Engineer to help advance the practice’s data ecosystem by transforming raw information into well‑modelled, actionable datasets that empower our teams to explore, analyse and innovate.  
-
-Working at the intersection of data engineering and analytics, you will develop the pipelines, transformations and models that underpin our modern lakehouse platform; enabling advanced reporting, data visualisation, digital tools and emerging AI workflows. You will collaborate with teams across the business, helping to make their data more accessible, reliable and impactful.  
-
-This role is an opportunity to help define how a leading practice leverages data: creating clarity, consistency and confidence in the information that drives both our creative and operational excellence.
-
-#### **Main responsibilities**
-
-* Develop and maintain scalable ELT/ETL pipelines in Azure Data Factory and Databricks, supporting both existing and new data sources.
-* Build, refine and optimise transformation logic using Databricks notebooks, Python, SQL and Spark.
-* Model data across Bronze, Silver and Gold layers to ensure structure, consistency and clarity.
-* Collaborate with colleagues across architecture, finance, operations, and technology to understand data needs and translate them into well\\-designed models and solutions.
-* Ensure data quality through validation, testing and clear documentation.
-* Implement data governance controls and access policies with Unity Catalog.
-* Support business\\-critical system transformations by managing data migrations and ensuring data quality and continuity.
-* Champion best practices in data engineering, analytics, version control and development workflows.
-
-#### **Your profile**
-
-* You are passionate about data and analytics, with a drive to solve real business problems with data.
-* You are proactive, detail\\-oriented and committed to continuous improvement and learning.
-* You enjoy solving complex business challenges with data and are comfortable with ambiguity and change.
-* You value clear documentation, knowledge sharing and collaboration.
-
-
-You can communicate complex technical concepts in a way that is accessible and relevant to business stakeholders.#### **Skills Required**
-
-* Bachelor’s Degree in Computer Science, Data Engineering, Information Systems or related STEM field.
-* Minimum 2\\+ years’ experience in analytics engineering, data engineering or data platform development.
-* Experience with Azure, Microsoft 365, Power Platform and Microsoft Graph API.
-* Exposure to AI/ML workflows and understanding of data requirements for model training and deployment.
-* Familiarity with Architectural, Design or Creative industries is a plus.
-
-#### **About us**
-
-
-Zaha Hadid Architects (ZHA) redefined architecture for the 21st century with a repertoire of projects that have captured imaginations across the globe. Creating buildings uniquely tailored to the communities they serve, ZHA has been awarded the highest honours from professional and academic institutions worldwide. Founded by Zaha Hadid in 1979, ZHA is one of the world’s most consistently inventive architectural studios—and has been for four decades. These decades of pioneering research are inscribed within our architecture to become more spatially inventive, more structurally efficient, more technologically advanced, and more environmentally considerate with every new design. Combining innovative architectural solutions with ecologically sound materials and sustainable construction practices, we do not look at the disparate parts, but work to understand them as a whole to meet the aspirations of each new generation. As an employee\\-owned business, we reinvest all profits back into our people and our company; continually enhancing our multidisciplinary research to address the challenges impacting communities around the world."
+"linkedin","Senior Data Engineer (AWS, Airflow, Python)","Triad Group Plc","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387985049",""
+"linkedin","Data Engineer","Fruition Group","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388390346",""
+"linkedin","Analytics Engineer","Tenth Revolution Group","Staffordshire, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385733898",""
+"linkedin","Senior Data Engineer","Allianz UK","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385158298",""
+"linkedin","Data Engineer","Noir","Newcastle Upon Tyne, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388359017",""
+"linkedin","Senior Analytics Engineer","QuantSpark","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387980281",""
+"linkedin","Senior Data Engineer (Trade Surveillance)","TP ICAP","Belfast, Northern Ireland, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4375517941",""
+"linkedin","Data Engineer","Searchability NS&D","Manchester Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388342152",""
+"linkedin","Senior Data Engineer – Front Office Data Platform - Leading Hedge Fund","Mondrian Alpha","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387840630",""
+"linkedin","Data Engineer - KDB/Algorithmic Trading","Templeton & Partners - Innovative & Inclusive Hiring Solutions","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388390653",""
+"linkedin","Analytics Engineer","IAG Loyalty","London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388398311",""
+"linkedin","Lead Data Engineer","Castle Trust Bank","Basingstoke, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388393723",""
+"linkedin","Databricks Data Engineer","Tenth Revolution Group","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385731824",""
+"linkedin","Associate Data Platform Engineer - Cyber Data Platform","Tesco","Welwyn Garden City, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387708250",""
+"linkedin","Junior Analytics Engineer","Lendable","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385778264",""
+"linkedin","Data Engineer","Mentor Talent Acquisition","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4383165966",""
+"linkedin","Data Engineer","BOSS ERP Consulting","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387968497",""
+"linkedin","Data Engineer","Digital Skills ltd","Manchester Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388373980",""
+"linkedin","Data Engineer","Channel 4","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385757075",""
+"linkedin","Data Engineer","Veeva Systems","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4377292945",""
+"linkedin","Lead Data Engineer - £90,000-£120,000","Volition","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388352292",""
+"linkedin","Analytics Engineer III","Fanatics","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4353581976",""
+"linkedin","Data Engineer – Delivery & Enablement","Screwfix","Yeovil, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387983271",""
 "linkedin","Data Platform Engineer","Prism Digital","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388362040",""
 "linkedin","Data Engineer","FSP","Glasgow, Scotland, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388363407",""
 "linkedin","Data Engineer (Telecom)","Vallum Associates","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388338667",""
-"linkedin","Data Analytics Engineer","Semble","","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385740571",""
-"linkedin","Analytics Engineer","Tenth Revolution Group","Staffordshire, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4385733898",""
-"linkedin","Data Engineer","Searchability NS&D","Manchester Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388342152",""
-"linkedin","Data Engineer","Network Plus","Worsley, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388507278",""
-"linkedin","Data Engineer","Fruition Group","England, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388390346",""
-"linkedin","Data Engineer","Castle Trust Bank","Basingstoke, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388396696",""
-"linkedin","Data Engineer","RedRock Consulting","London Area, United Kingdom","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387920504",""
-"linkedin","Senior Data Engineer","Digital Waffle","City Of London, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4387929143",""
-"linkedin","Data Engineer","VE3","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387957420",""
-"linkedin","Analytics Engineer","Policy Expert","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387872512",""
-"linkedin","Data Engineer","Mars","Waltham, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387328956",""
-"linkedin","Senior Data Engineer","Fruition Group","Ipswich, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387876252",""
+"linkedin","Data Engineer","Derbyshire Support & Facilities Services Limited","Sutton In Ashfield, England, UK","2026-03-20","N/A","https://www.linkedin.com/jobs/view/4388372224",""
+"linkedin","Senior Data Engineer","Allianz UK","Bournemouth, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385146808",""
+"linkedin","Senior Data Engineer","Allianz UK","Almondsbury, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385155385",""
 "linkedin","Data Engineer","1X2 Network","Brighton, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387838568",""
-"linkedin","Data Engineer","Levick Stanley","Newcastle Upon Tyne, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387881201",""
-"linkedin","Data Engineer - (P2163N)","Homes England","Newcastle Upon Tyne, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387746237",""
-"linkedin","Junior Data Engineer (Data Science)","Havas Market UK","Leeds, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387814448",""
-"linkedin","Contract Data Engineer","YLD","","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387863914",""
-"linkedin","Senior Data Engineer I-Search and AI Platform","Elsevier","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387321711",""
-"linkedin","Senior Data Engineer","Codat","","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4377853051",""
-"linkedin","Senior Data Engineer","DATAHEAD","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385483432",""
 "linkedin","Analytics Engineer","Just Eat Takeaway.com","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385076414",""
-"linkedin","Data Engineer","Oxfordshire County Council","Oxford, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387847872",""
+"linkedin","Data Engineer - (P2163N)","Homes England","Newcastle Upon Tyne, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387746237",""
+"linkedin","Analytics Engineer","Policy Expert","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387872512",""
+"linkedin","Data Engineer - Customer Service Platform","Spotify","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387641249",""
 "linkedin","Data Engineer | Energy & Commodities Trading | Greenfield Data Transformation | £95,000 + Bonus & Benefits | Hybrid London","VirtueTech Recruitment Group","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385460850",""
-"linkedin","Senior Data Engineer","Fanvue","","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387340052",""
-"linkedin","Staff Data Engineer","Arrows","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387701367",""
-"linkedin","Data Engineer","Homes England","Newcastle Upon Tyne, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385472557",""
-"linkedin","Data Engineer - Cloud Applications - UK Banking Group","Gresham Hunt","Greater London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385451933",""
-"linkedin","Data Engineer","Whitehall Resources","Shropshire, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385467171",""
-"linkedin","Data Engineer","Revolent Group","Glasgow, Scotland, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385470377",""
-"linkedin","Analytics Engineer  (Risk & Reserving)","Policy Expert","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387868624",""
-"linkedin","Data Analytics Engineer","ea Change","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387822572",""
-"linkedin","Data Engineer","Just Group plc","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4388111948",""
-"linkedin","Data Engineer","Propel","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387865837",""
 "linkedin","Data Engineer","BlueCo Data","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387849833",""
 "linkedin","Senior Data Engineer (Python/PySpark & SQL)","Women in Data®","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385485271",""
+"linkedin","Data Engineer","Propel","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387865837",""
+"linkedin","Data Engineer","Just Group plc","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4388111948",""
+"linkedin","Data Analytics Engineer","ea Change","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387822572",""
+"linkedin","Analytics Engineer  (Risk & Reserving)","Policy Expert","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387868624",""
+"linkedin","Data Engineer","Revolent Group","Glasgow, Scotland, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385470377",""
+"linkedin","Data Engineer","Whitehall Resources","Shropshire, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385467171",""
+"linkedin","Data Engineer - Cloud Applications - UK Banking Group","Gresham Hunt","Greater London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385451933",""
+"linkedin","Data Engineer","Homes England","Newcastle Upon Tyne, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385472557",""
+"linkedin","Staff Data Engineer","Arrows","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387701367",""
 "linkedin","Data Engineer","develop","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385493460",""
 "linkedin","Data Engineer","UnderwriteMe","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4346084337",""
 "linkedin","Data Engineer","Hays","Windsor, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387839840",""
 "linkedin","Senior Staff Data Engineer","DeepL","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387189095",""
-"indeed","Data Engineer","hireful","Bristol, ENG, GB","2026-03-19","fulltime","https://uk.indeed.com/viewjob?jk=a451dd6c6e4fbcb8","We’re currently partnering with a forward\\-thinking, technology\\-driven organisation that has recently secured significant investment and is now looking to expand its data capability with the addition of a talented **Data Engineer.**
-
-  
-
-This is an excellent opportunity for either an experienced “mid” level Data Engineer or a motivated junior with a few years under their belt, looking to step up into a more hands\\-on, impactful role.With elements of Data Science in the role too, you may be a Data Scientist, looking for a more hands on Data wrangling / production coding environment opportunity. **You’ll be instrumental in shaping how the business uses data** \\- moving from manual, ad\\-hoc processes to scalable, production\\-ready solutions.
-
-  
-
-The Role:
-
-  
-
-You’ll work at the heart of a growing data function, building robust pipelines and enabling advanced analytics within a modern Azure\\-based environment. **This is a highly technical, hands\\-on role with real ownership and visibility across the business.**
-
-  
-
-Benefits include:
-
-* 25 days’ annual leave, Birthday off, Life assurance, Health \\& Dental plans, pension scheme \\& more!
-* £45K Basic Salary \\+ Bonus
-
-  
-
-Key responsibilities include:
-
-* Developing and maintaining scalable data pipelines using Python
-* Automating manual Excel/VBA workflows into reliable, production\\-grade systems
-* Working with large datasets using Spark and Azure (Databricks/Synapse)
-* Supporting data modelling and analytics use cases (Crossing over to more Data Science driven work)
-* Driving best practices including Git, CI/CD, and code reviews
-* Collaborating with stakeholders to deliver actionable data solutions
-
-  
-
-What they’re looking for:
-
-* **Strong Python and SQL skills**
-* Experience or exposure to Spark, big data tools, or cloud platforms (ideally Azure)
-
-  
-
-What’s on offer:
-
-* The chance to join a business at an exciting stage of growth following recent investment
-* A collaborative and supportive team environment
-* **Clear opportunities for development and progression**
-* Hybrid working – ideally 2 days per week in the office (Tuesdays \\& Wednesdays), with some flexibility available for those further away: 1 day per week in the office, or even 1 day every 2 weeks?
-
-  
-
-If you’re looking to make a real impact in a growing organisation and build modern, scalable data solutions, we’d love to hear from you!"
+"linkedin","Senior Data Engineer","Fanvue","","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387340052",""
+"linkedin","Data Engineer","Oxfordshire County Council","Oxford, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387847872",""
+"linkedin","Data Engineer","Levick Stanley","Newcastle Upon Tyne, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387881201",""
 "indeed","Data Engineer","hireful","Exeter, ENG, GB","2026-03-19","fulltime","https://uk.indeed.com/viewjob?jk=36ebe5fccd3adc2a","We’re currently partnering with a forward\\-thinking, technology\\-driven organisation that has recently secured significant investment and is now looking to expand its data capability with the addition of a talented **Data Engineer.**
 
   
@@ -1043,7 +1018,10 @@ What’s on offer:
   
 
 If you’re looking to make a real impact in a growing organisation and build modern, scalable data solutions, we’d love to hear from you!"
-"linkedin","Data Engineer - Customer Service Platform","Spotify","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387641249",""
+"linkedin","Senior Data Engineer","DATAHEAD","London Area, United Kingdom","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4385483432",""
+"linkedin","Senior Data Engineer I-Search and AI Platform","Elsevier","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387321711",""
+"linkedin","Data Engineer","VE3","London, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387957420",""
+"linkedin","Junior Data Engineer (Data Science)","Havas Market UK","Leeds, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387814448",""
 "indeed","Senior Data Engineer (AIX)","OVO","London, ENG, GB","2026-03-19","fulltime","https://uk.indeed.com/viewjob?jk=655ad89c263a5f5d","**Role OVO\\-View**
 
 
@@ -1336,6 +1314,69 @@ Please note that any applicant who is not a citizen of the country of the vacanc
 IMPORTANT
 Advert will close at 23:59 GMT the day before Job Posting End Date below
 March\\-27\\-2026"
+"linkedin","Data Engineer","Mars","Waltham, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387328956",""
+"linkedin","Senior Data Engineer","Fruition Group","Ipswich, England, UK","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387876252",""
+"indeed","Data Engineer","hireful","Bristol, ENG, GB","2026-03-19","fulltime","https://uk.indeed.com/viewjob?jk=a451dd6c6e4fbcb8","We’re currently partnering with a forward\\-thinking, technology\\-driven organisation that has recently secured significant investment and is now looking to expand its data capability with the addition of a talented **Data Engineer.**
+
+  
+
+This is an excellent opportunity for either an experienced “mid” level Data Engineer or a motivated junior with a few years under their belt, looking to step up into a more hands\\-on, impactful role.With elements of Data Science in the role too, you may be a Data Scientist, looking for a more hands on Data wrangling / production coding environment opportunity. **You’ll be instrumental in shaping how the business uses data** \\- moving from manual, ad\\-hoc processes to scalable, production\\-ready solutions.
+
+  
+
+The Role:
+
+  
+
+You’ll work at the heart of a growing data function, building robust pipelines and enabling advanced analytics within a modern Azure\\-based environment. **This is a highly technical, hands\\-on role with real ownership and visibility across the business.**
+
+  
+
+Benefits include:
+
+* 25 days’ annual leave, Birthday off, Life assurance, Health \\& Dental plans, pension scheme \\& more!
+* £45K Basic Salary \\+ Bonus
+
+  
+
+Key responsibilities include:
+
+* Developing and maintaining scalable data pipelines using Python
+* Automating manual Excel/VBA workflows into reliable, production\\-grade systems
+* Working with large datasets using Spark and Azure (Databricks/Synapse)
+* Supporting data modelling and analytics use cases (Crossing over to more Data Science driven work)
+* Driving best practices including Git, CI/CD, and code reviews
+* Collaborating with stakeholders to deliver actionable data solutions
+
+  
+
+What they’re looking for:
+
+* **Strong Python and SQL skills**
+* Experience or exposure to Spark, big data tools, or cloud platforms (ideally Azure)
+
+  
+
+What’s on offer:
+
+* The chance to join a business at an exciting stage of growth following recent investment
+* A collaborative and supportive team environment
+* **Clear opportunities for development and progression**
+* Hybrid working – ideally 2 days per week in the office (Tuesdays \\& Wednesdays), with some flexibility available for those further away: 1 day per week in the office, or even 1 day every 2 weeks?
+
+  
+
+If you’re looking to make a real impact in a growing organisation and build modern, scalable data solutions, we’d love to hear from you!"
+"linkedin","Senior Data Engineer","Codat","","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4377853051",""
+"linkedin","Contract Data Engineer","YLD","","2026-03-19","N/A","https://www.linkedin.com/jobs/view/4387863914",""
+"linkedin","Senior Data Engineer","Codat","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377852071",""
+"linkedin","Senior Data Engineer","La Fosse","Milton Keynes, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384953478",""
+"linkedin","Data Engineer","Coforge","Waterside, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386868703",""
+"linkedin","Data Engineer","Aurum Search Limited","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385018506",""
+"linkedin","Data Engineer - Investments","Hillwood Investment Properties","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4374598353",""
+"linkedin","Data Analytics Engineer","Fruition Group","","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377447821",""
+"linkedin","Data Engineer","Vivo Talent Solutions","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384142725",""
+"linkedin","Data Engineer","Harnham","West Midlands, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387115074",""
 "indeed","Cloud Database Administrator (DBA)","Instanda","London, ENG, GB","2026-03-18","N/A","https://uk.indeed.com/viewjob?jk=b5def019a195335d","**An Inclusive, Impactful Place to Work**
 
 
@@ -1434,18 +1475,7 @@ Desirable Skills:
 * £100 per month to put towards wellness activities.
 * Annual learning \\& development allowance of £1,250
 * Free access to LinkedIn learning and Microsoft ESI learning platform"
-"linkedin","Data Engineer","Fifty5Blue","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387115035",""
-"linkedin","Junior Collibra Data Engineer","Brickendon Consulting","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386857340",""
-"linkedin","Data Engineer","De Stroopwafel","Manchester, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387635333",""
-"linkedin","Data Engineer","Harnham","West Midlands, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387115074",""
-"linkedin","Data Engineer","Vivo Talent Solutions","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384142725",""
-"linkedin","Data Engineer","Method Resourcing","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386870440",""
-"linkedin","Data Engineer","Coforge","Waterside, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386868703",""
-"linkedin","Data Engineer","Aurum Search Limited","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385018506",""
-"linkedin","Senior Data Engineer","La Fosse","Milton Keynes, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4384953478",""
-"linkedin","Senior Data Engineer","Codat","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377852071",""
-"linkedin","Data Engineer - Investments","Hillwood Investment Properties","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4374598353",""
-"linkedin","Data Engineer, 12-months FTC","SkyShowtime","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4375568119",""
+"linkedin","Senior Analytics Engineer","Zilch","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385066301",""
 "linkedin","Senior Data Engineer – Lloyd’s Insurance (Essential)","NINE by SATIGO","","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385023637",""
 "linkedin","Senior Data Engineer - (Genetics) Maternity Cover - 12 months FTC","Our Future Health UK","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4260898310",""
 "linkedin","Senior Data Engineer","Synthesia","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377448182",""
@@ -1560,18 +1590,21 @@ Flexible share incentives letting you choose how you share in our success.
 Global parental leave, six months off \\- for all new parents.
 All The Feels, our employee assistance program and self\\-care hub.
 Flexible public holidays, swap days off according to your values and beliefs."
-"linkedin","Analytics Engineer","Rightmove","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4374832239",""
-"linkedin","Data / ML Engineer","martee ai","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4383148774",""
-"linkedin","Senior Data Engineer","Liberty Specialty Markets","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387614682",""
-"linkedin","Senior Analytics Engineer","Zilch","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385066301",""
-"linkedin","Data Engineer","British Gas","Leicester, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387129544",""
+"linkedin","Data Engineer","De Stroopwafel","Manchester, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387635333",""
+"linkedin","Junior Collibra Data Engineer","Brickendon Consulting","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386857340",""
 "linkedin","Data Engineer","Gravitas Recruitment Group (Global) Ltd","England, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4385016458",""
-"linkedin","Senior Data Engineer","Arenko","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4367890267",""
 "linkedin","Senior Data Engineer","Made Tech","City Of Bristol, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4378160594",""
-"linkedin","Senior Data Engineer","Fortray Global Service Limited","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386856684",""
+"linkedin","Data Engineer, 12-months FTC","SkyShowtime","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4375568119",""
+"linkedin","Analytics Engineer","Rightmove","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4374832239",""
+"linkedin","Data Engineer","Fifty5Blue","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387115035",""
+"linkedin","Senior Data Engineer","Liberty Specialty Markets","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387614682",""
 "linkedin","Senior Data Engineer","Made Tech","Manchester, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4378161355",""
+"linkedin","Senior Data Engineer","Fortray Global Service Limited","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386856684",""
+"linkedin","Data Engineer","British Gas","Leicester, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4387129544",""
+"linkedin","Data Engineer","Method Resourcing","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4386870440",""
+"linkedin","Data / ML Engineer","martee ai","London Area, United Kingdom","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4383148774",""
+"linkedin","Senior Data Engineer","Arenko","London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4367890267",""
 "linkedin","Senior Data Engineer","LSEG","City Of London, England, UK","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4285770755",""
-"linkedin","Data Analytics Engineer","Fruition Group","","2026-03-18","N/A","https://www.linkedin.com/jobs/view/4377447821",""
 "linkedin","Data Engineer","Reach plc","","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385697282",""
 "linkedin","Senior Data Engineer","Vertus Partners","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384448702",""
 "linkedin","Senior Data Engineer","WalletConnect","Greater London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385947165",""
@@ -1586,32 +1619,32 @@ Flexible public holidays, swap days off according to your values and beliefs."
 "linkedin","Senior Data Engineer","Eden Smith Group","Warrington, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384704589",""
 "linkedin","Senior Data Engineer","iO Associates","Milton Keynes, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385697318",""
 "linkedin","Staff Data Engineer","Data Idols","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384490934",""
-"linkedin","Data Engineer","Peaple Talent","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384495755",""
 "linkedin","Data Engineer","Peaple Talent","Edinburgh, Scotland, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384499594",""
-"linkedin","Data Engineer","St. James’s Place","Bristol, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386597688",""
 "linkedin","Data Engineer","Addition","Hertfordshire, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385919143",""
-"linkedin","Data Platform Engineer","Hays","Milton Keynes, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385678980",""
-"linkedin","Data Engineer","easyJet holidays","Luton, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386701950",""
-"linkedin","Data Engineer","St. James’s Place","Cirencester, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386717044",""
-"linkedin","Analytics Data Engineer","Profitero+","Reading, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4380933757",""
 "linkedin","Data Engineer","Peaple Talent","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384491876",""
+"linkedin","Analytics Data Engineer","Profitero+","Reading, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4380933757",""
+"linkedin","Data Engineer","Lorien","Harrogate, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386920299",""
+"linkedin","Data Engineer","Blockchain","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4315875542",""
 "linkedin","Data Engineer (Platform)","hackajob","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385950017",""
+"linkedin","Data Engineer","St. James’s Place","Cirencester, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386717044",""
+"linkedin","Data Engineer","easyJet holidays","Luton, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386701950",""
+"linkedin","Data Engineer","myGwork - LGBTQ+ Business Community","Cirencester, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384475542",""
 "linkedin","Senior Data Engineer - Snowflake Cortex - Investment Management","Orbis Group","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386753399",""
 "linkedin","Senior Analytics Engineer","CMR Surgical","Cambridge, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384479460",""
 "linkedin","Senior Data Engineer","Starcom","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4271835573",""
-"linkedin","Global IT Data Engineer Senior Specialist","Boston Consulting Group (BCG)","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385947678",""
-"linkedin","Data Engineer - Private Equity","McGregor Boyall","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385683348",""
-"linkedin","Data Engineer","Fairmont Recruitment Technology","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386775928",""
-"linkedin","Data Engineer","myGwork - LGBTQ+ Business Community","Cirencester, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384475542",""
-"linkedin","Data Engineer","Eclectic Recruitment Ltd","Stevenage, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385931784",""
-"linkedin","Data Engineer - Private Equity","Jobs via eFinancialCareers","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386751974",""
+"linkedin","Senior Data Engineer","Quantum","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385675851",""
 "linkedin","Data Engineer","Somerset Council","Somerset, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384489481",""
 "linkedin","Microsoft Fabric Data Engineer","Movar","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386754094",""
+"linkedin","Senior Data Engineer","UK Home Office","Liverpool, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384454802",""
+"linkedin","Data Engineer","St. James’s Place","Bristol, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386597688",""
+"linkedin","Data Engineer - Private Equity","McGregor Boyall","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385683348",""
 "linkedin","Lead Data Engineer - PropTech - Up to £110k","Oliver Bernard","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384702701",""
 "linkedin","Senior Data Engineer","Publicis Production","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4373946102",""
 "linkedin","Senior Data Engineer","UK Home Office","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384463406",""
+"linkedin","Global IT Data Engineer Senior Specialist","Boston Consulting Group (BCG)","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385947678",""
 "linkedin","Senior Data Engineer","UK Home Office","Croydon, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384460509",""
-"linkedin","Senior Data Engineer","Quantum","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385675851",""
+"linkedin","Data Platform Engineer","Hays","Milton Keynes, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385678980",""
+"linkedin","Data Engineer","Fairmont Recruitment Technology","Manchester Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386775928",""
 "indeed","Data Engineer","St. James's Place","Cirencester, ENG, GB","2026-03-17","N/A","https://uk.indeed.com/viewjob?jk=6f9dd2afdd23b27b","Are you ready to chart your own career path? With our refreshed strategy, we’re building on our rich heritage and transforming our business to be more scalable and efficient, unlocking the capabilities needed for future success. This includes significantly investing in technology, streamlining the way we work and creating an environment where colleagues feel engaged, empowered and accountable; where they can show up, speak up and perform \\- because we believe in the difference our work makes.  
 
 
@@ -1798,11 +1831,11 @@ We prioritise employee well\\-being and mental health by offering a comprehensiv
 * **Education Benefits:** Learning Courses, Business Skills Training.
 * Offered only to employees based in the UK.
 * Unfortunately, we aren’t able to offer sponsorship for this role."
-"linkedin","Senior Data Engineer","UK Home Office","Liverpool, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384454802",""
+"linkedin","Data Engineer","Eclectic Recruitment Ltd","Stevenage, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4385931784",""
 "linkedin","Data Engineer","Unity Advisory","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4332549507",""
-"linkedin","Data Engineer","Lorien","Harrogate, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386920299",""
-"linkedin","Data Engineer","Blockchain","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4315875542",""
-"linkedin","Data Engineer","Scrumconnect Consulting","Edinburgh, Scotland, UK","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4384406358",""
+"linkedin","Data Engineer","Peaple Talent","London Area, United Kingdom","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4384495755",""
+"linkedin","Data Engineer - Private Equity","Jobs via eFinancialCareers","London, England, UK","2026-03-17","N/A","https://www.linkedin.com/jobs/view/4386751974",""
 "linkedin","Data Engineer","Vintage Cash Cow","Morley, England, UK","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4385238531",""
+"linkedin","Data Engineer","Scrumconnect Consulting","Edinburgh, Scotland, UK","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4384406358",""
 "linkedin","Senior Data Engineer, Vice President","State Street","London, England, UK","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4383361516",""
 "linkedin","Senior Data Engineer","Anson McCade","London Area, United Kingdom","2026-03-16","N/A","https://www.linkedin.com/jobs/view/4384069900",""
