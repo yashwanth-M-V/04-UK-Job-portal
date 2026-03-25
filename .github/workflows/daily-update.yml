@@ -36,8 +36,8 @@ jobs:
         run: |
           echo "API_URL: ${API_URL}"
           echo "SUPABASE_KEY: ${SUPABASE_KEY}"
-          echo "BUCKET_NAME: ${BUCKET_NAME}"
-          echo "DATABASE_URL: ${DATABASE_URL}"
+          echo "SUPABASE_BUCKET_NAME: ${SUPABASE_BUCKET_NAME}"
+          echo "CONNECTION_STRING: ${CONNECTION_STRING}"
         env:
           API_URL: ${{ secrets.API_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
@@ -47,10 +47,10 @@ jobs:
       # 6️⃣ Run data pipeline
       - name: Run data pipeline
         env:
-          SUPABASE_URL: ${{ secrets.API_URL }}
+          API_URL: ${{ secrets.API_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          DATABASE_URL: ${{ secrets.CONNECTION_STRING }}
           SUPABASE_BUCKET_NAME: ${{ secrets.SUPABASE_BUCKET_NAME }}
+          CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
         run: uv run python main.py
 
       # 7️⃣ Commit updated website
