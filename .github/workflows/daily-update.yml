@@ -13,20 +13,38 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout code
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2️⃣ Install UV
       - name: Install uv
         uses: astral-sh/setup-uv@v4
 
+      # 3️⃣ Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      # 4️⃣ Install dependencies
       - name: Install dependencies
         run: uv sync
 
+      # 5️⃣ Debug secrets (optional, remove in prod)
+      - name: Debug environment
+        run: |
+          echo "API_URL present: ${SUPABASE_URL:+yes}"
+          echo "SUPABASE_KEY present: ${SUPABASE_KEY:+yes}"
+          echo "BUCKET_NAME present: ${BUCKET_NAME:+yes}"
+          echo "DATABASE_URL present: ${DATABASE_URL:+yes}"
+        env:
+          SUPABASE_URL: ${{ secrets.API_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+
+      # 6️⃣ Run data pipeline
       - name: Run data pipeline
         env:
           SUPABASE_URL: ${{ secrets.API_URL }}
@@ -35,6 +53,7 @@ jobs:
           BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
         run: uv run python main.py
 
+      # 7️⃣ Commit updated website
       - name: Commit updated website
         run: |
           git config user.name "github-actions[bot]"
