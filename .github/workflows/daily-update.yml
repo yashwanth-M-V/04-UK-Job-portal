@@ -3,10 +3,10 @@ name: Daily Job Pipeline Update
 on:
   schedule:
     - cron: "0 21 * * *"   # Runs daily at 21:00 UTC
-  workflow_dispatch:        # Allows manual trigger
+  workflow_dispatch:
 
 permissions:
-  contents: write           # Required to push changes
+  contents: write
 
 jobs:
   run-pipeline:
@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          lfs: true   # <-- important for Git LFS
 
       - name: Install uv
         uses: astral-sh/setup-uv@v4
@@ -27,23 +25,21 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          uv sync
+        run: uv sync
 
       - name: Run data pipeline
-        run: |
-          uv run python main.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+        run: uv run python main.py
 
-      - name: Set up Git LFS
-        run: |
-          git lfs install
-          git lfs track "data/jobs_silver.csv" || echo "Already tracked"
-
-      - name: Commit and push changes
+      - name: Commit updated website
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add .
-          git diff --cached --quiet || git commit -m "chore: daily job postings update"
+          git add index.html
+          git diff --cached --quiet || git commit -m "daily job update"
           git push

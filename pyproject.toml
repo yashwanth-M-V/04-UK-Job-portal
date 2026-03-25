@@ -8,7 +8,12 @@ dependencies = [
     "jinja2>=3.1.6",
     "openpyxl>=3.1.5",
     "pandas>=2.3.3",
+    "psycopg>=3.3.3",
+    "psycopg2-binary>=2.9.11",
     "pyarrow>=23.0.1",
+    "python-dotenv>=1.2.2",
     "python-jobspy>=1.1.82",
+    "sqlalchemy>=2.0.48",
+    "supabase>=2.28.3",
     "tqdm>=4.67.3",
 ]

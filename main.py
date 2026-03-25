@@ -1,31 +1,26 @@
-from src.pipeline import run_pipeline
+from src.pipeline.pipeline import run_pipeline
+from src.render.render import render_html, load_jobs_from_db
+from pathlib import Path
 
-README_PATH = "READMe.md"
-START = "<!-- START:JOB_POSTINGS -->"
-END   = "<!-- END:JOB_POSTINGS -->"
-
-
-def update_readme(content: str):
-    with open(README_PATH, "r", encoding="utf-8") as f:
-        readme = f.read()
-
-    if START not in readme or END not in readme:
-        raise ValueError("README is missing job posting markers")
-
-    before = readme.split(START)[0]
-    after  = readme.split(END)[1]
-
-    new_readme = before + START + "\n\n" + content + "\n\n" + END + after
-
-    with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(new_readme)
-
-    print("✅ README updated")
-
+# ---------------------------
+# Main entry point
+# ---------------------------
 
 def main():
-    markdown = run_pipeline()
-    update_readme(markdown)
+    print("\n🚀 Starting Job Pipeline\n")
+
+    # Run the full pipeline (scrape → transform → ingest)
+    run_pipeline()
+
+    # Load latest jobs from database
+    df = load_jobs_from_db()
+
+    # Render HTML to root folder
+    output_path = Path("index.html")
+    render_html(df, output_path)
+
+    print("\n✅ Pipeline completed successfully")
+    print(f"📄 HTML output → {output_path.resolve()}\n")
 
 
 if __name__ == "__main__":

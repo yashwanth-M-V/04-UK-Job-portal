@@ -3,13 +3,18 @@ import pandas as pd
 from datetime import datetime
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
+from src.config.config import connect_to_DB
+from pathlib import Path
 
 
 # ---------------------------
 # Paths
 # ---------------------------
-TEMPLATE_DIR  = Path(__file__).parent.parent / "template"
-OUTPUT_PATH   = Path("index.html")
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+TEMPLATE_DIR = BASE_DIR / "template"
+OUTPUT_PATH = BASE_DIR / "index.html"
+
+OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 
 # ---------------------------
@@ -41,6 +46,34 @@ def get_role_group(title: str) -> str:
             return label
     return "Other"
 
+
+# ---------------------------
+# Load jobs from database
+# ---------------------------
+def load_jobs_from_db(limit: int = 500) -> pd.DataFrame:
+    conn = connect_to_DB()
+
+    query = f"""
+    SELECT
+        site,
+        title,
+        company,
+        location,
+        date_posted,
+        job_type,
+        job_url,
+        description
+    FROM job_postings
+    ORDER BY date_posted DESC
+    LIMIT {limit}
+    """
+
+    df = pd.read_sql(query, conn)
+    conn.close()
+
+    print(f"Loaded {len(df)} jobs from database")
+
+    return df
 
 # ---------------------------
 # Render README markdown
@@ -114,3 +147,12 @@ def render_html(df: pd.DataFrame, output_path: Path = OUTPUT_PATH) -> None:
     output_path.write_text(html, encoding="utf-8")
 
     print(f"✅ HTML rendered → {output_path} ({len(jobs)} jobs)")
+    
+    
+
+# ---------------------------
+# Run renderer standalone
+# ---------------------------
+if __name__ == "__main__":
+    df = load_jobs_from_db()
+    render_html(df)

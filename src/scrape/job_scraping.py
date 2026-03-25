@@ -3,10 +3,15 @@ import re
 import pandas as pd
 from jobspy import scrape_jobs
 from tqdm import tqdm
+from datetime import datetime
+from dotenv import load_dotenv
+import tempfile
+from io import BytesIO
 
-# ---------------------------
-# Search terms
-# ---------------------------
+from src.config.config import BUCKET_NAME, supabase
+
+load_dotenv()
+
 JUNIOR_KEYWORDS = [
     "junior data engineer",
     "graduate data engineer",
@@ -15,53 +20,33 @@ JUNIOR_KEYWORDS = [
     "trainee data engineer",
 ]
 
-# ---------------------------
-# Silver path (source of truth)
-# ---------------------------
-SILVER_PATH = "data/jobs_silver.parquet"
 
-
-# ---------------------------
-# Title filter
-# ---------------------------
 def is_data_role(title: str) -> bool:
     if not isinstance(title, str):
         return False
-
     title = title.lower()
 
     patterns = [
         r"\bdata engineer\b",
         r"\banalytics engineer\b",
-        r"\bplatform engineer\b.*\bdata\b",
         r"\bdata platform engineer\b",
         r"\bmachine learning engineer\b",
-        r"\bml engineer\b",
-        r"\bdatabase administrator\b",
-        r"\bdatabase engineer\b",
         r"\betl developer\b",
-        r"\bdata reliability engineer\b",
         r"\bbig data engineer\b",
-        r"\bdata architect\b",
         r"\bcloud data engineer\b",
         r"\bbi engineer\b",
-        r"\bbusiness intelligence engineer\b",
     ]
 
-    return any(re.search(pattern, title) for pattern in patterns)
+    return any(re.search(p, title) for p in patterns)
 
 
-# ---------------------------
-# Scrape → Silver
-# ---------------------------
-def scrape_to_silver(hours_old: int = 72) -> pd.DataFrame:
-    print("\n🔎 Starting job scraping...\n")
+def scrape_to_silver(hours_old: int = 72):
+    print("\nStarting scraping process\n")
 
     all_jobs = []
-    total_scraped = 0
+    total = 0
 
-    # Progress bar for keywords
-    for keyword in tqdm(JUNIOR_KEYWORDS, desc="Scraping job keywords"):
+    for keyword in tqdm(JUNIOR_KEYWORDS, desc="Scraping"):
         jobs = scrape_jobs(
             site_name=["indeed", "linkedin", "google"],
             search_term=keyword,
@@ -72,72 +57,93 @@ def scrape_to_silver(hours_old: int = 72) -> pd.DataFrame:
         )
 
         if jobs is not None and not jobs.empty:
-            count = len(jobs)
-            total_scraped += count
-            tqdm.write(f"Collected {count} jobs for '{keyword}'")
             all_jobs.append(jobs)
+            total += len(jobs)
 
     if not all_jobs:
-        raise RuntimeError("No jobs scraped from any source")
-
-    print(f"\n📦 Total raw jobs collected: {total_scraped}")
+        raise RuntimeError("No jobs scraped")
 
     df = pd.concat(all_jobs, ignore_index=True)
 
-    # ---------------------------
-    # Cleaning stage
-    # ---------------------------
-    print("\n🧹 Cleaning and filtering jobs...")
+    print(f"Total jobs scraped: {total}")
 
-    # Remove duplicates
     df = df.drop_duplicates(subset=["site", "job_url"])
 
-    # Filter only relevant roles (with progress bar)
-    tqdm.pandas(desc="Filtering job titles")
+    tqdm.pandas(desc="Filtering roles")
     df = df[df["title"].progress_apply(is_data_role)]
 
     if df.empty:
-        raise RuntimeError("No data-engineering roles found after filtering")
+        raise RuntimeError("No valid data roles found")
 
-    print(f"Remaining jobs after filtering: {len(df)}")
-
-    # ---------------------------
-    # Date handling
-    # ---------------------------
     df["date_posted"] = pd.to_datetime(df["date_posted"], errors="coerce")
-    df["date_posted"] = df["date_posted"].dt.tz_localize(None)
-
-    # Remove rows without valid date
     df = df[df["date_posted"].notna()]
+    df["scraped_at"] = pd.Timestamp.utcnow()
 
-    # Tag when pipeline scraped this job
-    df["scraped_at"] = pd.Timestamp.utcnow().replace(tzinfo=None)
+    print(f"Jobs after cleaning: {len(df)}")
 
-    # ---------------------------
-    # Save to Silver (Parquet history)
-    # ---------------------------
-    print("\n💾 Updating Silver dataset...")
+    # ------------------------
+    # TEMP SILVER FILE
+    # ------------------------
+    tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".parquet")
+    silver_path = tmp.name
+    df.to_parquet(silver_path, index=False)
 
-    os.makedirs(os.path.dirname(SILVER_PATH), exist_ok=True)
+    print(f"Temporary silver file created: {silver_path}")
 
-    if os.path.exists(SILVER_PATH):
-        existing = pd.read_parquet(SILVER_PATH)
+    # ------------------------
+    # ARCHIVE STORAGE
+    # ------------------------
+    today = datetime.utcnow().date().isoformat()
+    storage_path = f"silver/date-{today}/jobs.parquet"
 
-        before = len(existing)
+    print("Uploading archive to Supabase storage")
 
-        df = pd.concat([existing, df], ignore_index=True)
-        df = df.drop_duplicates(subset=["site", "job_url"], keep="first")
+    try:
+        existing = supabase.storage.from_(BUCKET_NAME).download(storage_path)
+        old_df = pd.read_parquet(BytesIO(existing))
+        df_archive = pd.concat([old_df, df], ignore_index=True)
+    except Exception:
+        df_archive = df
 
-        after = len(df)
-        added = after - before
+    archive_tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".parquet")
+    archive_path = archive_tmp.name
+    archive_tmp.close()
+    df_archive.to_parquet(archive_path, index=False)
+    
+    try:
+        # Try to download existing file
+        existing = supabase.storage.from_(BUCKET_NAME).download(storage_path)
 
-        print(f"New unique jobs added: {added}")
+        old_df = pd.read_parquet(BytesIO(existing))
+        combined_df = pd.concat([old_df, df], ignore_index=True)
 
-    # Save updated dataset
-    df = df.reset_index(drop=True)
-    df.to_parquet(SILVER_PATH, index=False)
+        # Optional but recommended
+        combined_df = combined_df.drop_duplicates(subset=["site", "job_url"])
 
-    print(f"\n✅ Silver saved → {SILVER_PATH}")
-    print(f"📊 Total jobs stored in history: {len(df)}\n")
+        combined_df.to_parquet(archive_path, index=False)
 
-    return df
+        # delete old file before upload
+        supabase.storage.from_(BUCKET_NAME).remove([storage_path])
+
+        print("Existing archive found — appending data")
+
+    except Exception:
+        # No file exists yet
+        print("Creating new archive file")
+        df.to_parquet(archive_path, index=False)
+
+    # Upload new file
+    supabase.storage.from_(BUCKET_NAME).upload(
+        storage_path,
+        archive_path
+    )
+
+    os.remove(archive_path)
+
+    print("Archive uploaded successfully")
+
+    return df, silver_path
+
+
+if __name__ == "__main__":
+    scrape_to_silver()
