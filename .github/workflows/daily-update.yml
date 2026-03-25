@@ -34,12 +34,12 @@ jobs:
       # 5️⃣ Debug secrets (optional, remove in prod)
       - name: Debug secrets
         run: |
-          echo "SUPABASE_URL: ${SUPABASE_URL}"
+          echo "API_URL: ${SUPABASE_URL}"
           echo "SUPABASE_KEY: ${SUPABASE_KEY}"
           echo "BUCKET_NAME: ${BUCKET_NAME}"
           echo "DATABASE_URL: ${DATABASE_URL}"
         env:
-          SUPABASE_URL: ${{ secrets.API_URL }}
+          API_URL: ${{ secrets.API_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
