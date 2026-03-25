@@ -41,16 +41,16 @@ jobs:
         env:
           API_URL: ${{ secrets.API_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          SUPABASE_BUCKET_NAME: ${{ secrets.SUPABASE_BUCKET_NAME }}
+          CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
 
       # 6️⃣ Run data pipeline
       - name: Run data pipeline
         env:
           SUPABASE_URL: ${{ secrets.API_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+          DATABASE_URL: ${{ secrets.CONNECTION_STRING }}
+          SUPABASE_BUCKET_NAME: ${{ secrets.SUPABASE_BUCKET_NAME }}
         run: uv run python main.py
 
       # 7️⃣ Commit updated website
