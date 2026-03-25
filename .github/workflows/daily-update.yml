@@ -32,17 +32,17 @@ jobs:
         run: uv sync
 
       # 5️⃣ Debug secrets (optional, remove in prod)
-      - name: Debug environment
+      - name: Debug secrets
         run: |
-          echo "API_URL present: ${SUPABASE_URL:+yes}"
-          echo "SUPABASE_KEY present: ${SUPABASE_KEY:+yes}"
-          echo "BUCKET_NAME present: ${BUCKET_NAME:+yes}"
-          echo "DATABASE_URL present: ${DATABASE_URL:+yes}"
+          echo "SUPABASE_URL: ${SUPABASE_URL}"
+          echo "SUPABASE_KEY: ${SUPABASE_KEY}"
+          echo "BUCKET_NAME: ${BUCKET_NAME}"
+          echo "DATABASE_URL: ${DATABASE_URL}"
         env:
           SUPABASE_URL: ${{ secrets.API_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
           BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       # 6️⃣ Run data pipeline
       - name: Run data pipeline
