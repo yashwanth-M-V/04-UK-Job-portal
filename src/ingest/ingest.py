@@ -1,5 +1,5 @@
 import pandas as pd
-from src.config.config import connect_to_DB
+from src.config.config import supabase
 
 def insert_jobs(df: pd.DataFrame):
 
@@ -7,39 +7,20 @@ def insert_jobs(df: pd.DataFrame):
         print("No jobs to insert.")
         return
 
-    conn = connect_to_DB()
-    cur = conn.cursor()
-
-    query = """
-    INSERT INTO job_postings (
-        site, title, company, location,
-        date_posted, job_type, job_url, description
-    )
-    VALUES (%s,%s,%s,%s,%s,%s,%s,%s)
-    ON CONFLICT (job_url) DO NOTHING
-    """
-
     rows = [
-        (
-            r.site,
-            r.title,
-            r.company,
-            r.location,
-            r.date_posted,
-            r.job_type,
-            r.job_url,
-            r.description,
-        )
+        {
+            "site":        r.site,
+            "title":       r.title,
+            "company":     r.company,
+            "location":    r.location,
+            "date_posted": str(r.date_posted),
+            "job_type":    r.job_type,
+            "job_url":     r.job_url,
+            "description": r.description,
+        }
         for r in df.itertuples()
     ]
 
-    cur.executemany(query, rows)
+    result = supabase.table("job_postings").upsert(rows, on_conflict="job_url").execute()
 
-    conn.commit()
-
-    inserted = cur.rowcount
-
-    cur.close()
-    conn.close()
-
-    print(f"Inserted {inserted} new jobs into database.")
+    print(f"Inserted/updated {len(result.data)} jobs into database.")
