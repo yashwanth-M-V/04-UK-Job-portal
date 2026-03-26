@@ -3,8 +3,7 @@ import pandas as pd
 from datetime import datetime
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-from src.config.config import connect_to_DB
-from pathlib import Path
+from src.config.config import supabase
 
 
 # ---------------------------
@@ -19,8 +18,6 @@ OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------
 # Role grouping
-# Maps a job title → a clean filter label
-# Add more as your role list grows
 # ---------------------------
 ROLE_GROUPS = {
     r"\bdata engineer\b":               "Data Engineer",
@@ -37,7 +34,6 @@ ROLE_GROUPS = {
 }
 
 def get_role_group(title: str) -> str:
-    """Return a clean role label for a job title."""
     if not isinstance(title, str):
         return "Other"
     title_lower = title.lower()
@@ -48,91 +44,53 @@ def get_role_group(title: str) -> str:
 
 
 # ---------------------------
-# Load jobs from database
+# Load jobs from database      ← CHANGED: supabase client instead of psycopg2
 # ---------------------------
 def load_jobs_from_db(limit: int = 500) -> pd.DataFrame:
-    conn = connect_to_DB()
+    response = supabase.table("job_postings") \
+        .select("site, title, company, location, date_posted, job_type, job_url, description") \
+        .order("date_posted", desc=True) \
+        .limit(limit) \
+        .execute()
 
-    query = f"""
-    SELECT
-        site,
-        title,
-        company,
-        location,
-        date_posted,
-        job_type,
-        job_url,
-        description
-    FROM job_postings
-    ORDER BY date_posted DESC
-    LIMIT {limit}
-    """
-
-    df = pd.read_sql(query, conn)
-    conn.close()
-
+    df = pd.DataFrame(response.data)
     print(f"Loaded {len(df)} jobs from database")
-
     return df
 
-# ---------------------------
-# Render README markdown
-# (kept for backward compat)
-# ---------------------------
-def render_markdown(df: pd.DataFrame) -> str:
-    if df.empty:
-        return "_No active job postings found._"
-
-    blocks = []
-    for _, row in df.iterrows():
-        link = f"[Apply]({row['job_url']})"
-        date_posted = (
-            row["date_posted"].strftime("%d %b %Y")
-            if pd.notnull(row["date_posted"])
-            else "Unknown"
-        )
-        block = f"""### {row['title']} – {row['company']}
-📍 Location: {row['location']}  
-🧠 Job Type: {row.get('job_type', 'N/A')}  
-🗓 Posted on: {date_posted}  
-🔗 {link}
-"""
-        blocks.append(block)
-    return "\n---\n\n".join(blocks)
-
 
 # ---------------------------
-# Render HTML via Jinja2
+# Render HTML via Jinja2       ← unchanged
 # ---------------------------
 def render_html(df: pd.DataFrame, output_path: Path = OUTPUT_PATH) -> None:
     if df.empty:
         print("⚠️  No jobs to render into HTML")
         return
 
-    # -- Prepare job dicts for the template --
     jobs = []
     for _, row in df.iterrows():
-        date_posted = (
-            row["date_posted"].strftime("%d %b %Y")
-            if pd.notnull(row["date_posted"])
-            else "Unknown"
-        )
+        date_val = row.get("date_posted")
+        try:
+            date_obj = pd.to_datetime(date_val)
+            date_posted     = date_obj.strftime("%d %b %Y")
+            date_posted_iso = date_obj.strftime("%Y-%m-%d")
+        except Exception:
+            date_posted     = "Unknown"
+            date_posted_iso = ""
+
         jobs.append({
-            "title":       row.get("title", ""),
-            "company":     row.get("company", ""),
-            "location":    row.get("location", ""),
-            "site":        row.get("site", ""),
-            "job_type":    row.get("job_type", "N/A") or "N/A",
-            "job_url":     row.get("job_url", "#"),
-            "date_posted": date_posted,
-            "date_posted_iso": row["date_posted"].strftime("%Y-%m-%d") if pd.notnull(row["date_posted"]) else "",
-            "role_group":  get_role_group(row.get("title", "")),
+            "title":          row.get("title", ""),
+            "company":        row.get("company", ""),
+            "location":       row.get("location", ""),
+            "site":           row.get("site", ""),
+            "job_type":       row.get("job_type", "N/A") or "N/A",
+            "job_url":        row.get("job_url", "#"),
+            "date_posted":    date_posted,
+            "date_posted_iso": date_posted_iso,
+            "role_group":     get_role_group(row.get("title", "")),
         })
 
-    # -- Unique role labels for filter buttons --
     roles = sorted(set(j["role_group"] for j in jobs))
 
-    # -- Load and render template --
     env      = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
     template = env.get_template("job_template.html")
 
@@ -145,10 +103,8 @@ def render_html(df: pd.DataFrame, output_path: Path = OUTPUT_PATH) -> None:
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(html, encoding="utf-8")
-
     print(f"✅ HTML rendered → {output_path} ({len(jobs)} jobs)")
-    
-    
+
 
 # ---------------------------
 # Run renderer standalone
