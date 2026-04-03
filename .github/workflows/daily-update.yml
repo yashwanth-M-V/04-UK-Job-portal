@@ -38,11 +38,21 @@ jobs:
           echo "SUPABASE_KEY: ${SUPABASE_KEY}"
           echo "SUPABASE_BUCKET_NAME: ${SUPABASE_BUCKET_NAME}"
           echo "CONNECTION_STRING: ${CONNECTION_STRING}"
+          echo "SUPABASE_SERVICE_KEY: ${SUPABASE_SERVICE_KEY}"
+          echo "SEND_GRID_API_KEY: ${SEND_GRID_API_KEY}"
+          echo "FROM_EMAIL: ${FROM_EMAIL}"
+          echo "BOT_TOKEN: ${BOT_TOKEN}"
+          echo "BOT_USERNAME: ${BOT_USERNAME}"
         env:
           API_URL: ${{ secrets.API_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SUPABASE_BUCKET_NAME: ${{ secrets.SUPABASE_BUCKET_NAME }}
           CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          SEND_GRID_API_KEY: ${{ secrets.SEND_GRID_API_KEY }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          BOT_USERNAME: ${{ secrets.BOT_USERNAME }}
 
       # 6️⃣ Run data pipeline
       - name: Run data pipeline
@@ -51,6 +61,11 @@ jobs:
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SUPABASE_BUCKET_NAME: ${{ secrets.SUPABASE_BUCKET_NAME }}
           CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          SEND_GRID_API_KEY: ${{ secrets.SEND_GRID_API_KEY }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          BOT_USERNAME: ${{ secrets.BOT_USERNAME }}
         run: uv run python main.py
 
       # 6b. Send notifications
