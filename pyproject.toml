@@ -13,6 +13,7 @@ dependencies = [
     "pyarrow>=23.0.1",
     "python-dotenv>=1.2.2",
     "python-jobspy>=1.1.82",
+    "sendgrid>=6.12.5",
     "sqlalchemy>=2.0.48",
     "supabase>=2.28.3",
     "tqdm>=4.67.3",

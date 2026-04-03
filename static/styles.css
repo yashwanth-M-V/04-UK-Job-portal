@@ -1,0 +1,327 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --indigo: #4f46e5;
+  --indigo-dark: #3730a3;
+  --indigo-light: #e0e7ff;
+  --cyan: #0891b2;
+  --cyan-light: #cffafe;
+  --bg: #f4f6f9;
+  --card-bg: #ffffff;
+  --text: #1a1a2e;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --slate: #f8fafc;
+}
+
+/* Base */
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: red;
+  color: var(--text);
+  padding: 2rem 1rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header p {
+  color: var(--muted);
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* GitHub Button */
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+  padding: 0.45rem 1.1rem;
+  background: var(--text);
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.github-btn:hover {
+  background: var(--indigo-dark);
+}
+
+.github-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+/* Navigation */
+.page-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.nav-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid var(--indigo);
+  border-radius: 999px;
+  background: white;
+  color: var(--indigo);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: var(--indigo);
+  color: white;
+}
+
+/* Filters */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.filter-label {
+  width: 100%;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.filter-btn {
+  padding: 0.45rem 1.1rem;
+  border: 2px solid var(--indigo);
+  border-radius: 999px;
+  background: white;
+  color: var(--indigo);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--indigo);
+  color: white;
+}
+
+.date-btn {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.date-btn:hover,
+.date-btn.active {
+  background: var(--cyan);
+  color: white;
+}
+
+.filter-divider {
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5rem auto 0.75rem;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* Job count */
+.job-count {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid */
+.grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(79,70,229,0.12);
+  border-color: #c7d2fe;
+}
+
+.card-stripe {
+  width: 5px;
+  background: linear-gradient(180deg, var(--indigo) 0%, var(--cyan) 100%);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+/* Card info */
+.card-info {
+  flex: 1;
+  padding: 1.25rem 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  border-right: 1px solid var(--border);
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card-company {
+  font-size: 0.88rem;
+  color: var(--indigo);
+  font-weight: 600;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.3rem;
+}
+
+.badge {
+  background: var(--indigo-light);
+  color: var(--indigo);
+  border-radius: 6px;
+  padding: 0.18rem 0.55rem;
+  font-size: 0.75rem;
+}
+
+.badge.site-indeed { background: #fff3e0; color: #c2410c; }
+.badge.site-linkedin { background: #dbeafe; color: #1d4ed8; }
+.badge.site-google { background: #dcfce7; color: #15803d; }
+
+.card-date {
+  font-size: 0.78rem;
+  color: #aaa;
+  margin-top: auto;
+  font-family: 'DM Mono', monospace;
+}
+
+/* Actions */
+.card-actions {
+  width: 130px;
+  flex-shrink: 0;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  justify-content: center;
+  background: var(--slate);
+}
+
+.apply-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem;
+  background: var(--indigo);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.apply-btn:hover {
+  background: var(--indigo-dark);
+  transform: scale(1.03);
+}
+
+.ats-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem;
+  background: white;
+  color: var(--cyan);
+  border-radius: 8px;
+  border: 2px solid var(--cyan);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ats-btn:hover {
+  background: var(--cyan);
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  color: #999;
+  padding: 3rem;
+  grid-column: 1 / -1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-actions {
+    width: 110px;
+    padding: 1rem 0.75rem;
+  }
+}
+
+
+#page-jobs {
+  max-width: 1200px;
+  margin: 0 auto;
+}

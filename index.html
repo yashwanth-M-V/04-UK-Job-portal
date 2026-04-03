@@ -4,216 +4,437 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>UK Data Engineering Jobs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ─── Reset & tokens ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        white;
+      --surface:   #131726;
+      --surface2:  #1a1f32;
+      --border:    rgba(255,255,255,0.07);
+      --border2:   rgba(255,255,255,0.13);
+      --text:      #e0e4f2;
+      --muted:     #7b82a0;
+      --accent:    #5b8fff;
+      --accent2:   #3ecfb2;
+      --accent3:   #ff6b6b;
+      --pill-bg:   rgba(91,143,255,0.1);
+      --pill-text: #8aadff;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --font-body: "DM Sans", sans-serif;
+      --font-mono: "DM Mono", monospace;
+    }
+
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f4f6f9;
-      color: #1a1a2e;
-      padding: 2rem 1rem;
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 0;
+      overflow-x: hidden;
     }
 
+    /* ─── Background grid texture ─── */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(91,143,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(91,143,255,0.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── Glow blobs ─── */
+    .glow-1, .glow-2 {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(120px);
+      opacity: 0.18;
+    }
+    .glow-1 {
+      width: 600px; height: 600px;
+      background: #3b63d9;
+      top: -200px; left: -100px;
+    }
+    .glow-2 {
+      width: 500px; height: 500px;
+      background: #1fbfa6;
+      bottom: -200px; right: -100px;
+    }
+
+    /* ─── Layout wrapper ─── */
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    /* ─── Header ─── */
     header {
       text-align: center;
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s ease both;
     }
 
-    header h1 {
-      font-size: 2rem;
-      color: #1a1a2e;
-    }
-
-    header p {
-      color: #666;
-      margin-top: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    /* ── GitHub button ── */
-    .github-btn {
+    .header-eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      margin-top: 0.85rem;
-      padding: 0.45rem 1.1rem;
-      background: #1a1a2e;
-      color: white;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent2);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      padding: 0.3rem 0.9rem;
+      border: 1px solid rgba(62,207,178,0.25);
       border-radius: 999px;
-      text-decoration: none;
-      font-size: 0.85rem;
+      background: rgba(62,207,178,0.06);
+    }
+
+    .header-eyebrow::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent2);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 600;
-      transition: background 0.2s;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--muted);
     }
 
-    .github-btn:hover { background: #3730a3; }
-
-    .github-btn svg {
-      width: 16px;
-      height: 16px;
-      fill: white;
+    header h1 span {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
-    /* ── Filter sections ── */
-    .filter-section {
+    .header-sub {
+      margin-top: 0.75rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+
+    .header-sub strong {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* ─── Header actions row ─── */
+    .header-actions {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+      align-items: center;
       justify-content: center;
-      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.15rem;
+      border: 1px solid var(--border2);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(91,143,255,0.07);
+    }
+    .btn-ghost svg { width: 15px; height: 15px; fill: currentColor; }
+
+    .btn-subscribe {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.35rem;
+      border: 1px solid rgba(62,207,178,0.4);
+      border-radius: 999px;
+      background: rgba(62,207,178,0.1);
+      color: var(--accent2);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: var(--font-body);
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    }
+    .btn-subscribe:hover {
+      background: rgba(62,207,178,0.18);
+      border-color: rgba(62,207,178,0.7);
+      transform: translateY(-1px);
+    }
+
+    /* ─── Filters ─── */
+    .filters-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(12, 15, 26, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      margin: 0 -1.5rem 2rem;
+      border-radius: 15px;
+      animation: fadeDown 0.5s ease 0.1s both;
+    }
+
+    .filters-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4rem;
     }
 
     .filter-label {
-      width: 100%;
-      text-align: center;
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: #999;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.1rem;
+      margin-right: 0.25rem;
+      white-space: nowrap;
     }
 
-    .filter-btn {
-      padding: 0.45rem 1.1rem;
-      border: 2px solid #4f46e5;
+    .chip {
+      padding: 0.3rem 0.85rem;
       border-radius: 999px;
-      background: white;
-      color: #4f46e5;
-      font-size: 0.85rem;
-      font-weight: 600;
+      border: 1px solid var(--border2);
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 500;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.18s;
+      white-space: nowrap;
+    }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .chip.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .chip.date-chip:hover { border-color: var(--accent2); color: var(--accent2); }
+    .chip.date-chip.active {
+      background: var(--accent2);
+      border-color: var(--accent2);
+      color: #0c1a17;
     }
 
-    .filter-btn:hover,
-    .filter-btn.active {
-      background: #4f46e5;
-      color: white;
-    }
-
-    /* date filter uses a slightly different accent so it's visually distinct */
-    .date-btn {
-      border-color: #0891b2;
-      color: #0891b2;
-    }
-
-    .date-btn:hover,
-    .date-btn.active {
-      background: #0891b2;
-      color: white;
-    }
-
-    .filter-divider {
-      width: 100%;
-      max-width: 500px;
-      margin: 0.5rem auto 0.75rem;
-      border: none;
-      border-top: 1px solid #e2e8f0;
-    }
-
-    /* ── Job count ── */
-    .job-count {
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
+    /* ─── Stats bar ─── */
+    .stats-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 1.5rem;
+      animation: fadeUp 0.5s ease 0.2s both;
     }
 
-    /* ── Grid ── */
+    .job-count {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .job-count strong { color: var(--muted); }
+
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+      margin: 0 1rem;
+    }
+
+    /* ─── Grid ─── */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.25rem;
-      max-width: 1200px;
-      margin: 0 auto;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1rem;
     }
 
-    /* ── Card ── */
+    /* ─── Card ─── */
     .card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.4rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      border-left: 4px solid #4f46e5;
-      transition: transform 0.2s, box-shadow 0.2s;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.5rem;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.65rem;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      animation: fadeUp 0.4s ease both;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(91,143,255,0.4), transparent);
+      opacity: 0;
+      transition: opacity 0.2s;
     }
 
     .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.11);
+      border-color: rgba(91,143,255,0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+    .card:hover::before { opacity: 1; }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.5rem;
     }
 
     .card-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #1a1a2e;
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+      flex: 1;
     }
 
     .card-company {
-      font-size: 0.9rem;
-      color: #4f46e5;
-      font-weight: 600;
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-weight: 500;
     }
 
     .card-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.2rem;
+      gap: 0.35rem;
     }
 
     .badge {
-      background: #f0f0ff;
-      color: #4f46e5;
-      border-radius: 6px;
       padding: 0.2rem 0.6rem;
-      font-size: 0.78rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.72rem;
       font-weight: 500;
+      letter-spacing: 0.01em;
     }
 
-    .badge.site-indeed   { background: #fff3e0; color: #e65100; }
-    .badge.site-linkedin { background: #e3f2fd; color: #0a66c2; }
-    .badge.site-google   { background: #e8f5e9; color: #2e7d32; }
+    .badge-default {
+      background: var(--pill-bg);
+      color: var(--pill-text);
+      border: 1px solid rgba(91,143,255,0.15);
+    }
+
+    .badge-indeed   { background: rgba(255,107,107,0.1);  color: #ff9a9a; border: 1px solid rgba(255,107,107,0.2); }
+    .badge-linkedin { background: rgba(10,102,194,0.15);   color: #6baee8; border: 1px solid rgba(10,102,194,0.25); }
+    .badge-google   { background: rgba(62,207,178,0.1);    color: var(--accent2); border: 1px solid rgba(62,207,178,0.2); }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
 
     .card-date {
-      font-size: 0.8rem;
-      color: #999;
-      margin-top: auto;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--muted);
     }
 
     .apply-btn {
-      display: inline-block;
-      margin-top: 0.75rem;
-      padding: 0.5rem 1.2rem;
-      background: #4f46e5;
-      color: white;
-      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 1rem;
+      background: rgba(91,143,255,0.12);
+      border: 1px solid rgba(91,143,255,0.3);
+      color: var(--accent);
+      border-radius: var(--radius-sm);
       text-decoration: none;
-      font-size: 0.85rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      text-align: center;
-      transition: background 0.2s;
+      transition: background 0.18s, border-color 0.18s, transform 0.15s;
+    }
+    .apply-btn:hover {
+      background: rgba(91,143,255,0.22);
+      border-color: var(--accent);
+      transform: translateX(2px);
     }
 
-    .apply-btn:hover { background: #3730a3; }
+    .new-badge {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: #0c1a17;
+      background: var(--accent2);
+      border-radius: 4px;
+      padding: 0.1rem 0.4rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+    }
 
-    /* ── Empty state ── */
+    /* ─── Empty state ─── */
     .empty {
-      text-align: center;
-      color: #999;
-      padding: 3rem;
       grid-column: 1 / -1;
+      text-align: center;
+      padding: 5rem 2rem;
+      color: var(--muted);
     }
+    .empty-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      opacity: 0.4;
+    }
+    .empty p { font-size: 0.95rem; }
 
+    /* ─── Footer ─── */
     footer {
       text-align: center;
-      margin-top: 3rem;
-      color: #aaa;
-      font-size: 0.8rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
     }
   </style>
 </head>
@@ -2475,19 +2696,42 @@
         
       </div>
 
-      <div class="card-date">
-        🗓 Posted: 30 Mar 2026
-      </div>
+    .modal-close {
+      position: absolute;
+      top: 1.1rem; right: 1.1rem;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .modal-close:hover { background: var(--surface2); color: var(--text); }
+
+    .modal-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--radius-md);
+      background: rgba(62,207,178,0.12);
+      border: 1px solid rgba(62,207,178,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
 
       <a class="apply-btn" href="https://www.linkedin.com/jobs/view/4393201822" target="_blank" rel="noopener">
         Apply →
       </a>
 
-    </div>
-    
-    <div class="card"
-         data-role="data-engineer"
-         data-date="2026-03-30">
+    .modal-desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
 
       <div class="card-title">Data Engineer</div>
       <div class="card-company">Octopus Energy</div>
@@ -2500,19 +2744,44 @@
         
       </div>
 
-      <div class="card-date">
-        🗓 Posted: 30 Mar 2026
-      </div>
+    /* Form elements */
+    .modal-input {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border2);
+      border-radius: var(--radius-md);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .modal-input::placeholder { color: var(--muted); }
+    .modal-input:focus {
+      border-color: var(--accent2);
+      box-shadow: 0 0 0 3px rgba(62,207,178,0.1);
+    }
 
       <a class="apply-btn" href="https://www.linkedin.com/jobs/view/4392516032" target="_blank" rel="noopener">
         Apply →
       </a>
 
-    </div>
-    
-    <div class="card"
-         data-role="data-engineer"
-         data-date="2026-03-30">
+    .modal-btn-tg {
+      width: 100%;
+      padding: 0.75rem;
+      background: rgba(62,207,178,0.12);
+      border: 1px solid rgba(62,207,178,0.35);
+      border-radius: var(--radius-md);
+      color: var(--accent2);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+    }
+    .modal-btn-tg:hover { background: rgba(62,207,178,0.2); transform: translateY(-1px); }
 
       <div class="card-title">Senior Data Engineer</div>
       <div class="card-company">Carwow</div>
@@ -2548,9 +2817,31 @@
         
       </div>
 
-      <div class="card-date">
-        🗓 Posted: 30 Mar 2026
-      </div>
+    /* stagger cards */
+    .card:nth-child(1)  { animation-delay: 0.05s; }
+    .card:nth-child(2)  { animation-delay: 0.08s; }
+    .card:nth-child(3)  { animation-delay: 0.11s; }
+    .card:nth-child(4)  { animation-delay: 0.14s; }
+    .card:nth-child(5)  { animation-delay: 0.17s; }
+    .card:nth-child(6)  { animation-delay: 0.20s; }
+    .card:nth-child(7)  { animation-delay: 0.23s; }
+    .card:nth-child(8)  { animation-delay: 0.26s; }
+    .card:nth-child(9)  { animation-delay: 0.29s; }
+    .card:nth-child(10) { animation-delay: 0.32s; }
+    .card:nth-child(n+11) { animation-delay: 0.35s; }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 600px) {
+      .page { padding: 1.5rem 1rem 3rem; }
+      header h1 { font-size: 1.75rem; }
+      .grid { grid-template-columns: 1fr; }
+      .stats-bar { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .divider-line { display: none; }
+      .filters-wrapper { padding: 0.85rem 1rem; }
+    }
+  </style>
+</head>
+<body>
 
       <a class="apply-btn" href="https://www.linkedin.com/jobs/view/4380466046" target="_blank" rel="noopener">
         Apply →
@@ -2573,19 +2864,29 @@
         
       </div>
 
-      <div class="card-date">
-        🗓 Posted: 30 Mar 2026
-      </div>
+  <script>
+    /* ════════════════════════════
+       Config — update these two
+    ════════════════════════════ */
+    const SUPABASE_URL  = "https://ijlydnalqkepiikzsgqq.supabase.co";
+    const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqbHlkbmFscWtlcGlpa3pzZ3FxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyNjcyOTUsImV4cCI6MjA4OTg0MzI5NX0.rhOZqWbN7DCVwP49SCkrbNr83clsbO3VPp1_owXTUTo";
+
+    /* ════════════════════════════
+       Filter state
+    ════════════════════════════ */
+    const roleChips = document.querySelectorAll(".chip:not(.date-chip)");
+    const dateChips = document.querySelectorAll(".date-chip");
+    const cards     = document.querySelectorAll(".card");
+    const counter   = document.getElementById("job-count");
 
       <a class="apply-btn" href="https://www.linkedin.com/jobs/view/4386753399" target="_blank" rel="noopener">
         Apply →
       </a>
 
-    </div>
-    
-    <div class="card"
-         data-role="data-engineer"
-         data-date="2026-03-30">
+    function applyFilters() {
+      const cutoff = new Date();
+      cutoff.setDate(cutoff.getDate() - activeDays);
+      cutoff.setHours(0, 0, 0, 0);
 
       <div class="card-title">Senior Data Engineer</div>
       <div class="card-company">Places for People</div>
@@ -2598,19 +2899,24 @@
         
       </div>
 
-      <div class="card-date">
-        🗓 Posted: 30 Mar 2026
-      </div>
+    roleChips.forEach(btn => {
+      btn.addEventListener("click", () => {
+        roleChips.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeRole = btn.dataset.filter;
+        applyFilters();
+      });
+    });
 
       <a class="apply-btn" href="https://www.linkedin.com/jobs/view/4392384599" target="_blank" rel="noopener">
         Apply →
       </a>
 
-    </div>
-    
-    <div class="card"
-         data-role="data-engineer"
-         data-date="2026-03-30">
+    /* ════════════════════════════
+       Modal
+    ════════════════════════════ */
+    function openModal()  { document.getElementById("subscribeModal").classList.add("open"); }
+    function closeModal() { document.getElementById("subscribeModal").classList.remove("open"); }
 
       <div class="card-title">Senior Data Engineer</div>
       <div class="card-company">Prism Digital</div>
@@ -10911,26 +11217,6 @@
 
       counter.textContent = `Showing ${visible} job${visible !== 1 ? "s" : ""}`;
     }
-
-    // Role filter
-    roleButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        roleButtons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        activeRole = btn.dataset.filter;
-        applyFilters();
-      });
-    });
-
-    // Date filter
-    dateButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        dateButtons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        activeDays = parseInt(btn.dataset.days);
-        applyFilters();
-      });
-    });
   </script>
 
 </body>

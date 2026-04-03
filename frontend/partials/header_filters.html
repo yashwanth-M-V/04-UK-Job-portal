@@ -1,0 +1,44 @@
+<header>
+  <h1>🇬🇧 UK Data Engineering Jobs</h1>
+  <p>Updated daily · {{ job_count }} roles found · Last run: {{ last_run }}</p>
+
+  <a class="github-btn"
+     href="https://github.com/yashwanth-m-v/UK-Job-portal"
+     target="_blank" rel="noopener">
+    <svg viewBox="0 0 16 16" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59..."/>
+    </svg>
+    ⭐ Star on GitHub · Raise an Issue
+  </a>
+
+  <!-- ── Main nav tabs ── -->
+  <div class="nav-tabs">
+    <button class="nav-tab active" data-tab="jobs">💼 Jobs</button>
+    <button class="nav-tab"        data-tab="analytics">📊 Analytics</button>
+  </div>
+</header>
+
+<!-- ── Filters (only visible on Jobs tab) ── -->
+<div id="jobs-filters">
+
+  <div class="filter-section">
+    <div class="filter-label">Filter by date posted</div>
+    <button class="filter-btn date-btn active" data-days="14">Last 14 days</button>
+    <button class="filter-btn date-btn" data-days="7">Last 7 days</button>
+    <button class="filter-btn date-btn" data-days="3">Last 3 days</button>
+    <button class="filter-btn date-btn" data-days="1">Today</button>
+  </div>
+
+  <hr class="filter-divider" />
+
+  <div class="filter-section">
+    <div class="filter-label">Filter by role</div>
+    <button class="filter-btn active" data-filter="all">All Roles</button>
+    {% for role in roles %}
+      <button class="filter-btn" data-filter="{{ role.slug }}">{{ role.label }}</button>
+    {% endfor %}
+  </div>
+
+  <p class="job-count" id="job-count">Showing {{ job_count }} jobs</p>
+
+</div>

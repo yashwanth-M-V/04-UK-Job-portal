@@ -4,311 +4,861 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>UK Data Engineering Jobs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ─── Reset & tokens ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0c0f1a;
+      --surface:   #131726;
+      --surface2:  #1a1f32;
+      --border:    rgba(255,255,255,0.07);
+      --border2:   rgba(255,255,255,0.13);
+      --text:      #e8eaf2;
+      --muted:     #7b82a0;
+      --accent:    #5b8fff;
+      --accent2:   #3ecfb2;
+      --accent3:   #ff6b6b;
+      --pill-bg:   rgba(91,143,255,0.1);
+      --pill-text: #8aadff;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --font-body: "DM Sans", sans-serif;
+      --font-mono: "DM Mono", monospace;
+    }
+
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f4f6f9;
-      color: #1a1a2e;
-      padding: 2rem 1rem;
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 0;
+      overflow-x: hidden;
     }
 
+    /* ─── Background grid texture ─── */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(91,143,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(91,143,255,0.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── Glow blobs ─── */
+    .glow-1, .glow-2 {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(120px);
+      opacity: 0.18;
+    }
+    .glow-1 {
+      width: 600px; height: 600px;
+      background: #3b63d9;
+      top: -200px; left: -100px;
+    }
+    .glow-2 {
+      width: 500px; height: 500px;
+      background: #1fbfa6;
+      bottom: -200px; right: -100px;
+    }
+
+    /* ─── Layout wrapper ─── */
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    /* ─── Header ─── */
     header {
       text-align: center;
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s ease both;
     }
 
-    header h1 {
-      font-size: 2rem;
-      color: #1a1a2e;
-    }
-
-    header p {
-      color: #666;
-      margin-top: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    /* ── GitHub button ── */
-    .github-btn {
+    .header-eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      margin-top: 0.85rem;
-      padding: 0.45rem 1.1rem;
-      background: #1a1a2e;
-      color: white;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent2);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      padding: 0.3rem 0.9rem;
+      border: 1px solid rgba(62,207,178,0.25);
       border-radius: 999px;
-      text-decoration: none;
-      font-size: 0.85rem;
+      background: rgba(62,207,178,0.06);
+    }
+
+    .header-eyebrow::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent2);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 600;
-      transition: background 0.2s;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--text);
     }
 
-    .github-btn:hover { background: #3730a3; }
-
-    .github-btn svg {
-      width: 16px;
-      height: 16px;
-      fill: white;
+    header h1 span {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
-    /* ── Filter sections ── */
-    .filter-section {
+    .header-sub {
+      margin-top: 0.75rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+
+    .header-sub strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ─── Header actions row ─── */
+    .header-actions {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+      align-items: center;
       justify-content: center;
-      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.15rem;
+      border: 1px solid var(--border2);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(91,143,255,0.07);
+    }
+    .btn-ghost svg { width: 15px; height: 15px; fill: currentColor; }
+
+    .btn-subscribe {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.35rem;
+      border: 1px solid rgba(62,207,178,0.4);
+      border-radius: 999px;
+      background: rgba(62,207,178,0.1);
+      color: var(--accent2);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: var(--font-body);
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    }
+    .btn-subscribe:hover {
+      background: rgba(62,207,178,0.18);
+      border-color: rgba(62,207,178,0.7);
+      transform: translateY(-1px);
+    }
+
+    /* ─── Filters ─── */
+    .filters-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(12, 15, 26, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      margin: 0 -1.5rem 2rem;
+      animation: fadeDown 0.5s ease 0.1s both;
+    }
+
+    .filters-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4rem;
     }
 
     .filter-label {
-      width: 100%;
-      text-align: center;
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: #999;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.1rem;
+      margin-right: 0.25rem;
+      white-space: nowrap;
     }
 
-    .filter-btn {
-      padding: 0.45rem 1.1rem;
-      border: 2px solid #4f46e5;
+    .chip {
+      padding: 0.3rem 0.85rem;
       border-radius: 999px;
-      background: white;
-      color: #4f46e5;
-      font-size: 0.85rem;
-      font-weight: 600;
+      border: 1px solid var(--border2);
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 500;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.18s;
+      white-space: nowrap;
+    }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .chip.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .chip.date-chip:hover { border-color: var(--accent2); color: var(--accent2); }
+    .chip.date-chip.active {
+      background: var(--accent2);
+      border-color: var(--accent2);
+      color: #0c1a17;
     }
 
-    .filter-btn:hover,
-    .filter-btn.active {
-      background: #4f46e5;
-      color: white;
-    }
-
-    /* date filter uses a slightly different accent so it's visually distinct */
-    .date-btn {
-      border-color: #0891b2;
-      color: #0891b2;
-    }
-
-    .date-btn:hover,
-    .date-btn.active {
-      background: #0891b2;
-      color: white;
-    }
-
-    .filter-divider {
-      width: 100%;
-      max-width: 500px;
-      margin: 0.5rem auto 0.75rem;
-      border: none;
-      border-top: 1px solid #e2e8f0;
-    }
-
-    /* ── Job count ── */
-    .job-count {
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
+    /* ─── Stats bar ─── */
+    .stats-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 1.5rem;
+      animation: fadeUp 0.5s ease 0.2s both;
     }
 
-    /* ── Grid ── */
+    .job-count {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .job-count strong { color: var(--text); }
+
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+      margin: 0 1rem;
+    }
+
+    /* ─── Grid ─── */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.25rem;
-      max-width: 1200px;
-      margin: 0 auto;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1rem;
     }
 
-    /* ── Card ── */
+    /* ─── Card ─── */
     .card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.4rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      border-left: 4px solid #4f46e5;
-      transition: transform 0.2s, box-shadow 0.2s;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.5rem;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.65rem;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      animation: fadeUp 0.4s ease both;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(91,143,255,0.4), transparent);
+      opacity: 0;
+      transition: opacity 0.2s;
     }
 
     .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.11);
+      border-color: rgba(91,143,255,0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+    .card:hover::before { opacity: 1; }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.5rem;
     }
 
     .card-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #1a1a2e;
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+      flex: 1;
     }
 
     .card-company {
-      font-size: 0.9rem;
-      color: #4f46e5;
-      font-weight: 600;
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-weight: 500;
     }
 
     .card-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.2rem;
+      gap: 0.35rem;
     }
 
     .badge {
-      background: #f0f0ff;
-      color: #4f46e5;
-      border-radius: 6px;
       padding: 0.2rem 0.6rem;
-      font-size: 0.78rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.72rem;
       font-weight: 500;
+      letter-spacing: 0.01em;
     }
 
-    .badge.site-indeed   { background: #fff3e0; color: #e65100; }
-    .badge.site-linkedin { background: #e3f2fd; color: #0a66c2; }
-    .badge.site-google   { background: #e8f5e9; color: #2e7d32; }
+    .badge-default {
+      background: var(--pill-bg);
+      color: var(--pill-text);
+      border: 1px solid rgba(91,143,255,0.15);
+    }
+
+    .badge-indeed   { background: rgba(255,107,107,0.1);  color: #ff9a9a; border: 1px solid rgba(255,107,107,0.2); }
+    .badge-linkedin { background: rgba(10,102,194,0.15);   color: #6baee8; border: 1px solid rgba(10,102,194,0.25); }
+    .badge-google   { background: rgba(62,207,178,0.1);    color: var(--accent2); border: 1px solid rgba(62,207,178,0.2); }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
 
     .card-date {
-      font-size: 0.8rem;
-      color: #999;
-      margin-top: auto;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--muted);
     }
 
     .apply-btn {
-      display: inline-block;
-      margin-top: 0.75rem;
-      padding: 0.5rem 1.2rem;
-      background: #4f46e5;
-      color: white;
-      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 1rem;
+      background: rgba(91,143,255,0.12);
+      border: 1px solid rgba(91,143,255,0.3);
+      color: var(--accent);
+      border-radius: var(--radius-sm);
       text-decoration: none;
-      font-size: 0.85rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      text-align: center;
-      transition: background 0.2s;
+      transition: background 0.18s, border-color 0.18s, transform 0.15s;
+    }
+    .apply-btn:hover {
+      background: rgba(91,143,255,0.22);
+      border-color: var(--accent);
+      transform: translateX(2px);
     }
 
-    .apply-btn:hover { background: #3730a3; }
+    .new-badge {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: #0c1a17;
+      background: var(--accent2);
+      border-radius: 4px;
+      padding: 0.1rem 0.4rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+    }
 
-    /* ── Empty state ── */
+    /* ─── Empty state ─── */
     .empty {
-      text-align: center;
-      color: #999;
-      padding: 3rem;
       grid-column: 1 / -1;
+      text-align: center;
+      padding: 5rem 2rem;
+      color: var(--muted);
     }
+    .empty-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      opacity: 0.4;
+    }
+    .empty p { font-size: 0.95rem; }
 
+    /* ─── Footer ─── */
     footer {
       text-align: center;
-      margin-top: 3rem;
-      color: #aaa;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+    }
+
+    /* ─── Modal ─── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .modal-overlay.open { display: flex; }
+
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: var(--radius-lg);
+      padding: 2rem 2rem 1.75rem;
+      width: 100%;
+      max-width: 440px;
+      position: relative;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      animation: modalIn 0.25s ease both;
+    }
+
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(16px) scale(0.97); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.1rem; right: 1.1rem;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .modal-close:hover { background: var(--surface2); color: var(--text); }
+
+    .modal-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--radius-md);
+      background: rgba(62,207,178,0.12);
+      border: 1px solid rgba(62,207,178,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .modal h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+
+    .modal-desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    /* Channel tabs */
+    .channel-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .tab-btn {
+      padding: 0.65rem 0.5rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border2);
+      background: var(--surface2);
+      color: var(--muted);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+    .tab-btn:hover { border-color: var(--accent2); color: var(--text); }
+    .tab-btn.active {
+      border-color: var(--accent2);
+      background: rgba(62,207,178,0.1);
+      color: var(--accent2);
+    }
+
+    /* Form elements */
+    .modal-input {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border2);
+      border-radius: var(--radius-md);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .modal-input::placeholder { color: var(--muted); }
+    .modal-input:focus {
+      border-color: var(--accent2);
+      box-shadow: 0 0 0 3px rgba(62,207,178,0.1);
+    }
+
+    .modal-submit {
+      width: 100%;
+      margin-top: 0.75rem;
+      padding: 0.75rem;
+      background: var(--accent2);
+      color: #0a1a15;
+      border: none;
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .modal-submit:hover { opacity: 0.88; transform: translateY(-1px); }
+    .modal-submit:disabled { opacity: 0.45; cursor: default; transform: none; }
+
+    .telegram-info {
+      background: rgba(62,207,178,0.06);
+      border: 1px solid rgba(62,207,178,0.2);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .telegram-info p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .telegram-info strong { color: var(--accent2); }
+    .telegram-info code {
+      font-family: var(--font-mono);
+      background: rgba(255,255,255,0.07);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
       font-size: 0.8rem;
+      color: var(--text);
+    }
+
+    .modal-btn-tg {
+      width: 100%;
+      padding: 0.75rem;
+      background: rgba(62,207,178,0.12);
+      border: 1px solid rgba(62,207,178,0.35);
+      border-radius: var(--radius-md);
+      color: var(--accent2);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+    }
+    .modal-btn-tg:hover { background: rgba(62,207,178,0.2); transform: translateY(-1px); }
+
+    .modal-msg {
+      margin-top: 0.75rem;
+      font-size: 0.82rem;
+      text-align: center;
+      min-height: 1.2em;
+      font-family: var(--font-mono);
+    }
+    .modal-msg.ok  { color: var(--accent2); }
+    .modal-msg.err { color: var(--accent3); }
+
+    /* ─── Animations ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+
+    /* stagger cards */
+    .card:nth-child(1)  { animation-delay: 0.05s; }
+    .card:nth-child(2)  { animation-delay: 0.08s; }
+    .card:nth-child(3)  { animation-delay: 0.11s; }
+    .card:nth-child(4)  { animation-delay: 0.14s; }
+    .card:nth-child(5)  { animation-delay: 0.17s; }
+    .card:nth-child(6)  { animation-delay: 0.20s; }
+    .card:nth-child(7)  { animation-delay: 0.23s; }
+    .card:nth-child(8)  { animation-delay: 0.26s; }
+    .card:nth-child(9)  { animation-delay: 0.29s; }
+    .card:nth-child(10) { animation-delay: 0.32s; }
+    .card:nth-child(n+11) { animation-delay: 0.35s; }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 600px) {
+      .page { padding: 1.5rem 1rem 3rem; }
+      header h1 { font-size: 1.75rem; }
+      .grid { grid-template-columns: 1fr; }
+      .stats-bar { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .divider-line { display: none; }
+      .filters-wrapper { padding: 0.85rem 1rem; }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>🇬🇧 UK Data Engineering Jobs</h1>
-    <p>Updated daily · {{ total_jobs }} roles found · Last run: {{ last_updated }}</p>
+  <!-- Ambient blobs -->
+  <div class="glow-1"></div>
+  <div class="glow-2"></div>
 
-    <!-- GitHub button -->
-    <a class="github-btn"
-       href="https://github.com/yashwanth-m-v/UK-Job-portal"
-       target="_blank"
-       rel="noopener">
-      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-                 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-                 -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-                 .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-                 -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
-                 .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
-                 .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-                 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-      </svg>
-      ⭐ Star on GitHub · Raise an Issue
-    </a>
-  </header>
+  <div class="page">
 
-  <!-- Date range filter -->
-  <div class="filter-section">
-    <div class="filter-label">Filter by date posted</div>
-    <button class="filter-btn date-btn active" data-days="14">Last 14 days</button>
-    <button class="filter-btn date-btn" data-days="7">Last 7 days</button>
-    <button class="filter-btn date-btn" data-days="3">Last 3 days</button>
-    <button class="filter-btn date-btn" data-days="1">Today</button>
-  </div>
+    <!-- ── Header ── -->
+    <header>
+      <div class="header-eyebrow">Updated daily · live pipeline</div>
+      <h1>🇬🇧 UK <span>Data Engineering</span> Jobs</h1>
+      <p class="header-sub">
+        <strong>{{ total_jobs }} roles</strong> scraped &amp; ranked · Last run: {{ last_updated }}
+      </p>
 
-  <hr class="filter-divider" />
+      <div class="header-actions">
+        <a class="btn-ghost"
+           href="https://github.com/yashwanth-m-v/UK-Job-portal"
+           target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                     0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                     -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                     .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                     -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
+                     .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+                     .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                     0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          ⭐ Star on GitHub
+        </a>
 
-  <!-- Role filter -->
-  <div class="filter-section">
-    <div class="filter-label">Filter by role</div>
-    <button class="filter-btn active" data-filter="all">All Roles</button>
-    {% for role in roles %}
-      <button class="filter-btn" data-filter="{{ role | lower | replace(' ', '-') }}">
-        {{ role }}
-      </button>
-    {% endfor %}
-  </div>
+        <button class="btn-subscribe" onclick="openModal()">
+          🔔 Get Daily Alerts
+        </button>
+      </div>
+    </header>
 
-  <p class="job-count" id="job-count">Showing {{ total_jobs }} jobs</p>
+    <!-- ── Sticky filters ── -->
+    <div class="filters-wrapper">
+      <div class="filters-inner">
+        <div class="filter-row">
+          <span class="filter-label">Date →</span>
+          <button class="chip date-chip active" data-days="14">14 days</button>
+          <button class="chip date-chip" data-days="7">7 days</button>
+          <button class="chip date-chip" data-days="3">3 days</button>
+          <button class="chip date-chip" data-days="1">Today</button>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Role →</span>
+          <button class="chip active" data-filter="all">All</button>
+          {% for role in roles %}
+            <button class="chip" data-filter="{{ role | lower | replace(' ', '-') }}">
+              {{ role }}
+            </button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
 
-  <!-- Job cards — date_posted_iso is used by JS for date filtering -->
-  <div class="grid" id="job-grid">
-    {% for job in jobs %}
-    <div class="card"
-         data-role="{{ job.role_group | lower | replace(' ', '-') }}"
-         data-date="{{ job.date_posted_iso }}">
+    <!-- ── Stats bar ── -->
+    <div class="stats-bar">
+      <p class="job-count" id="job-count">Showing <strong>{{ total_jobs }}</strong> jobs</p>
+      <div class="divider-line"></div>
+    </div>
 
-      <div class="card-title">{{ job.title }}</div>
-      <div class="card-company">{{ job.company }}</div>
+    <!-- ── Job grid ── -->
+    <div class="grid" id="job-grid">
+      {% for job in jobs %}
+      <div class="card"
+           data-role="{{ job.role_group | lower | replace(' ', '-') }}"
+           data-date="{{ job.date_posted_iso }}">
 
-      <div class="card-meta">
-        <span class="badge site-{{ job.site | lower }}">{{ job.site | capitalize }}</span>
-        {% if job.location %}
-          <span class="badge">📍 {{ job.location }}</span>
-        {% endif %}
-        {% if job.job_type and job.job_type != 'N/A' %}
-          <span class="badge">🧠 {{ job.job_type }}</span>
-        {% endif %}
+        <div class="card-header">
+          <div>
+            <div class="card-title">{{ job.title }}</div>
+            <div class="card-company" style="margin-top:0.3rem;">{{ job.company }}</div>
+          </div>
+          {% set days_old = ((today_iso | default('2099-01-01')) | string) %}
+          {% if job.date_posted_iso >= today_iso | default('2099-01-01') %}
+            <span class="new-badge">NEW</span>
+          {% endif %}
+        </div>
+
+        <div class="card-meta">
+          <span class="badge badge-{{ job.site | lower }}">{{ job.site | capitalize }}</span>
+          {% if job.location %}
+            <span class="badge badge-default">📍 {{ job.location }}</span>
+          {% endif %}
+          {% if job.job_type and job.job_type != 'N/A' %}
+            <span class="badge badge-default">{{ job.job_type }}</span>
+          {% endif %}
+          <span class="badge badge-default" style="background:rgba(255,255,255,0.04);color:var(--muted);border-color:transparent;">
+            {{ job.role_group }}
+          </span>
+        </div>
+
+        <div class="card-footer">
+          <span class="card-date">{{ job.date_posted }}</span>
+          <a class="apply-btn" href="{{ job.job_url }}" target="_blank" rel="noopener">
+            Apply →
+          </a>
+        </div>
+
+      </div>
+      {% else %}
+        <div class="empty">
+          <div class="empty-icon">🔍</div>
+          <p>No jobs match the current filters.</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer>
+      built with python · jobspy · jinja2 · supabase · hosted on github pages
+    </footer>
+
+  </div><!-- /page -->
+
+
+  <!-- ══════════════════════════════
+       Subscribe modal
+  ══════════════════════════════ -->
+  <div class="modal-overlay" id="subscribeModal"
+       onclick="if(event.target===this) closeModal()">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+
+      <div class="modal-icon">🔔</div>
+      <h2 id="modal-title">Daily Job Alerts</h2>
+      <p class="modal-desc">
+        Get the freshest UK Data Engineering roles delivered every day at 9 pm.
+        Pick your channel below.
+      </p>
+
+      <div class="channel-tabs">
+        <button class="tab-btn active" id="tab-email" onclick="switchTab('email')">
+          📧 Email
+        </button>
+        <button class="tab-btn" id="tab-telegram" onclick="switchTab('telegram')">
+          ✈️ Telegram
+        </button>
       </div>
 
-      <div class="card-date">
-        🗓 Posted: {{ job.date_posted }}
+      <!-- Email panel -->
+      <div id="panel-email">
+        <input
+          class="modal-input"
+          type="email"
+          id="input-email"
+          placeholder="you@example.com"
+          autocomplete="email"
+        />
+        <button class="modal-submit" id="submit-email" onclick="subscribeEmail()">
+          Subscribe via Email
+        </button>
       </div>
 
-      <a class="apply-btn" href="{{ job.job_url }}" target="_blank" rel="noopener">
-        Apply →
-      </a>
+      <!-- Telegram panel -->
+      <div id="panel-telegram" style="display:none;">
+        <div class="telegram-info">
+          <p>
+            Open Telegram and message
+            <strong>@uk_de_job_update_bot</strong>
+            then send <code>/start</code> — that's all it takes.
+            You can unsubscribe any time with <code>/stop</code>.
+          </p>
+        </div>
+        <button class="modal-btn-tg"
+                onclick="window.open('https://t.me/uk_de_job_update_bot','_blank')">
+          ✈️ Open Bot on Telegram →
+        </button>
+      </div>
+
+      <div class="modal-msg" id="modal-msg"></div>
 
     </div>
-    {% else %}
-      <div class="empty">No jobs found for this filter.</div>
-    {% endfor %}
   </div>
 
-  <footer>
-    Built with Python · jobspy · Jinja2 · Hosted on GitHub Pages
-  </footer>
 
   <script>
-    const roleButtons = document.querySelectorAll(".filter-btn:not(.date-btn)");
-    const dateButtons = document.querySelectorAll(".date-btn");
-    const cards       = document.querySelectorAll(".card");
-    const counter     = document.getElementById("job-count");
+    /* ════════════════════════════
+       Config — update these two
+    ════════════════════════════ */
+    const SUPABASE_URL  = "https://ijlydnalqkepiikzsgqq.supabase.co";
+    const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqbHlkbmFscWtlcGlpa3pzZ3FxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyNjcyOTUsImV4cCI6MjA4OTg0MzI5NX0.rhOZqWbN7DCVwP49SCkrbNr83clsbO3VPp1_owXTUTo";
+
+    /* ════════════════════════════
+       Filter state
+    ════════════════════════════ */
+    const roleChips = document.querySelectorAll(".chip:not(.date-chip)");
+    const dateChips = document.querySelectorAll(".date-chip");
+    const cards     = document.querySelectorAll(".card");
+    const counter   = document.getElementById("job-count");
 
     let activeRole = "all";
     let activeDays = 14;
@@ -319,39 +869,109 @@
       cutoff.setHours(0, 0, 0, 0);
 
       let visible = 0;
-
       cards.forEach(card => {
         const roleMatch = activeRole === "all" || card.dataset.role === activeRole;
-        const cardDate  = new Date(card.dataset.date);
-        const dateMatch = cardDate >= cutoff;
-
+        const dateMatch = new Date(card.dataset.date) >= cutoff;
         const show = roleMatch && dateMatch;
         card.style.display = show ? "flex" : "none";
         if (show) visible++;
       });
 
-      counter.textContent = `Showing ${visible} job${visible !== 1 ? "s" : ""}`;
+      counter.innerHTML = `Showing <strong>${visible}</strong> job${visible !== 1 ? "s" : ""}`;
     }
 
-    // Role filter
-    roleButtons.forEach(btn => {
+    roleChips.forEach(btn => {
       btn.addEventListener("click", () => {
-        roleButtons.forEach(b => b.classList.remove("active"));
+        roleChips.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
         activeRole = btn.dataset.filter;
         applyFilters();
       });
     });
 
-    // Date filter
-    dateButtons.forEach(btn => {
+    dateChips.forEach(btn => {
       btn.addEventListener("click", () => {
-        dateButtons.forEach(b => b.classList.remove("active"));
+        dateChips.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
-        activeDays = parseInt(btn.dataset.days);
+        activeDays = parseInt(btn.dataset.days, 10);
         applyFilters();
       });
     });
+
+    /* ════════════════════════════
+       Modal
+    ════════════════════════════ */
+    function openModal()  { document.getElementById("subscribeModal").classList.add("open"); }
+    function closeModal() { document.getElementById("subscribeModal").classList.remove("open"); }
+
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") closeModal();
+    });
+
+    function switchTab(tab) {
+      document.getElementById("panel-email").style.display    = tab === "email"    ? "" : "none";
+      document.getElementById("panel-telegram").style.display = tab === "telegram" ? "" : "none";
+      document.getElementById("tab-email").classList.toggle("active",    tab === "email");
+      document.getElementById("tab-telegram").classList.toggle("active", tab === "telegram");
+      document.getElementById("modal-msg").textContent = "";
+    }
+
+    async function subscribeEmail() {
+      const msg   = document.getElementById("modal-msg");
+      const btn   = document.getElementById("submit-email");
+      const email = document.getElementById("input-email").value.trim();
+
+      msg.className = "modal-msg";
+      msg.textContent = "";
+
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        msg.className = "modal-msg err";
+        msg.textContent = "please enter a valid email address.";
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = "Subscribing…";
+
+      try {
+        const res = await fetch(`${SUPABASE_URL}/rest/v1/subscribers`, {
+          method: "POST",
+          headers: {
+            "Content-Type":  "application/json",
+            "apikey":        SUPABASE_ANON,
+            "Authorization": `Bearer ${SUPABASE_ANON}`,
+            "Prefer":        "return=minimal",
+          },
+          body: JSON.stringify({
+            email,
+            preferred_channel: "email",
+            channel_verified:  false,
+            is_active:         true,
+            source:            "website",
+          }),
+        });
+
+        if (res.ok || res.status === 201) {
+          msg.className = "modal-msg ok";
+          msg.textContent = "✓ subscribed — see you at 9 pm!";
+          document.getElementById("input-email").value = "";
+        } else {
+          const err = await res.json().catch(() => ({}));
+          if (res.status === 409 || err.code === "23505") {
+            msg.className = "modal-msg ok";
+            msg.textContent = "✓ you're already subscribed!";
+          } else {
+            throw new Error(res.status);
+          }
+        }
+      } catch {
+        msg.className = "modal-msg err";
+        msg.textContent = "something went wrong — please try again.";
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Subscribe via Email";
+      }
+    }
   </script>
 
 </body>
