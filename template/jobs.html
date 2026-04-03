@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- ── Jobs Panel ── -->
+  <div id="panel-jobs">
+    <div class="grid" id="job-grid">
+      {% for job in jobs %}
+      <div class="card"
+           data-role="{{ job.role }}"
+           data-date="{{ job.date_iso }}">
+
+        <div class="card-title">{{ job.title }}</div>
+        <div class="card-company">{{ job.company }}</div>
+
+        <div class="card-meta">
+          <span class="badge site-{{ job.source_class }}">{{ job.source_label }}</span>
+          {% if job.location %}
+            <span class="badge">📍 {{ job.location }}</span>
+          {% endif %}
+          {% if job.job_type and job.job_type != 'NaN' %}
+            <span class="badge">🧠 {{ job.job_type }}</span>
+          {% endif %}
+        </div>
+
+        <div class="card-date">🗓 Posted: {{ job.date_display }}</div>
+
+        <a class="apply-btn" href="{{ job.url }}" target="_blank" rel="noopener">
+          Apply →
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- ── Analytics Panel (placeholder) ── -->
+  <div id="panel-analytics" style="display:none;">
+    <div class="analytics-placeholder">
+      <span>📊</span>
+      <h2>Analytics coming soon</h2>
+      <p>Charts, trends, and insights about the UK Data Engineering job market will live here.</p>
+    </div>
+  </div>
+
+{% endblock %}

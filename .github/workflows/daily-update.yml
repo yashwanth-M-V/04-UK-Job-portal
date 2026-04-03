@@ -53,6 +53,18 @@ jobs:
           CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
         run: uv run python main.py
 
+      # 6b. Send notifications
+      - name: Send job notifications
+        env:
+          API_URL: ${{ secrets.API_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
+          SEND_GRID_API_KEY: ${{ secrets.SEND_GRID_API_KEY }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: uv run python notify.py
+
       # 7️⃣ Commit updated website
       - name: Commit updated website
         run: |
