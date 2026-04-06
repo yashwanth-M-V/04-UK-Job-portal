@@ -19,7 +19,7 @@ load_dotenv()
 
 supabase = create_client(os.getenv("API_URL"), os.getenv("SUPABASE_SERVICE_KEY"))
 
-SITE_URL = "https://yashwanth-m-v.github.io/UK-Job-portal/"  # update if different
+SITE_URL = "https://yashwanth-m-v.github.io/Data-hire-UK/" 
 
 
 def get_todays_jobs(limit: int = 5) -> list[dict]:
