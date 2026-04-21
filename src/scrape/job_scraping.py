@@ -7,7 +7,6 @@ from datetime import datetime
 from dotenv import load_dotenv
 import tempfile
 from io import BytesIO
-
 from src.config.config import BUCKET_NAME, supabase
 
 load_dotenv()
