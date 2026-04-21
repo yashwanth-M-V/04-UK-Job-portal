@@ -6,6 +6,8 @@
 
 A automated data pipeline that scrapes, processes, and displays active Data Engineering job openings across the UK. This project simplifies the job search process by centralizing listings from Indeed, LinkedIn, and Google.
 
+View the live page here: https://yashwanth-m-v.github.io/Data-hire-UK/
+
 ## 📋 Table of Contents
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
