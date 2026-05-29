@@ -62,50 +62,89 @@ def load_jobs_from_db(limit: int = 500) -> pd.DataFrame:
 # Render HTML via Jinja2       ← unchanged
 # ---------------------------
 def render_html(df: pd.DataFrame, output_path: Path = OUTPUT_PATH) -> None:
+
     if df.empty:
-        print("⚠️  No jobs to render into HTML")
+        print("⚠️ No jobs to render into HTML")
         return
 
     jobs = []
+
     for _, row in df.iterrows():
+
         date_val = row.get("date_posted")
+
         try:
             date_obj = pd.to_datetime(date_val)
-            date_posted     = date_obj.strftime("%d %b %Y")
+
+            date_posted = date_obj.strftime("%d %b %Y")
             date_posted_iso = date_obj.strftime("%Y-%m-%d")
+
         except Exception:
-            date_posted     = "Unknown"
+            date_posted = "Unknown"
             date_posted_iso = ""
 
+        title = row.get("title", "")
+
+        # Categorise jobs
+        category = "healthcare"
+
+        if any(word in title.lower() for word in [
+            "data",
+            "etl",
+            "analytics",
+            "machine learning",
+            "bi engineer",
+            "cloud"
+        ]):
+            category = "data_engineering"
+
         jobs.append({
-            "title":          row.get("title", ""),
-            "company":        row.get("company", ""),
-            "location":       row.get("location", ""),
-            "site":           row.get("site", ""),
-            "job_type":       row.get("job_type", "N/A") or "N/A",
-            "job_url":        row.get("job_url", "#"),
-            "date_posted":    date_posted,
+            "title": title,
+            "company": row.get("company", ""),
+            "location": row.get("location", ""),
+            "site": row.get("site", ""),
+            "job_type": row.get("job_type", "N/A") or "N/A",
+            "job_url": row.get("job_url", "#"),
+            "date_posted": date_posted,
             "date_posted_iso": date_posted_iso,
-            "role_group":     get_role_group(row.get("title", "")),
+            "role_group": get_role_group(title),
+            "category": category,
         })
 
-    roles = sorted(set(j["role_group"] for j in jobs))
+    # Split jobs
+    de_jobs = [j for j in jobs if j["category"] == "data_engineering"]
+    hc_jobs = [j for j in jobs if j["category"] == "healthcare"]
 
-    env      = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
+    # Roles
+    de_roles = sorted(set(j["role_group"] for j in de_jobs))
+    hc_roles = sorted(set(j["role_group"] for j in hc_jobs))
+
+    total_de = len(de_jobs)
+    total_hc = len(hc_jobs)
+
+    env = Environment(
+        loader=FileSystemLoader(str(TEMPLATE_DIR))
+    )
+
     template = env.get_template("job_template.html")
 
     html = template.render(
-        jobs         = jobs,
-        roles        = roles,
-        total_jobs   = len(jobs),
-        last_updated = datetime.utcnow().strftime("%d %b %Y, %H:%M UTC"),
+        de_jobs=de_jobs,
+        hc_jobs=hc_jobs,
+        de_roles=de_roles,
+        hc_roles=hc_roles,
+        total_de=total_de,
+        total_hc=total_hc,
+        today_iso=datetime.utcnow().strftime("%Y-%m-%d"),
+        last_updated=datetime.utcnow().strftime("%d %b %Y, %H:%M UTC"),
     )
 
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(html, encoding="utf-8")
+    output_path.write_text(
+        html,
+        encoding="utf-8"
+    )
+
     print(f"✅ HTML rendered → {output_path} ({len(jobs)} jobs)")
-
-
 # ---------------------------
 # Run renderer standalone
 # ---------------------------

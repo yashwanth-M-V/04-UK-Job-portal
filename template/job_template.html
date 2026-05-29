@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Data Hire UK</title>
+  <title>Jobs UK — Data & Healthcare</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
   <style>
-    /* ─── Reset & tokens ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -19,689 +18,456 @@
       --border2:   rgba(255,255,255,0.13);
       --text:      #e8eaf2;
       --muted:     #7b82a0;
-      --accent:    #5b8fff;
-      --accent2:   #3ecfb2;
+
+      /* Data Engineering palette */
+      --de-accent:   #5b8fff;
+      --de-accent2:  #3ecfb2;
+      --de-pill-bg:  rgba(91,143,255,0.1);
+      --de-pill-txt: #8aadff;
+
+      /* Healthcare palette */
+      --hc-accent:   #ff7eb3;
+      --hc-accent2:  #f9a94b;
+      --hc-pill-bg:  rgba(255,126,179,0.1);
+      --hc-pill-txt: #ffadd0;
+
       --accent3:   #ff6b6b;
-      --pill-bg:   rgba(91,143,255,0.1);
-      --pill-text: #8aadff;
       --radius-sm: 6px;
       --radius-md: 12px;
       --radius-lg: 18px;
       --font-body: "DM Sans", sans-serif;
       --font-mono: "DM Mono", monospace;
+
+      /* active section colours (overridden by JS) */
+      --accent:    var(--de-accent);
+      --accent2:   var(--de-accent2);
+      --pill-bg:   var(--de-pill-bg);
+      --pill-text: var(--de-pill-txt);
     }
 
     html { scroll-behavior: smooth; }
-
     body {
       font-family: var(--font-body);
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
-      padding: 0;
       overflow-x: hidden;
     }
 
-    /* ─── Background grid texture ─── */
     body::before {
       content: "";
-      position: fixed;
-      inset: 0;
+      position: fixed; inset: 0;
       background-image:
         linear-gradient(rgba(91,143,255,0.025) 1px, transparent 1px),
         linear-gradient(90deg, rgba(91,143,255,0.025) 1px, transparent 1px);
       background-size: 48px 48px;
-      pointer-events: none;
-      z-index: 0;
+      pointer-events: none; z-index: 0;
     }
 
-    /* ─── Glow blobs ─── */
     .glow-1, .glow-2 {
-      position: fixed;
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 0;
-      filter: blur(120px);
-      opacity: 0.18;
+      position: fixed; border-radius: 50%; pointer-events: none; z-index: 0;
+      filter: blur(120px); opacity: 0.18;
     }
-    .glow-1 {
-      width: 600px; height: 600px;
-      background: #3b63d9;
-      top: -200px; left: -100px;
-    }
-    .glow-2 {
-      width: 500px; height: 500px;
-      background: #1fbfa6;
-      bottom: -200px; right: -100px;
-    }
+    .glow-1 { width:600px; height:600px; background:#3b63d9; top:-200px; left:-100px; }
+    .glow-2 { width:500px; height:500px; background:#1fbfa6; bottom:-200px; right:-100px; }
 
-    /* ─── Layout wrapper ─── */
     .page {
-      position: relative;
-      z-index: 1;
-      max-width: 1240px;
-      margin: 0 auto;
+      position: relative; z-index: 1;
+      max-width: 1240px; margin: 0 auto;
       padding: 2.5rem 1.5rem 4rem;
     }
 
-    /* ─── Header ─── */
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-      animation: fadeUp 0.6s ease both;
-    }
+    /* ── Header ── */
+    header { text-align: center; margin-bottom: 2rem; animation: fadeUp 0.6s ease both; }
 
     .header-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--accent2);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-      padding: 0.3rem 0.9rem;
-      border: 1px solid rgba(62,207,178,0.25);
-      border-radius: 999px;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--de-accent2);
+      letter-spacing: 0.12em; text-transform: uppercase;
+      margin-bottom: 1rem; padding: 0.3rem 0.9rem;
+      border: 1px solid rgba(62,207,178,0.25); border-radius: 999px;
       background: rgba(62,207,178,0.06);
     }
-
     .header-eyebrow::before {
-      content: "";
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--accent2);
-      animation: pulse 2s ease-in-out infinite;
+      content: ""; width:6px; height:6px; border-radius:50%;
+      background: var(--de-accent2); animation: pulse 2s ease-in-out infinite;
     }
 
     header h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 600;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      color: var(--text);
+      font-size: clamp(1.8rem,5vw,2.8rem); font-weight:600;
+      letter-spacing:-0.03em; line-height:1.1;
     }
+    header h1 .de-word  { background: linear-gradient(135deg,var(--de-accent),var(--de-accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    header h1 .hc-word  { background: linear-gradient(135deg,var(--hc-accent),var(--hc-accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
 
-    header h1 span {
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+    .header-sub { margin-top:0.75rem; color:var(--muted); font-size:0.9rem; font-weight:300; }
+    .header-sub strong { color:var(--text); font-weight:500; }
 
-    .header-sub {
-      margin-top: 0.75rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-      font-weight: 300;
-    }
-
-    .header-sub strong {
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    /* ─── Header actions row ─── */
     .header-actions {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
+      display:flex; align-items:center; justify-content:center;
+      flex-wrap:wrap; gap:0.75rem; margin-top:1.5rem;
     }
-
     .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1.15rem;
-      border: 1px solid var(--border2);
-      border-radius: 999px;
-      background: var(--surface);
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.82rem;
-      font-weight: 500;
-      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      display:inline-flex; align-items:center; gap:0.5rem;
+      padding:0.5rem 1.15rem; border:1px solid var(--border2); border-radius:999px;
+      background:var(--surface); color:var(--muted); text-decoration:none;
+      font-size:0.82rem; font-weight:500; transition:all 0.2s;
     }
-    .btn-ghost:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: rgba(91,143,255,0.07);
-    }
-    .btn-ghost svg { width: 15px; height: 15px; fill: currentColor; }
+    .btn-ghost:hover { border-color:var(--de-accent); color:var(--de-accent); background:rgba(91,143,255,0.07); }
+    .btn-ghost svg { width:15px; height:15px; fill:currentColor; }
 
     .btn-subscribe {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1.35rem;
-      border: 1px solid rgba(62,207,178,0.4);
-      border-radius: 999px;
-      background: rgba(62,207,178,0.1);
-      color: var(--accent2);
-      font-size: 0.82rem;
-      font-weight: 600;
-      cursor: pointer;
-      font-family: var(--font-body);
-      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+      display:inline-flex; align-items:center; gap:0.5rem;
+      padding:0.5rem 1.35rem; border:1px solid rgba(62,207,178,0.4); border-radius:999px;
+      background:rgba(62,207,178,0.1); color:var(--de-accent2);
+      font-size:0.82rem; font-weight:600; cursor:pointer; font-family:var(--font-body);
+      transition:all 0.2s;
     }
-    .btn-subscribe:hover {
-      background: rgba(62,207,178,0.18);
-      border-color: rgba(62,207,178,0.7);
-      transform: translateY(-1px);
+    .btn-subscribe:hover { background:rgba(62,207,178,0.18); transform:translateY(-1px); }
+
+    /* ── Section switcher tabs ── */
+    .section-nav {
+      display:flex; justify-content:center; gap:0.75rem;
+      margin-bottom:2rem; animation: fadeUp 0.5s ease 0.1s both;
     }
 
-    /* ─── Filters ─── */
+    .section-tab {
+      display:inline-flex; align-items:center; gap:0.55rem;
+      padding:0.65rem 1.75rem; border-radius:999px;
+      border:1px solid var(--border2); background:var(--surface);
+      color:var(--muted); font-family:var(--font-body);
+      font-size:0.88rem; font-weight:600; cursor:pointer;
+      transition:all 0.22s; white-space:nowrap;
+    }
+    .section-tab .tab-count {
+      font-family:var(--font-mono); font-size:0.72rem;
+      padding:0.1rem 0.45rem; border-radius:999px;
+      background:rgba(255,255,255,0.06); color:var(--muted);
+    }
+
+    .section-tab.de-tab:hover,
+    .section-tab.de-tab.active {
+      border-color:var(--de-accent); color:var(--de-accent);
+      background:rgba(91,143,255,0.08);
+      box-shadow: 0 0 0 1px rgba(91,143,255,0.2);
+    }
+    .section-tab.de-tab.active .tab-count { background:rgba(91,143,255,0.18); color:var(--de-accent); }
+
+    .section-tab.hc-tab:hover,
+    .section-tab.hc-tab.active {
+      border-color:var(--hc-accent); color:var(--hc-accent);
+      background:rgba(255,126,179,0.08);
+      box-shadow: 0 0 0 1px rgba(255,126,179,0.2);
+    }
+    .section-tab.hc-tab.active .tab-count { background:rgba(255,126,179,0.18); color:var(--hc-accent); }
+
+    /* ── Sticky filters ── */
     .filters-wrapper {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(12, 15, 26, 0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-      padding: 1rem 1.5rem;
-      margin: 0 -1.5rem 2rem;
-      animation: fadeDown 0.5s ease 0.1s both;
+      position:sticky; top:0; z-index:10;
+      background:rgba(12,15,26,0.9); backdrop-filter:blur(16px);
+      -webkit-backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--border);
+      padding:1rem 1.5rem; margin:0 -1.5rem 2rem;
     }
-
     .filters-inner {
-      max-width: 1240px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
+      max-width:1240px; margin:0 auto;
+      display:flex; flex-direction:column; gap:0.75rem;
     }
-
-    .filter-row {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-
+    .filter-row { display:flex; align-items:center; flex-wrap:wrap; gap:0.4rem; }
     .filter-label {
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-right: 0.25rem;
-      white-space: nowrap;
+      font-family:var(--font-mono); font-size:0.68rem; color:var(--muted);
+      letter-spacing:0.1em; text-transform:uppercase;
+      margin-right:0.25rem; white-space:nowrap;
     }
 
     .chip {
-      padding: 0.3rem 0.85rem;
-      border-radius: 999px;
-      border: 1px solid var(--border2);
-      background: var(--surface);
-      color: var(--muted);
-      font-size: 0.78rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.18s;
-      white-space: nowrap;
-    }
-    .chip:hover { border-color: var(--accent); color: var(--accent); }
-    .chip.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
-    }
-    .chip.date-chip:hover { border-color: var(--accent2); color: var(--accent2); }
-    .chip.date-chip.active {
-      background: var(--accent2);
-      border-color: var(--accent2);
-      color: #0c1a17;
+      padding:0.3rem 0.85rem; border-radius:999px;
+      border:1px solid var(--border2); background:var(--surface);
+      color:var(--muted); font-size:0.78rem; font-weight:500;
+      cursor:pointer; transition:all 0.18s; white-space:nowrap;
     }
 
-    /* ─── Stats bar ─── */
+    /* DE chips */
+    .de-section .chip:hover          { border-color:var(--de-accent); color:var(--de-accent); }
+    .de-section .chip.active         { background:var(--de-accent); border-color:var(--de-accent); color:#fff; }
+    .de-section .date-chip:hover     { border-color:var(--de-accent2); color:var(--de-accent2); }
+    .de-section .date-chip.active    { background:var(--de-accent2); border-color:var(--de-accent2); color:#0c1a17; }
+
+    /* HC chips */
+    .hc-section .chip:hover          { border-color:var(--hc-accent); color:var(--hc-accent); }
+    .hc-section .chip.active         { background:var(--hc-accent); border-color:var(--hc-accent); color:#fff; }
+    .hc-section .date-chip:hover     { border-color:var(--hc-accent2); color:var(--hc-accent2); }
+    .hc-section .date-chip.active    { background:var(--hc-accent2); border-color:var(--hc-accent2); color:#1a0d00; }
+
+    /* ── Stats bar ── */
     .stats-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.5rem;
-      animation: fadeUp 0.5s ease 0.2s both;
+      display:flex; align-items:center; justify-content:space-between;
+      margin-bottom:1.5rem;
     }
+    .job-count { font-family:var(--font-mono); font-size:0.82rem; color:var(--muted); }
+    .job-count strong { color:var(--text); }
+    .divider-line { flex:1; height:1px; background:var(--border); margin:0 1rem; }
 
-    .job-count {
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      color: var(--muted);
-    }
-    .job-count strong { color: var(--text); }
-
-    .divider-line {
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-      margin: 0 1rem;
-    }
-
-    /* ─── Grid ─── */
+    /* ── Grid ── */
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 1rem;
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
+      gap:1rem;
     }
 
-    /* ─── Card ─── */
+    /* ── Card ── */
     .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.4rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
-      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-      animation: fadeUp 0.4s ease both;
-      position: relative;
-      overflow: hidden;
+      background:var(--surface); border:1px solid var(--border);
+      border-radius:var(--radius-lg); padding:1.4rem 1.5rem;
+      display:flex; flex-direction:column; gap:0.65rem;
+      transition:border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      animation:fadeUp 0.4s ease both; position:relative; overflow:hidden;
     }
-
     .card::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(91,143,255,0.4), transparent);
-      opacity: 0;
-      transition: opacity 0.2s;
+      content:""; position:absolute; top:0; left:0; right:0; height:1px;
+      opacity:0; transition:opacity 0.2s;
     }
+    .de-card::before { background:linear-gradient(90deg,transparent,rgba(91,143,255,0.5),transparent); }
+    .hc-card::before { background:linear-gradient(90deg,transparent,rgba(255,126,179,0.5),transparent); }
 
-    .card:hover {
-      border-color: rgba(91,143,255,0.3);
-      transform: translateY(-2px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
-    }
-    .card:hover::before { opacity: 1; }
+    .card:hover { transform:translateY(-2px); box-shadow:0 12px 40px rgba(0,0,0,0.35); }
+    .de-card:hover { border-color:rgba(91,143,255,0.3); }
+    .hc-card:hover { border-color:rgba(255,126,179,0.3); }
+    .card:hover::before { opacity:1; }
 
-    .card-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 0.5rem;
-    }
+    .card-header { display:flex; align-items:flex-start; justify-content:space-between; gap:0.5rem; }
+    .card-title  { font-size:0.98rem; font-weight:600; color:var(--text); line-height:1.35; flex:1; }
+    .de-card .card-company { font-size:0.82rem; color:var(--de-accent); font-weight:500; }
+    .hc-card .card-company { font-size:0.82rem; color:var(--hc-accent); font-weight:500; }
 
-    .card-title {
-      font-size: 0.98rem;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.35;
-      flex: 1;
-    }
-
-    .card-company {
-      font-size: 0.82rem;
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    .card-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-    }
+    .card-meta { display:flex; flex-wrap:wrap; gap:0.35rem; }
 
     .badge {
-      padding: 0.2rem 0.6rem;
-      border-radius: var(--radius-sm);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.01em;
+      padding:0.2rem 0.6rem; border-radius:var(--radius-sm);
+      font-size:0.72rem; font-weight:500; letter-spacing:0.01em;
     }
+    .de-card .badge-default { background:var(--de-pill-bg); color:var(--de-pill-txt); border:1px solid rgba(91,143,255,0.15); }
+    .hc-card .badge-default { background:var(--hc-pill-bg); color:var(--hc-pill-txt); border:1px solid rgba(255,126,179,0.15); }
 
-    .badge-default {
-      background: var(--pill-bg);
-      color: var(--pill-text);
-      border: 1px solid rgba(91,143,255,0.15);
-    }
-
-    .badge-indeed   { background: rgba(255,107,107,0.1);  color: #ff9a9a; border: 1px solid rgba(255,107,107,0.2); }
-    .badge-linkedin { background: rgba(10,102,194,0.15);   color: #6baee8; border: 1px solid rgba(10,102,194,0.25); }
-    .badge-google   { background: rgba(62,207,178,0.1);    color: var(--accent2); border: 1px solid rgba(62,207,178,0.2); }
+    .badge-indeed   { background:rgba(255,107,107,0.1);  color:#ff9a9a; border:1px solid rgba(255,107,107,0.2); }
+    .badge-linkedin { background:rgba(10,102,194,0.15);   color:#6baee8; border:1px solid rgba(10,102,194,0.25); }
+    .badge-google   { background:rgba(62,207,178,0.1);    color:var(--de-accent2); border:1px solid rgba(62,207,178,0.2); }
 
     .card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: auto;
-      padding-top: 0.5rem;
-      border-top: 1px solid var(--border);
+      display:flex; align-items:center; justify-content:space-between;
+      margin-top:auto; padding-top:0.5rem; border-top:1px solid var(--border);
     }
+    .card-date { font-family:var(--font-mono); font-size:0.7rem; color:var(--muted); }
 
-    .card-date {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      color: var(--muted);
+    .de-card .apply-btn {
+      display:inline-flex; align-items:center; gap:0.35rem;
+      padding:0.4rem 1rem; background:rgba(91,143,255,0.12);
+      border:1px solid rgba(91,143,255,0.3); color:var(--de-accent);
+      border-radius:var(--radius-sm); text-decoration:none;
+      font-size:0.78rem; font-weight:600; transition:all 0.18s;
     }
+    .de-card .apply-btn:hover { background:rgba(91,143,255,0.22); border-color:var(--de-accent); transform:translateX(2px); }
 
-    .apply-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.4rem 1rem;
-      background: rgba(91,143,255,0.12);
-      border: 1px solid rgba(91,143,255,0.3);
-      color: var(--accent);
-      border-radius: var(--radius-sm);
-      text-decoration: none;
-      font-size: 0.78rem;
-      font-weight: 600;
-      transition: background 0.18s, border-color 0.18s, transform 0.15s;
+    .hc-card .apply-btn {
+      display:inline-flex; align-items:center; gap:0.35rem;
+      padding:0.4rem 1rem; background:rgba(255,126,179,0.12);
+      border:1px solid rgba(255,126,179,0.3); color:var(--hc-accent);
+      border-radius:var(--radius-sm); text-decoration:none;
+      font-size:0.78rem; font-weight:600; transition:all 0.18s;
     }
-    .apply-btn:hover {
-      background: rgba(91,143,255,0.22);
-      border-color: var(--accent);
-      transform: translateX(2px);
-    }
+    .hc-card .apply-btn:hover { background:rgba(255,126,179,0.22); border-color:var(--hc-accent); transform:translateX(2px); }
 
     .new-badge {
-      font-family: var(--font-mono);
-      font-size: 0.62rem;
-      color: #0c1a17;
-      background: var(--accent2);
-      border-radius: 4px;
-      padding: 0.1rem 0.4rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
+      font-family:var(--font-mono); font-size:0.62rem; color:#0c1a17;
+      background:var(--de-accent2); border-radius:4px;
+      padding:0.1rem 0.4rem; font-weight:500; letter-spacing:0.06em;
     }
 
-    /* ─── Empty state ─── */
-    .empty {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 5rem 2rem;
-      color: var(--muted);
-    }
-    .empty-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      opacity: 0.4;
-    }
-    .empty p { font-size: 0.95rem; }
+    /* ── Section wrapper ── */
+    .section-block { display:none; }
+    .section-block.visible { display:block; }
 
-    /* ─── Footer ─── */
+    /* ── Section heading ── */
+    .section-heading {
+      display:flex; align-items:center; gap:1rem;
+      margin-bottom:1.5rem; padding-bottom:1rem;
+      border-bottom:1px solid var(--border);
+    }
+    .section-heading h2 { font-size:1.3rem; font-weight:600; letter-spacing:-0.02em; }
+    .section-heading .sh-pill {
+      font-family:var(--font-mono); font-size:0.7rem; padding:0.25rem 0.7rem;
+      border-radius:999px; font-weight:500;
+    }
+    .de-section .sh-pill { background:rgba(91,143,255,0.12); color:var(--de-accent); border:1px solid rgba(91,143,255,0.25); }
+    .hc-section .sh-pill { background:rgba(255,126,179,0.12); color:var(--hc-accent); border:1px solid rgba(255,126,179,0.25); }
+
+    /* ── Empty state ── */
+    .empty { grid-column:1/-1; text-align:center; padding:5rem 2rem; color:var(--muted); }
+    .empty-icon { font-size:2.5rem; margin-bottom:1rem; opacity:0.4; }
+    .empty p { font-size:0.95rem; }
+
+    /* ── Footer ── */
     footer {
-      text-align: center;
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.78rem;
-      font-family: var(--font-mono);
+      text-align:center; margin-top:4rem; padding-top:2rem;
+      border-top:1px solid var(--border);
+      color:var(--muted); font-size:0.78rem; font-family:var(--font-mono);
     }
 
-    /* ─── Modal ─── */
+    /* ── Modal (unchanged from original) ── */
     .modal-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.65);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      z-index: 200;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
+      display:none; position:fixed; inset:0; background:rgba(0,0,0,0.65);
+      backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+      z-index:200; align-items:center; justify-content:center; padding:1rem;
     }
-    .modal-overlay.open { display: flex; }
-
+    .modal-overlay.open { display:flex; }
     .modal {
-      background: var(--surface);
-      border: 1px solid var(--border2);
-      border-radius: var(--radius-lg);
-      padding: 2rem 2rem 1.75rem;
-      width: 100%;
-      max-width: 440px;
-      position: relative;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
-      animation: modalIn 0.25s ease both;
+      background:var(--surface); border:1px solid var(--border2);
+      border-radius:var(--radius-lg); padding:2rem 2rem 1.75rem;
+      width:100%; max-width:440px; position:relative;
+      box-shadow:0 30px 80px rgba(0,0,0,0.5);
+      animation:modalIn 0.25s ease both;
     }
-
     @keyframes modalIn {
-      from { opacity: 0; transform: translateY(16px) scale(0.97); }
-      to   { opacity: 1; transform: translateY(0) scale(1); }
+      from { opacity:0; transform:translateY(16px) scale(0.97); }
+      to   { opacity:1; transform:translateY(0) scale(1); }
     }
-
     .modal-close {
-      position: absolute;
-      top: 1.1rem; right: 1.1rem;
-      background: none;
-      border: none;
-      color: var(--muted);
-      font-size: 1.1rem;
-      cursor: pointer;
-      width: 28px; height: 28px;
-      display: flex; align-items: center; justify-content: center;
-      border-radius: 6px;
-      transition: background 0.15s, color 0.15s;
+      position:absolute; top:1.1rem; right:1.1rem; background:none; border:none;
+      color:var(--muted); font-size:1.1rem; cursor:pointer;
+      width:28px; height:28px; display:flex; align-items:center; justify-content:center;
+      border-radius:6px; transition:all 0.15s;
     }
-    .modal-close:hover { background: var(--surface2); color: var(--text); }
-
+    .modal-close:hover { background:var(--surface2); color:var(--text); }
     .modal-icon {
-      width: 44px; height: 44px;
-      border-radius: var(--radius-md);
-      background: rgba(62,207,178,0.12);
-      border: 1px solid rgba(62,207,178,0.25);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
+      width:44px; height:44px; border-radius:var(--radius-md);
+      background:rgba(62,207,178,0.12); border:1px solid rgba(62,207,178,0.25);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.25rem; margin-bottom:1rem;
     }
-
-    .modal h2 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      color: var(--text);
-      margin-bottom: 0.35rem;
-    }
-
-    .modal-desc {
-      font-size: 0.85rem;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-      font-weight: 300;
-    }
-
-    /* Channel tabs */
-    .channel-tabs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
-      margin-bottom: 1.25rem;
-    }
-
+    .modal h2 { font-size:1.2rem; font-weight:600; letter-spacing:-0.02em; margin-bottom:0.35rem; }
+    .modal-desc { font-size:0.85rem; color:var(--muted); line-height:1.6; margin-bottom:1.5rem; font-weight:300; }
+    .channel-tabs { display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-bottom:1.25rem; }
     .tab-btn {
-      padding: 0.65rem 0.5rem;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border2);
-      background: var(--surface2);
-      color: var(--muted);
-      font-family: var(--font-body);
-      font-size: 0.82rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.18s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
+      padding:0.65rem 0.5rem; border-radius:var(--radius-md); border:1px solid var(--border2);
+      background:var(--surface2); color:var(--muted); font-family:var(--font-body);
+      font-size:0.82rem; font-weight:500; cursor:pointer; transition:all 0.18s;
+      display:flex; align-items:center; justify-content:center; gap:0.4rem;
     }
-    .tab-btn:hover { border-color: var(--accent2); color: var(--text); }
-    .tab-btn.active {
-      border-color: var(--accent2);
-      background: rgba(62,207,178,0.1);
-      color: var(--accent2);
-    }
-
-    /* Form elements */
+    .tab-btn:hover { border-color:var(--de-accent2); color:var(--text); }
+    .tab-btn.active { border-color:var(--de-accent2); background:rgba(62,207,178,0.1); color:var(--de-accent2); }
     .modal-input {
-      width: 100%;
-      padding: 0.7rem 1rem;
-      background: var(--bg);
-      border: 1px solid var(--border2);
-      border-radius: var(--radius-md);
-      color: var(--text);
-      font-family: var(--font-body);
-      font-size: 0.88rem;
-      outline: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      width:100%; padding:0.7rem 1rem; background:var(--bg); border:1px solid var(--border2);
+      border-radius:var(--radius-md); color:var(--text); font-family:var(--font-body);
+      font-size:0.88rem; outline:none; transition:all 0.2s;
     }
-    .modal-input::placeholder { color: var(--muted); }
-    .modal-input:focus {
-      border-color: var(--accent2);
-      box-shadow: 0 0 0 3px rgba(62,207,178,0.1);
-    }
-
+    .modal-input::placeholder { color:var(--muted); }
+    .modal-input:focus { border-color:var(--de-accent2); box-shadow:0 0 0 3px rgba(62,207,178,0.1); }
     .modal-submit {
-      width: 100%;
-      margin-top: 0.75rem;
-      padding: 0.75rem;
-      background: var(--accent2);
-      color: #0a1a15;
-      border: none;
-      border-radius: var(--radius-md);
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: opacity 0.2s, transform 0.15s;
+      width:100%; margin-top:0.75rem; padding:0.75rem;
+      background:var(--de-accent2); color:#0a1a15; border:none;
+      border-radius:var(--radius-md); font-family:var(--font-body);
+      font-size:0.9rem; font-weight:600; cursor:pointer; transition:all 0.2s;
     }
-    .modal-submit:hover { opacity: 0.88; transform: translateY(-1px); }
-    .modal-submit:disabled { opacity: 0.45; cursor: default; transform: none; }
-
+    .modal-submit:hover { opacity:0.88; transform:translateY(-1px); }
+    .modal-submit:disabled { opacity:0.45; cursor:default; transform:none; }
     .telegram-info {
-      background: rgba(62,207,178,0.06);
-      border: 1px solid rgba(62,207,178,0.2);
-      border-radius: var(--radius-md);
-      padding: 1rem;
-      margin-bottom: 0.75rem;
+      background:rgba(62,207,178,0.06); border:1px solid rgba(62,207,178,0.2);
+      border-radius:var(--radius-md); padding:1rem; margin-bottom:0.75rem;
     }
-    .telegram-info p {
-      font-size: 0.82rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-    .telegram-info strong { color: var(--accent2); }
+    .telegram-info p { font-size:0.82rem; color:var(--muted); line-height:1.6; }
+    .telegram-info strong { color:var(--de-accent2); }
     .telegram-info code {
-      font-family: var(--font-mono);
-      background: rgba(255,255,255,0.07);
-      padding: 0.1rem 0.4rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      color: var(--text);
+      font-family:var(--font-mono); background:rgba(255,255,255,0.07);
+      padding:0.1rem 0.4rem; border-radius:4px; font-size:0.8rem; color:var(--text);
     }
-
     .modal-btn-tg {
-      width: 100%;
-      padding: 0.75rem;
-      background: rgba(62,207,178,0.12);
-      border: 1px solid rgba(62,207,178,0.35);
-      border-radius: var(--radius-md);
-      color: var(--accent2);
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s;
-      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      width:100%; padding:0.75rem; background:rgba(62,207,178,0.12);
+      border:1px solid rgba(62,207,178,0.35); border-radius:var(--radius-md);
+      color:var(--de-accent2); font-family:var(--font-body); font-size:0.9rem;
+      font-weight:600; cursor:pointer; transition:all 0.2s;
+      display:flex; align-items:center; justify-content:center; gap:0.5rem;
     }
-    .modal-btn-tg:hover { background: rgba(62,207,178,0.2); transform: translateY(-1px); }
+    .modal-btn-tg:hover { background:rgba(62,207,178,0.2); transform:translateY(-1px); }
+    .modal-msg { margin-top:0.75rem; font-size:0.82rem; text-align:center; min-height:1.2em; font-family:var(--font-mono); }
+    .modal-msg.ok  { color:var(--de-accent2); }
+    .modal-msg.err { color:var(--accent3); }
 
-    .modal-msg {
-      margin-top: 0.75rem;
-      font-size: 0.82rem;
-      text-align: center;
-      min-height: 1.2em;
-      font-family: var(--font-mono);
-    }
-    .modal-msg.ok  { color: var(--accent2); }
-    .modal-msg.err { color: var(--accent3); }
+    /* ── Animations ── */
+    @keyframes fadeUp   { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes fadeDown { from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes pulse    { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
-    /* ─── Animations ─── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(14px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-8px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: 0.4; }
-    }
+    .card:nth-child(1)  { animation-delay:0.05s }
+    .card:nth-child(2)  { animation-delay:0.08s }
+    .card:nth-child(3)  { animation-delay:0.11s }
+    .card:nth-child(4)  { animation-delay:0.14s }
+    .card:nth-child(5)  { animation-delay:0.17s }
+    .card:nth-child(6)  { animation-delay:0.20s }
+    .card:nth-child(7)  { animation-delay:0.23s }
+    .card:nth-child(8)  { animation-delay:0.26s }
+    .card:nth-child(n+9){ animation-delay:0.29s }
 
-    /* stagger cards */
-    .card:nth-child(1)  { animation-delay: 0.05s; }
-    .card:nth-child(2)  { animation-delay: 0.08s; }
-    .card:nth-child(3)  { animation-delay: 0.11s; }
-    .card:nth-child(4)  { animation-delay: 0.14s; }
-    .card:nth-child(5)  { animation-delay: 0.17s; }
-    .card:nth-child(6)  { animation-delay: 0.20s; }
-    .card:nth-child(7)  { animation-delay: 0.23s; }
-    .card:nth-child(8)  { animation-delay: 0.26s; }
-    .card:nth-child(9)  { animation-delay: 0.29s; }
-    .card:nth-child(10) { animation-delay: 0.32s; }
-    .card:nth-child(n+11) { animation-delay: 0.35s; }
-
-    /* ─── Responsive ─── */
     @media (max-width: 600px) {
-      .page { padding: 1.5rem 1rem 3rem; }
-      header h1 { font-size: 1.75rem; }
-      .grid { grid-template-columns: 1fr; }
-      .stats-bar { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-      .divider-line { display: none; }
-      .filters-wrapper { padding: 0.85rem 1rem; }
+      .page { padding:1.5rem 1rem 3rem; }
+      header h1 { font-size:1.75rem; }
+      .grid { grid-template-columns:1fr; }
+      .stats-bar { flex-direction:column; align-items:flex-start; gap:0.5rem; }
+      .divider-line { display:none; }
+      .filters-wrapper { padding:0.85rem 1rem; }
+      .section-nav { flex-direction:column; align-items:center; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Ambient blobs -->
-  <div class="glow-1"></div>
-  <div class="glow-2"></div>
+<div class="glow-1"></div>
+<div class="glow-2"></div>
 
-  <div class="page">
+<div class="page">
 
-    <!-- ── Header ── -->
-    <header>
-      <div class="header-eyebrow">Updated daily · live pipeline</div>
-      <h1>🇬🇧 UK <span>Data Engineering</span> Jobs</h1>
-      <p class="header-sub">
-        <strong>{{ total_jobs }} roles</strong> scraped &amp; ranked · Last run: {{ last_updated }}
-      </p>
+  <!-- ── Header ── -->
+  <header>
+    <div class="header-eyebrow">Updated daily · live pipeline</div>
+    <h1>🇬🇧 UK <span class="de-word">Data</span> &amp; <span class="hc-word">Healthcare</span> Jobs</h1>
+    <p class="header-sub">
+      <strong>{{ total_de }} data</strong> + <strong>{{ total_hc }} healthcare</strong> roles
+      · Last run: {{ last_updated }}
+    </p>
+    <div class="header-actions">
+      <a class="btn-ghost" href="https://yashwanth-m-v.github.io/Data-hire-UK/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                   0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                   -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                   .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                   -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
+                   .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+                   .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                   0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        ⭐ Star on GitHub
+      </a>
+      <button class="btn-subscribe" onclick="openModal()">🔔 Get Daily Alerts</button>
+    </div>
+  </header>
 
-      <div class="header-actions">
-        <a class="btn-ghost"
-           href="https://yashwanth-m-v.github.io/Data-hire-UK/"
-           target="_blank" rel="noopener">
-          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-                     0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-                     -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-                     .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-                     -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
-                     .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
-                     .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-                     0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-          ⭐ Star on GitHub
-        </a>
+  <!-- ── Section switcher ── -->
+  <div class="section-nav">
+    <button class="section-tab de-tab active" onclick="showSection('de')">
+      💻 Data Engineering
+      <span class="tab-count" id="de-tab-count">{{ total_de }}</span>
+    </button>
+    <button class="section-tab hc-tab" onclick="showSection('hc')">
+      🏥 Healthcare &amp; Support
+      <span class="tab-count" id="hc-tab-count">{{ total_hc }}</span>
+    </button>
+  </div>
 
-        <button class="btn-subscribe" onclick="openModal()">
-          🔔 Get Daily Alerts
-        </button>
-      </div>
-    </header>
+  <!-- ══════════════════════════════════════
+       DATA ENGINEERING SECTION
+  ══════════════════════════════════════ -->
+  <div class="section-block de-section visible" id="section-de">
 
-    <!-- ── Sticky filters ── -->
     <div class="filters-wrapper">
       <div class="filters-inner">
         <div class="filter-row">
@@ -714,265 +480,257 @@
         <div class="filter-row">
           <span class="filter-label">Role →</span>
           <button class="chip active" data-filter="all">All</button>
-          {% for role in roles %}
-            <button class="chip" data-filter="{{ role | lower | replace(' ', '-') }}">
-              {{ role }}
-            </button>
+          {% for role in de_roles %}
+            <button class="chip" data-filter="{{ role | lower | replace(' ', '-') }}">{{ role }}</button>
           {% endfor %}
         </div>
       </div>
     </div>
 
-    <!-- ── Stats bar ── -->
     <div class="stats-bar">
-      <p class="job-count" id="job-count">Showing <strong>{{ total_jobs }}</strong> jobs</p>
+      <p class="job-count" id="de-job-count">Showing <strong>{{ total_de }}</strong> jobs</p>
       <div class="divider-line"></div>
     </div>
 
-    <!-- ── Job grid ── -->
-    <div class="grid" id="job-grid">
-      {% for job in jobs %}
-      <div class="card"
+    <div class="grid" id="de-grid">
+      {% for job in de_jobs %}
+      <div class="card de-card"
            data-role="{{ job.role_group | lower | replace(' ', '-') }}"
            data-date="{{ job.date_posted_iso }}">
-
         <div class="card-header">
           <div>
             <div class="card-title">{{ job.title }}</div>
             <div class="card-company" style="margin-top:0.3rem;">{{ job.company }}</div>
           </div>
-          {% set days_old = ((today_iso | default('2099-01-01')) | string) %}
           {% if job.date_posted_iso >= today_iso | default('2099-01-01') %}
             <span class="new-badge">NEW</span>
           {% endif %}
         </div>
-
         <div class="card-meta">
           <span class="badge badge-{{ job.site | lower }}">{{ job.site | capitalize }}</span>
-          {% if job.location %}
-            <span class="badge badge-default">📍 {{ job.location }}</span>
-          {% endif %}
-          {% if job.job_type and job.job_type != 'N/A' %}
-            <span class="badge badge-default">{{ job.job_type }}</span>
-          {% endif %}
-          <span class="badge badge-default" style="background:rgba(255,255,255,0.04);color:var(--muted);border-color:transparent;">
-            {{ job.role_group }}
-          </span>
+          {% if job.location %}<span class="badge badge-default">📍 {{ job.location }}</span>{% endif %}
+          {% if job.job_type and job.job_type != 'N/A' %}<span class="badge badge-default">{{ job.job_type }}</span>{% endif %}
+          <span class="badge badge-default" style="background:rgba(255,255,255,0.04);color:var(--muted);border-color:transparent;">{{ job.role_group }}</span>
         </div>
-
         <div class="card-footer">
           <span class="card-date">{{ job.date_posted }}</span>
-          <a class="apply-btn" href="{{ job.job_url }}" target="_blank" rel="noopener">
-            Apply →
-          </a>
+          <a class="apply-btn" href="{{ job.job_url }}" target="_blank" rel="noopener">Apply →</a>
         </div>
-
       </div>
       {% else %}
-        <div class="empty">
-          <div class="empty-icon">🔍</div>
-          <p>No jobs match the current filters.</p>
-        </div>
+        <div class="empty"><div class="empty-icon">🔍</div><p>No data engineering jobs match the filters.</p></div>
       {% endfor %}
-    </div>
-
-    <!-- ── Footer ── -->
-    <footer>
-      built with python · jobspy · jinja2 · supabase · hosted on github pages
-    </footer>
-
-  </div><!-- /page -->
-
-
-  <!-- ══════════════════════════════
-       Subscribe modal
-  ══════════════════════════════ -->
-  <div class="modal-overlay" id="subscribeModal"
-       onclick="if(event.target===this) closeModal()">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-
-      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
-
-      <div class="modal-icon">🔔</div>
-      <h2 id="modal-title">Daily Job Alerts</h2>
-      <p class="modal-desc">
-        Get the freshest UK Data Engineering roles delivered every day at 9 pm.
-        Pick your channel below.
-      </p>
-
-      <div class="channel-tabs">
-        <button class="tab-btn active" id="tab-email" onclick="switchTab('email')">
-          📧 Email
-        </button>
-        <button class="tab-btn" id="tab-telegram" onclick="switchTab('telegram')">
-          ✈️ Telegram
-        </button>
-      </div>
-
-      <!-- Email panel -->
-      <div id="panel-email">
-        <input
-          class="modal-input"
-          type="email"
-          id="input-email"
-          placeholder="you@example.com"
-          autocomplete="email"
-        />
-        <button class="modal-submit" id="submit-email" onclick="subscribeEmail()">
-          Subscribe via Email
-        </button>
-      </div>
-
-      <!-- Telegram panel -->
-      <div id="panel-telegram" style="display:none;">
-        <div class="telegram-info">
-          <p>
-            Open Telegram and message
-            <strong>@uk_de_job_update_bot</strong>
-            then send <code>/start</code> — that's all it takes.
-            You can unsubscribe any time with <code>/stop</code>.
-          </p>
-        </div>
-        <button class="modal-btn-tg"
-                onclick="window.open('https://t.me/uk_de_job_update_bot','_blank')">
-          ✈️ Open Bot on Telegram →
-        </button>
-      </div>
-
-      <div class="modal-msg" id="modal-msg"></div>
-
     </div>
   </div>
 
+  <!-- ══════════════════════════════════════
+       HEALTHCARE SECTION
+  ══════════════════════════════════════ -->
+  <div class="section-block hc-section" id="section-hc">
 
-  <script>
-    /* ════════════════════════════
-       Configuration
-    ════════════════════════════ */
-    const SUPABASE_URL  = "https://ijlydnalqkepiikzsgqq.supabase.co";
-    const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqbHlkbmFscWtlcGlpa3pzZ3FxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyNjcyOTUsImV4cCI6MjA4OTg0MzI5NX0.rhOZqWbN7DCVwP49SCkrbNr83clsbO3VPp1_owXTUTo";
+    <div class="filters-wrapper">
+      <div class="filters-inner">
+        <div class="filter-row">
+          <span class="filter-label">Date →</span>
+          <button class="chip date-chip active" data-days="14">14 days</button>
+          <button class="chip date-chip" data-days="7">7 days</button>
+          <button class="chip date-chip" data-days="3">3 days</button>
+          <button class="chip date-chip" data-days="1">Today</button>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Role →</span>
+          <button class="chip active" data-filter="all">All</button>
+          {% for role in hc_roles %}
+            <button class="chip" data-filter="{{ role | lower | replace(' ', '-') }}">{{ role }}</button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
 
-    /* ════════════════════════════
-       Filter state
-    ════════════════════════════ */
-    const roleChips = document.querySelectorAll(".chip:not(.date-chip)");
-    const dateChips = document.querySelectorAll(".date-chip");
-    const cards     = document.querySelectorAll(".card");
-    const counter   = document.getElementById("job-count");
+    <div class="stats-bar">
+      <p class="job-count" id="hc-job-count">Showing <strong>{{ total_hc }}</strong> jobs</p>
+      <div class="divider-line"></div>
+    </div>
 
-    let activeRole = "all";
-    let activeDays = 14;
+    <div class="grid" id="hc-grid">
+      {% for job in hc_jobs %}
+      <div class="card hc-card"
+           data-role="{{ job.role_group | lower | replace(' ', '-') }}"
+           data-date="{{ job.date_posted_iso }}">
+        <div class="card-header">
+          <div>
+            <div class="card-title">{{ job.title }}</div>
+            <div class="card-company" style="margin-top:0.3rem;">{{ job.company }}</div>
+          </div>
+          {% if job.date_posted_iso >= today_iso | default('2099-01-01') %}
+            <span class="new-badge">NEW</span>
+          {% endif %}
+        </div>
+        <div class="card-meta">
+          <span class="badge badge-{{ job.site | lower }}">{{ job.site | capitalize }}</span>
+          {% if job.location %}<span class="badge badge-default">📍 {{ job.location }}</span>{% endif %}
+          {% if job.job_type and job.job_type != 'N/A' %}<span class="badge badge-default">{{ job.job_type }}</span>{% endif %}
+          <span class="badge badge-default" style="background:rgba(255,255,255,0.04);color:var(--muted);border-color:transparent;">{{ job.role_group }}</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-date">{{ job.date_posted }}</span>
+          <a class="apply-btn" href="{{ job.job_url }}" target="_blank" rel="noopener">Apply →</a>
+        </div>
+      </div>
+      {% else %}
+        <div class="empty"><div class="empty-icon">🔍</div><p>No healthcare jobs match the filters.</p></div>
+      {% endfor %}
+    </div>
+  </div>
 
-    function applyFilters() {
-      const cutoff = new Date();
-      cutoff.setDate(cutoff.getDate() - activeDays);
-      cutoff.setHours(0, 0, 0, 0);
+  <footer>
+    built with python · jobspy · jinja2 · supabase · hosted on github pages
+  </footer>
+</div>
 
-      let visible = 0;
-      cards.forEach(card => {
-        const roleMatch = activeRole === "all" || card.dataset.role === activeRole;
-        const dateMatch = new Date(card.dataset.date) >= cutoff;
-        const show = roleMatch && dateMatch;
-        card.style.display = show ? "flex" : "none";
-        if (show) visible++;
-      });
+<!-- ── Subscribe modal (unchanged) ── -->
+<div class="modal-overlay" id="subscribeModal" onclick="if(event.target===this) closeModal()">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+    <div class="modal-icon">🔔</div>
+    <h2 id="modal-title">Daily Job Alerts</h2>
+    <p class="modal-desc">Fresh UK roles delivered every day at 9 pm. Pick your channel.</p>
+    <div class="channel-tabs">
+      <button class="tab-btn active" id="tab-email" onclick="switchTab('email')">📧 Email</button>
+      <button class="tab-btn" id="tab-telegram" onclick="switchTab('telegram')">✈️ Telegram</button>
+    </div>
+    <div id="panel-email">
+      <input class="modal-input" type="email" id="input-email" placeholder="you@example.com" autocomplete="email"/>
+      <button class="modal-submit" id="submit-email" onclick="subscribeEmail()">Subscribe via Email</button>
+    </div>
+    <div id="panel-telegram" style="display:none;">
+      <div class="telegram-info">
+        <p>Open Telegram and message <strong>@uk_de_job_update_bot</strong> then send <code>/start</code>. Unsubscribe any time with <code>/stop</code>.</p>
+      </div>
+      <button class="modal-btn-tg" onclick="window.open('https://t.me/uk_de_job_update_bot','_blank')">✈️ Open Bot on Telegram →</button>
+    </div>
+    <div class="modal-msg" id="modal-msg"></div>
+  </div>
+</div>
 
-      counter.innerHTML = `Showing <strong>${visible}</strong> job${visible !== 1 ? "s" : ""}`;
-    }
+<script>
+  const SUPABASE_URL  = "https://ijlydnalqkepiikzsgqq.supabase.co";
+  const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqbHlkbmFscWtlcGlpa3pzZ3FxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyNjcyOTUsImV4cCI6MjA4OTg0MzI5NX0.rhOZqWbN7DCVwP49SCkrbNr83clsbO3VPp1_owXTUTo";
 
-    roleChips.forEach(btn => {
+  /* ── Section switcher ── */
+  function showSection(sec) {
+    document.getElementById("section-de").classList.toggle("visible", sec === "de");
+    document.getElementById("section-hc").classList.toggle("visible", sec === "hc");
+    document.querySelector(".de-tab").classList.toggle("active", sec === "de");
+    document.querySelector(".hc-tab").classList.toggle("active", sec === "hc");
+    // Re-run filters for whichever section just became visible
+    if (sec === "de") applyFilters("de");
+    else              applyFilters("hc");
+  }
+
+  /* ── Filters (one instance per section) ── */
+  const state = {
+    de: { role: "all", days: 14 },
+    hc: { role: "all", days: 14 },
+  };
+
+  function applyFilters(sec) {
+    const { role, days } = state[sec];
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - days);
+    cutoff.setHours(0, 0, 0, 0);
+
+    const grid    = document.getElementById(`${sec}-grid`);
+    const counter = document.getElementById(`${sec}-job-count`);
+    const cards   = grid.querySelectorAll(".card");
+
+    let visible = 0;
+    cards.forEach(card => {
+      const show = (role === "all" || card.dataset.role === role)
+                && new Date(card.dataset.date) >= cutoff;
+      card.style.display = show ? "flex" : "none";
+      if (show) visible++;
+    });
+
+    counter.innerHTML = `Showing <strong>${visible}</strong> job${visible !== 1 ? "s" : ""}`;
+  }
+
+  // Wire up chips for each section independently
+  ["de", "hc"].forEach(sec => {
+    const section = document.getElementById(`section-${sec}`);
+
+    section.querySelectorAll(".chip:not(.date-chip)").forEach(btn => {
       btn.addEventListener("click", () => {
-        roleChips.forEach(b => b.classList.remove("active"));
+        section.querySelectorAll(".chip:not(.date-chip)").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
-        activeRole = btn.dataset.filter;
-        applyFilters();
+        state[sec].role = btn.dataset.filter;
+        applyFilters(sec);
       });
     });
 
-    dateChips.forEach(btn => {
+    section.querySelectorAll(".date-chip").forEach(btn => {
       btn.addEventListener("click", () => {
-        dateChips.forEach(b => b.classList.remove("active"));
+        section.querySelectorAll(".date-chip").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
-        activeDays = parseInt(btn.dataset.days, 10);
-        applyFilters();
+        state[sec].days = parseInt(btn.dataset.days, 10);
+        applyFilters(sec);
       });
     });
+  });
 
-    /* ════════════════════════════
-       Modal
-    ════════════════════════════ */
-    function openModal()  { document.getElementById("subscribeModal").classList.add("open"); }
-    function closeModal() { document.getElementById("subscribeModal").classList.remove("open"); }
+  /* ── Modal ── */
+  function openModal()  { document.getElementById("subscribeModal").classList.add("open"); }
+  function closeModal() { document.getElementById("subscribeModal").classList.remove("open"); }
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
 
-    document.addEventListener("keydown", e => {
-      if (e.key === "Escape") closeModal();
-    });
+  function switchTab(tab) {
+    document.getElementById("panel-email").style.display    = tab === "email"    ? "" : "none";
+    document.getElementById("panel-telegram").style.display = tab === "telegram" ? "" : "none";
+    document.getElementById("tab-email").classList.toggle("active",    tab === "email");
+    document.getElementById("tab-telegram").classList.toggle("active", tab === "telegram");
+    document.getElementById("modal-msg").textContent = "";
+  }
 
-    function switchTab(tab) {
-      document.getElementById("panel-email").style.display    = tab === "email"    ? "" : "none";
-      document.getElementById("panel-telegram").style.display = tab === "telegram" ? "" : "none";
-      document.getElementById("tab-email").classList.toggle("active",    tab === "email");
-      document.getElementById("tab-telegram").classList.toggle("active", tab === "telegram");
-      document.getElementById("modal-msg").textContent = "";
+  async function subscribeEmail() {
+    const msg   = document.getElementById("modal-msg");
+    const btn   = document.getElementById("submit-email");
+    const email = document.getElementById("input-email").value.trim();
+    msg.className = "modal-msg"; msg.textContent = "";
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      msg.className = "modal-msg err";
+      msg.textContent = "please enter a valid email address.";
+      return;
     }
 
-    async function subscribeEmail() {
-      const msg   = document.getElementById("modal-msg");
-      const btn   = document.getElementById("submit-email");
-      const email = document.getElementById("input-email").value.trim();
+    btn.disabled = true; btn.textContent = "Subscribing…";
 
-      msg.className = "modal-msg";
-      msg.textContent = "";
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/subscribers`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", "apikey": SUPABASE_ANON,
+          "Authorization": `Bearer ${SUPABASE_ANON}`, "Prefer": "return=minimal",
+        },
+        body: JSON.stringify({ email, preferred_channel:"email", channel_verified:false, is_active:true, source:"website" }),
+      });
 
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        msg.className = "modal-msg err";
-        msg.textContent = "please enter a valid email address.";
-        return;
+      if (res.ok || res.status === 201) {
+        msg.className = "modal-msg ok";
+        msg.textContent = "✓ subscribed — see you at 9 pm!";
+        document.getElementById("input-email").value = "";
+      } else {
+        const err = await res.json().catch(() => ({}));
+        if (res.status === 409 || err.code === "23505") {
+          msg.className = "modal-msg ok"; msg.textContent = "✓ you're already subscribed!";
+        } else { throw new Error(res.status); }
       }
-
-      btn.disabled = true;
-      btn.textContent = "Subscribing…";
-
-      try {
-        const res = await fetch(`${SUPABASE_URL}/rest/v1/subscribers`, {
-          method: "POST",
-          headers: {
-            "Content-Type":  "application/json",
-            "apikey":        SUPABASE_ANON,
-            "Authorization": `Bearer ${SUPABASE_ANON}`,
-            "Prefer":        "return=minimal",
-          },
-          body: JSON.stringify({
-            email,
-            preferred_channel: "email",
-            channel_verified:  false,
-            is_active:         true,
-            source:            "website",
-          }),
-        });
-
-        if (res.ok || res.status === 201) {
-          msg.className = "modal-msg ok";
-          msg.textContent = "✓ subscribed — see you at 9 pm!";
-          document.getElementById("input-email").value = "";
-        } else {
-          const err = await res.json().catch(() => ({}));
-          if (res.status === 409 || err.code === "23505") {
-            msg.className = "modal-msg ok";
-            msg.textContent = "✓ you're already subscribed!";
-          } else {
-            throw new Error(res.status);
-          }
-        }
-      } catch {
-        msg.className = "modal-msg err";
-        msg.textContent = "something went wrong — please try again.";
-      } finally {
-        btn.disabled = false;
-        btn.textContent = "Subscribe via Email";
-      }
+    } catch {
+      msg.className = "modal-msg err"; msg.textContent = "something went wrong — please try again.";
+    } finally {
+      btn.disabled = false; btn.textContent = "Subscribe via Email";
     }
-  </script>
-
+  }
+</script>
 </body>
 </html>
