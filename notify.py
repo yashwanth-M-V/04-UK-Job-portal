@@ -17,7 +17,7 @@ from src.db import insert_log, get_active_subscribers, get_unsent_updates, updat
 
 load_dotenv()
 
-supabase = create_client(os.getenv("SUPABASE_URL_URL"), os.getenv("SUPABASE_SERVICE_KEY"))
+supabase = create_client(os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_SERVICE_KEY"))
 
 SITE_URL = "https://yashwanth-m-v.github.io/Data-hire-UK/" 
 
