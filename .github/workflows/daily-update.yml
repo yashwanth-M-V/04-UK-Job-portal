@@ -35,6 +35,7 @@ jobs:
       - name: Debug secrets
         run: |
           echo "API_URL: ${API_URL}"
+          echo "SUPABASE_URL: ${SUPABASE_URL}"
           echo "SUPABASE_KEY: ${SUPABASE_KEY}"
           echo "SUPABASE_BUCKET_NAME: ${SUPABASE_BUCKET_NAME}"
           echo "CONNECTION_STRING: ${CONNECTION_STRING}"
@@ -45,6 +46,7 @@ jobs:
           echo "BOT_USERNAME: ${BOT_USERNAME}"
         env:
           API_URL: ${{ secrets.API_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SUPABASE_BUCKET_NAME: ${{ secrets.SUPABASE_BUCKET_NAME }}
           CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
