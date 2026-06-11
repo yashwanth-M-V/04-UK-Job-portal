@@ -60,6 +60,7 @@ jobs:
       - name: Run data pipeline
         env:
           API_URL: ${{ secrets.API_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SUPABASE_BUCKET_NAME: ${{ secrets.SUPABASE_BUCKET_NAME }}
           CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
